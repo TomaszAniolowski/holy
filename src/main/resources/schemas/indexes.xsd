@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.arch.com/holy/metadata/indexes">
+
+    <xs:simpleType name="TestamentIDType" final="restriction">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="OLD"/>
+            <xs:enumeration value="NEW"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="SuppType" final="restriction">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="DICT"/>
+            <xs:enumeration value="DEF"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="EntType" final="restriction">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="V"/>
+            <xs:enumeration value="CH"/>
+            <xs:enumeration value="P"/>
+            <xs:enumeration value="T"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="StdEntityType">
+        <xs:attribute name="absNum" type="xs:positiveInteger" use="required"/>
+        <xs:attribute name="relNum" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="SimpleVerseType">
+        <xs:attribute name="absNum" type="xs:positiveInteger" use="required"/>
+        <xs:attribute name="siglum" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="VerseType">
+        <xs:attribute name="absNum" type="xs:positiveInteger" use="required"/>
+        <xs:attribute name="siglum" type="xs:string" use="required"/>
+        <xs:attribute name="testamentID" type="TestamentIDType" use="required"/>
+        <xs:attribute name="pericopeAbsNum" type="xs:positiveInteger"/>
+        <xs:attribute name="chapterAbsNum" type="xs:positiveInteger" use="required"/>
+        <xs:attribute name="tomeAbsNum" type="xs:positiveInteger" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="VersesType">
+        <xs:sequence>
+            <xs:element ref="verse" maxOccurs="500"/>
+        </xs:sequence>
+        <xs:attribute name="rangeStart" type="xs:positiveInteger" use="required"/>
+        <xs:attribute name="rangeEnd" type="xs:positiveInteger" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="PericopeType">
+        <xs:attribute name="absNum" type="xs:positiveInteger" use="required"/>
+        <xs:attribute name="testamentID" type="TestamentIDType" use="required"/>
+        <xs:attribute name="tomeAbsNum" type="xs:positiveInteger" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="PericopesType">
+        <xs:sequence>
+            <xs:element ref="pericope" maxOccurs="500"/>
+        </xs:sequence>
+        <xs:attribute name="rangeStart" type="xs:positiveInteger" use="required"/>
+        <xs:attribute name="rangeEnd" type="xs:positiveInteger" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="chapterType">
+        <xs:sequence>
+            <xs:element ref="first-verse"/>
+            <xs:element ref="last-verse"/>
+        </xs:sequence>
+        <xs:attribute name="absNum" type="xs:positiveInteger" use="required"/>
+        <xs:attribute name="relNum" type="xs:string" use="required"/>
+        <xs:attribute name="tomeAbsNum" type="xs:positiveInteger" use="required"/>
+        <xs:attribute name="testamentID" type="TestamentIDType" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="ChaptersType">
+        <xs:sequence>
+            <xs:element ref="chapter" maxOccurs="500"/>
+        </xs:sequence>
+        <xs:attribute name="rangeStart" type="xs:positiveInteger" use="required"/>
+        <xs:attribute name="rangeEnd" type="xs:positiveInteger" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="TomeType">
+        <xs:sequence>
+            <xs:element ref="first-chapter"/>
+            <xs:element ref="last-chapter"/>
+        </xs:sequence>
+        <xs:attribute name="testamentID" type="TestamentIDType" use="required"/>
+        <xs:attribute name="absNum" type="xs:positiveInteger" use="required"/>
+        <xs:attribute name="relNum" type="xs:string" use="required"/>
+        <xs:attribute name="size" type="xs:positiveInteger" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="TomesType">
+        <xs:sequence>
+            <xs:element ref="tome" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="quantity" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="TestamentType">
+        <xs:attribute name="absNum" type="xs:positiveInteger" use="required"/>
+        <xs:attribute name="relNum" type="TestamentIDType" use="required"/>
+        <xs:attribute name="firstVerseAbsNum" type="xs:positiveInteger" use="required"/>
+        <xs:attribute name="lastVerseAbsNum" type="xs:positiveInteger" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="TestamentsType">
+        <xs:sequence>
+            <xs:element ref="testament" minOccurs="2" maxOccurs="2"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="SuppEntryType">
+        <xs:attribute name="suppType" type="SuppType" use="required"/>
+        <xs:attribute name="entType" type="EntType" use="required"/>
+        <xs:attribute name="suppId" type="xs:positiveInteger" use="required"/>
+        <xs:attribute name="entAbsNum" type="xs:positiveInteger" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="SupplementType">
+        <xs:sequence>
+            <xs:element ref="supp-entry" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:positiveInteger" use="required"/>
+        <xs:attribute name="quantity" type="xs:positiveInteger" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="SupplementsType">
+        <xs:choice>
+            <xs:element ref="supps-en-entry" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element ref="en-supps-entry" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:choice>
+        <xs:attribute name="suppType" type="SuppType"/>
+        <xs:attribute name="entType" type="EntType"/>
+        <xs:attribute name="rangeStart" type="xs:positiveInteger"/>
+        <xs:attribute name="rangeEnd" type="xs:positiveInteger"/>
+    </xs:complexType>
+
+    <!--    MAIN ROOT ELEMENTS WITH ITS CHILDREN-->
+    <xs:element name="verses" type="VersesType"/>
+    <xs:element name="verse" type="VerseType"/>
+    <xs:element name="pericopes" type="PericopesType"/>
+    <xs:element name="pericope" type="PericopeType"/>
+    <xs:element name="chapters" type="ChaptersType"/>
+    <xs:element name="chapter" type="chapterType"/>
+    <xs:element name="tomes" type="TomesType"/>
+    <xs:element name="tome" type="TomeType"/>
+    <xs:element name="testaments" type="TestamentsType"/>
+    <xs:element name="testament" type="TestamentType"/>
+    <xs:element name="supps-en-entries" type="SupplementsType"/>
+    <xs:element name="supps-en-entry" type="SupplementType"/>
+    <xs:element name="en-supps-entries" type="SupplementsType"/>
+    <xs:element name="en-supps-entry" type="SupplementType"/>
+
+    <!--    DESCENDANTS -->
+    <xs:element name="first-verse" type="SimpleVerseType"/>
+    <xs:element name="last-verse" type="SimpleVerseType"/>
+    <xs:element name="first-chapter" type="StdEntityType"/>
+    <xs:element name="last-chapter" type="StdEntityType"/>
+    <xs:element name="supp-entry" type="SuppEntryType"/>
+
+</xs:schema>

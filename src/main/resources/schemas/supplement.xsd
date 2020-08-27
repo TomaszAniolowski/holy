@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.arch.com/holy/data/supplement">
+
+    <xs:simpleType name="SuppType" final="restriction">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="DICT" />
+            <xs:enumeration value="DEF" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="SuppEntryType">
+        <xs:attribute name="id" type="xs:string" use="required"/>
+        <xs:attribute name="suppType" type="SuppType" use="required"/>
+        <xs:attribute name="definiendum" type="xs:string"/>
+    </xs:complexType>
+
+    <xs:complexType name="SupplementsType">
+        <xs:sequence>
+            <xs:element ref="entry" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="rangeStart" type="xs:string"/>
+        <xs:attribute name="rangeEnd" type="xs:string"/>
+    </xs:complexType>
+
+    <xs:element name="supplements" type="SupplementsType"/>
+    <xs:element name="entry" type="SuppEntryType"/>
+
+</xs:schema>

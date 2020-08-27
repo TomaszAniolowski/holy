@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.arch.com/holy/data/pericope">
+
+    <xs:simpleType name="TomeIDType" final="restriction">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Rdz"/>
+            <xs:enumeration value="Wj"/>
+            <xs:enumeration value="Kpł"/>
+            <xs:enumeration value="Lb"/>
+            <xs:enumeration value="Pwt"/>
+            <xs:enumeration value="Joz"/>
+            <xs:enumeration value="Sdz"/>
+            <xs:enumeration value="Rt"/>
+            <xs:enumeration value="1Sm"/>
+            <xs:enumeration value="2Sm"/>
+            <xs:enumeration value="1Krl"/>
+            <xs:enumeration value="2Krl"/>
+            <xs:enumeration value="1Krn"/>
+            <xs:enumeration value="2Krn"/>
+            <xs:enumeration value="Ezd"/>
+            <xs:enumeration value="Ne"/>
+            <xs:enumeration value="Tb"/>
+            <xs:enumeration value="Jdt"/>
+            <xs:enumeration value="Est"/>
+            <xs:enumeration value="1Mch"/>
+            <xs:enumeration value="2Mch"/>
+            <xs:enumeration value="Hi"/>
+            <xs:enumeration value="Ps"/>
+            <xs:enumeration value="Prz"/>
+            <xs:enumeration value="Koh"/>
+            <xs:enumeration value="Pnp"/>
+            <xs:enumeration value="Mdr"/>
+            <xs:enumeration value="Syr"/>
+            <xs:enumeration value="Iz"/>
+            <xs:enumeration value="Jr"/>
+            <xs:enumeration value="Lm"/>
+            <xs:enumeration value="Ba"/>
+            <xs:enumeration value="Ez"/>
+            <xs:enumeration value="Dn"/>
+            <xs:enumeration value="Oz"/>
+            <xs:enumeration value="Jl"/>
+            <xs:enumeration value="Am"/>
+            <xs:enumeration value="Ab"/>
+            <xs:enumeration value="Jon"/>
+            <xs:enumeration value="Mi"/>
+            <xs:enumeration value="Na"/>
+            <xs:enumeration value="Ha"/>
+            <xs:enumeration value="So"/>
+            <xs:enumeration value="Ag"/>
+            <xs:enumeration value="Za"/>
+            <xs:enumeration value="Ml"/>
+            <xs:enumeration value="Mt"/>
+            <xs:enumeration value="Mm"/>
+            <xs:enumeration value="Łk"/>
+            <xs:enumeration value="J"/>
+            <xs:enumeration value="Dz"/>
+            <xs:enumeration value="Rz"/>
+            <xs:enumeration value="1Kor"/>
+            <xs:enumeration value="2Kor"/>
+            <xs:enumeration value="Ga"/>
+            <xs:enumeration value="Ef"/>
+            <xs:enumeration value="Flp"/>
+            <xs:enumeration value="Kol"/>
+            <xs:enumeration value="1Tes"/>
+            <xs:enumeration value="2Tes"/>
+            <xs:enumeration value="1Tm"/>
+            <xs:enumeration value="2Tm"/>
+            <xs:enumeration value="Tt"/>
+            <xs:enumeration value="Flm"/>
+            <xs:enumeration value="Hbr"/>
+            <xs:enumeration value="Jk"/>
+            <xs:enumeration value="1P"/>
+            <xs:enumeration value="2P"/>
+            <xs:enumeration value="1J"/>
+            <xs:enumeration value="2J"/>
+            <xs:enumeration value="3J"/>
+            <xs:enumeration value="Jud"/>
+            <xs:enumeration value="Ap"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="PericopeType">
+        <xs:attribute name="absNum" type="xs:string" use="required"/>
+        <xs:attribute name="relNum" type="xs:string" use="required"/>
+        <xs:attribute name="prev" type="xs:string" use="required"/>
+        <xs:attribute name="next" type="xs:string" use="required"/>
+        <xs:attribute name="firstVerseAbsNum" type="xs:string" use="required"/>
+        <xs:attribute name="lastVerseAbsNum" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="PericopesType">
+        <xs:sequence>
+            <xs:element ref="pericope" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="quantity" type="xs:string" use="required"/>
+        <xs:attribute name="tomeID" type="TomeIDType"/>
+    </xs:complexType>
+
+    <xs:element name="pericope" type="PericopeType"/>
+    <xs:element name="pericopes" type="PericopesType"/>
+
+</xs:schema>
