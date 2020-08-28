@@ -48,8 +48,8 @@ public class SourceDataCollector {
         for (TomeMetadata tomeMetadata : tomeMetadataList) {
             List<ChapterMetadata> chapters = tomeMetadata.getChapters();
             Collections.sort(chapters);
-            String tomeSiglum = tomeMetadata.getSiglum();
-            int lastChapter = Integer.parseInt(chapters.get(chapters.size() - 1).getSiglum());
+            String tomeSiglum = tomeMetadata.getSigl();
+            int lastChapter = Integer.parseInt(chapters.get(chapters.size() - 1).getSigl());
             tomeLastChapterMap.put(tomeSiglum, lastChapter);
         }
 
@@ -127,9 +127,9 @@ public class SourceDataCollector {
             List<ContentContainer> tomeList = responseList.getTomeList();
             for (ContentContainer contentContainer : tomeList) {
                 Content data = contentContainer.getData();
-                String tomeSiglum = data.getTome().getSiglum();
+                String tomeSiglum = data.getTome().getSigl();
                 TESTAMENT_ID testamentId = metadataCollector.findTestamentIdForTome((TOME_ID) BibleConstants.TOME_SIGLA_MAP.getKey(tomeSiglum));
-                String chapterSiglum = data.getChapter().getSiglum();
+                String chapterSiglum = data.getChapter().getSigl();
                 String sigla = String.format("%s/%s/%s", testamentId.name(), tomeSiglum, chapterSiglum);
                 String content = data.getChapter().getContent();
                 String lineToSave = sigla + SourceDataConstants.DATA_SEPARATOR + content;

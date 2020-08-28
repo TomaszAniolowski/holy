@@ -2,7 +2,7 @@ package com.arch.holy.model.response.content;
 
 public class TomeMetadata {
 
-    private String siglum;
+    private String sigl;
 
     private String name;
 
@@ -11,18 +11,18 @@ public class TomeMetadata {
     public TomeMetadata() {
     }
 
-    public TomeMetadata(String siglum, String name, String content) {
-        this.siglum = siglum;
+    public TomeMetadata(String sigl, String name, String content) {
+        this.sigl = sigl;
         this.name = name;
         this.content = content;
     }
 
-    public String getSiglum() {
-        return siglum;
+    public String getSigl() {
+        return sigl;
     }
 
-    public void setSiglum(String siglum) {
-        this.siglum = siglum;
+    public void setSigl(String sigl) {
+        this.sigl = sigl;
     }
 
     public String getName() {

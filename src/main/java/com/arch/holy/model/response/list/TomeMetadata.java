@@ -6,7 +6,7 @@ public class TomeMetadata {
 
     private int id;
 
-    private String siglum;
+    private String sigl;
 
     private String name;
 
@@ -17,9 +17,9 @@ public class TomeMetadata {
     public TomeMetadata() {
     }
 
-    public TomeMetadata(int id, String siglum, String name, boolean isNewTestament, List<ChapterMetadata> chapters) {
+    public TomeMetadata(int id, String sigl, String name, boolean isNewTestament, List<ChapterMetadata> chapters) {
         this.id = id;
-        this.siglum = siglum;
+        this.sigl = sigl;
         this.name = name;
         this.isNewTestament = isNewTestament;
         this.chapters = chapters;
@@ -33,12 +33,12 @@ public class TomeMetadata {
         this.id = id;
     }
 
-    public String getSiglum() {
-        return siglum;
+    public String getSigl() {
+        return sigl;
     }
 
-    public void setSiglum(String siglum) {
-        this.siglum = siglum;
+    public void setSigl(String sigl) {
+        this.sigl = sigl;
     }
 
     public String getName() {

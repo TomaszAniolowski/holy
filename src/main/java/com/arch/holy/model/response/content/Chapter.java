@@ -4,14 +4,14 @@ public class Chapter {
 
     private String content;
 
-    private String siglum;
+    private String sigl;
 
     public Chapter() {
     }
 
-    public Chapter(String content, String siglum) {
+    public Chapter(String content, String sigl) {
         this.content = content;
-        this.siglum = siglum;
+        this.sigl = sigl;
     }
 
     public String getContent() {
@@ -22,11 +22,11 @@ public class Chapter {
         this.content = content;
     }
 
-    public String getSiglum() {
-        return siglum;
+    public String getSigl() {
+        return sigl;
     }
 
-    public void setSiglum(String siglum) {
-        this.siglum = siglum;
+    public void setSigl(String sigl) {
+        this.sigl = sigl;
     }
 }
