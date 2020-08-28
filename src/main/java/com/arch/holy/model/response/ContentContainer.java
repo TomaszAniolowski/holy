@@ -1,11 +1,10 @@
-package com.arch.holy.model.response.content;
+package com.arch.holy.model.response;
 
-import com.arch.holy.model.response.BibleResponse;
 import com.arch.holy.management.SourceDataConstants;
 
 import java.util.Map;
 
-public class ContentContainer implements BibleResponse {
+public class ContentContainer {
 
     private boolean success;
 

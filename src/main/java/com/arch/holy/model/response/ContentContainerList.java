@@ -1,4 +1,4 @@
-package com.arch.holy.model.response.content;
+package com.arch.holy.model.response;
 
 import java.util.ArrayList;
 import java.util.List;
