@@ -3,8 +3,11 @@ package com.arch.holy.management;
 import com.arch.holy.model.bible.Bible;
 import com.arch.holy.model.bible.MetadataCollector;
 import com.arch.holy.model.bible.MetadataCollectorFactory;
+import com.arch.holy.model.response.ContentContainerList;
 
 import java.io.IOException;
+import java.util.List;
+import java.util.TreeMap;
 
 public class SourceDataManager {
 
@@ -12,26 +15,20 @@ public class SourceDataManager {
     private SourceDataExtractor extractor;
     private SourceDataWriter writer;
     private MetadataCollector metadataCollector;
-    private String session;
     private boolean loadStructureIndexes;
 
-    public SourceDataManager() {
-        this(SourceDataConstants.BLANK);
-    }
-
     public SourceDataManager(String session) {
-        this.collector = new SourceDataCollector();
+        this.collector = new SourceDataCollector(session);
         this.extractor = new SourceDataExtractor();
         this.writer = new SourceDataWriter();
         this.metadataCollector = MetadataCollectorFactory.createNewCollector();
-        this.session = session;
         this.loadStructureIndexes = true;
     }
 
     public void run() throws IOException {
-//        TreeMap<String, String> tomeLastChaptersMap = metadataCollector.getTomeLastChaptersMap();
-//        List<ContentContainerList> tomesContent = collector.getTomesContent(session, tomeLastChaptersMap);
-//        collector.saveChapterHTML(metadataCollector, tomesContent, SourceDataConstants.BIBLE_CONTENT_FILE_PATH, true);
+        TreeMap<String, String> tomeLastChaptersMap = metadataCollector.getTomeLastChaptersMap();
+        List<ContentContainerList> tomesContent = collector.getTomesContent(tomeLastChaptersMap);
+        collector.saveChapterHTML(metadataCollector, tomesContent, SourceDataConstants.BIBLE_CONTENT_FILE_PATH, true);
 
         Bible bible = extractor.extractData(metadataCollector, SourceDataConstants.BIBLE_CONTENT_FILE_PATH);
         if (loadStructureIndexes) extractor.fillBibleStructureIndexes(metadataCollector, bible);
