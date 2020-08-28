@@ -1,40 +1,33 @@
 package com.arch.holy.utils;
 
-import com.arch.holy.management.SourceDataConstants;
-import org.apache.commons.lang3.StringUtils;
-
+import javax.net.ssl.HttpsURLConnection;
 import java.io.BufferedReader;
+import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.Map;
 
 public class RequestSender {
 
     private static final String GET_REQUEST = "GET";
-    private static final String COOKIE_PROPERTY = "Cookie";
+    private static final String POST_REQUEST = "POST";
 
-    private String rawResponse;
-
-    RequestSender() {
-    }
-
-    public String GET(String urlValue) {
-        return GET(urlValue, SourceDataConstants.BLANK);
-    }
-
-    public String GET(String urlValue, String cookie) {
+    public String GET(String urlValue, Map<String, String> requestParams) {
         String response = "";
         try {
             URL url = new URL(urlValue);
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod(GET_REQUEST);
-            if (StringUtils.isNotBlank(cookie)) {
-                conn.setRequestProperty(COOKIE_PROPERTY, cookie);
+            conn.setUseCaches(false);
+            if (requestParams != null) {
+                for (Map.Entry<String, String> requestParam : requestParams.entrySet()) {
+                    conn.setRequestProperty(requestParam.getKey(), requestParam.getValue());
+                }
             }
             conn.connect();
-            BufferedReader in = new BufferedReader(
-                    new InputStreamReader(conn.getInputStream()));
+            BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream()));
             String inputLine;
             StringBuilder content = new StringBuilder();
             while ((inputLine = in.readLine()) != null) content.append(inputLine);
@@ -45,6 +38,35 @@ public class RequestSender {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
         return response;
+    }
+
+    public int POST(String urlValue, Map<String, String> requestParams, String postParams) {
+        int responseCode = -1;
+        try {
+            URL url = new URL(urlValue);
+            HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
+            conn.setRequestMethod(POST_REQUEST);
+            conn.setUseCaches(false);
+            conn.setDoOutput(true);
+            conn.setDoInput(true);
+            if (requestParams != null) {
+                for (Map.Entry<String, String> requestParam : requestParams.entrySet()) {
+                    conn.setRequestProperty(requestParam.getKey(), requestParam.getValue());
+                }
+            }
+
+            DataOutputStream wr = new DataOutputStream(conn.getOutputStream());
+            wr.writeBytes(postParams);
+            wr.flush();
+            wr.close();
+
+            responseCode = conn.getResponseCode();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return responseCode;
     }
 }
