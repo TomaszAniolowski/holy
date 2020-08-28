@@ -160,8 +160,8 @@ public class MetadataCollector {
     public TreeMap<String, String> getTomeLastChaptersMap() {
         TreeMap<String, String> tomeLastChaptersMap = new TreeMap<>(
                 (siglum1, siglum2) -> {
-                    int firstTomeId = (int) BibleConstants.TOME_ORDER_MAP.getKey(siglum1);
-                    int secondTomeId = (int) BibleConstants.TOME_ORDER_MAP.getKey(siglum2);
+                    int firstTomeId = (int) BibleConstants.TOME_ORDER_MAP.getKey(BibleConstants.TOME_SIGLA_MAP.getKey(siglum1));
+                    int secondTomeId = (int) BibleConstants.TOME_ORDER_MAP.getKey(BibleConstants.TOME_SIGLA_MAP.getKey(siglum2));
                     return Integer.compare(firstTomeId, secondTomeId);
                 }
         );
