@@ -28,7 +28,7 @@ public class SourceDataManager {
     public void run() throws IOException {
         TreeMap<String, String> tomeLastChaptersMap = metadataCollector.getTomeLastChaptersMap();
         List<ContentContainerList> tomesContent = collector.getTomesContent(tomeLastChaptersMap);
-        collector.saveChapterHTML(metadataCollector, tomesContent, SourceDataConstants.BIBLE_CONTENT_FILE_PATH, true);
+        collector.saveChapterHTML(metadataCollector, tomesContent);
 
         Bible bible = extractor.extractData(metadataCollector, SourceDataConstants.BIBLE_CONTENT_FILE_PATH);
         if (loadStructureIndexes) extractor.fillBibleStructureIndexes(metadataCollector, bible);
