@@ -5,7 +5,6 @@ import com.arch.holy.model.bible.MetadataCollector;
 import com.arch.holy.model.bible.MetadataCollectorFactory;
 import com.arch.holy.model.response.ContentContainerList;
 import org.apache.commons.lang3.StringUtils;
-import org.jsoup.internal.StringUtil;
 
 import java.io.File;
 import java.io.IOException;
