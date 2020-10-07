@@ -60,16 +60,31 @@ public class SourceDataCollector {
      *
      * @param metadataCollector    MetadataCollector object to find testament id for tome
      * @param contentContainerList list of tomes, which contains list of chapter contents
-     * @param ifCleanUp            boolean value indicating if old file should be removed
      */
-    protected void saveChapterHTML(MetadataCollector metadataCollector, List<ContentContainerList> contentContainerList, String outputPath, boolean ifCleanUp) {
-        if (ifCleanUp) {
-            File file = new File(outputPath);
-            String message = (file.delete()) ? " removed" : " not removed";
-            System.out.println(outputPath + message);
-        }
+    protected void saveChapterHTML(MetadataCollector metadataCollector, List<ContentContainerList> contentContainerList) {
+        for (ContentContainerList responseList : contentContainerList) {
+            List<ContentContainer> tomeList = responseList.getTomeList();
+            for (ContentContainer contentContainer : tomeList) {
+                Content data = contentContainer.getData();
+                String tomeSiglum = data.getTome().getSigl();
+                TESTAMENT_ID testamentId = metadataCollector.findTestamentIdForTome((TOME_ID) BibleConstants.TOME_SIGLA_MAP.getKey(tomeSiglum));
+                String chapterSiglum = data.getChapter().getSigl();
+                String sigla = String.format("%s/%s/%s", testamentId.name(), tomeSiglum, chapterSiglum);
+                String content = data.getChapter().getContent();
+                String lineToSave = sigla + SourceDataConstants.DATA_SEPARATOR + content;
+                String outputPath = String.format(SourceDataConstants.BIBLE_CONTENT_FILE_PATH, new Date());
+                File file = new File(outputPath);
+                CharSink chs = Files.asCharSink(file, Charsets.UTF_8, FileWriteMode.APPEND);
+                try {
+                    chs.write(lineToSave + SourceDataConstants.NEW_LINE);
+                    System.out.println(sigla + " saved");
+                } catch (IOException e) {
+                    e.printStackTrace();
+                    System.out.println(sigla + " not saved");
+                }
 
-        this.saveChapterHTML(metadataCollector, contentContainerList, outputPath);
+            }
+        }
     }
 
     private List<ContentContainer> getSpecificTomeContent(String tome, int lastChapter) {
@@ -96,31 +111,6 @@ public class SourceDataCollector {
         String wrappedContent = String.format(SourceDataConstants.WRAPPED_CHAPTER_CONTENT_TMPLT, rawContent);
         chapterData.setChapterContent(wrappedContent);
         return chapterData;
-    }
-
-    private void saveChapterHTML(MetadataCollector metadataCollector, List<ContentContainerList> contentContainerList, String outputPath) {
-        for (ContentContainerList responseList : contentContainerList) {
-            List<ContentContainer> tomeList = responseList.getTomeList();
-            for (ContentContainer contentContainer : tomeList) {
-                Content data = contentContainer.getData();
-                String tomeSiglum = data.getTome().getSigl();
-                TESTAMENT_ID testamentId = metadataCollector.findTestamentIdForTome((TOME_ID) BibleConstants.TOME_SIGLA_MAP.getKey(tomeSiglum));
-                String chapterSiglum = data.getChapter().getSigl();
-                String sigla = String.format("%s/%s/%s", testamentId.name(), tomeSiglum, chapterSiglum);
-                String content = data.getChapter().getContent();
-                String lineToSave = sigla + SourceDataConstants.DATA_SEPARATOR + content;
-                File file = new File(outputPath);
-                CharSink chs = Files.asCharSink(file, Charsets.UTF_8, FileWriteMode.APPEND);
-                try {
-                    chs.write(lineToSave + SourceDataConstants.NEW_LINE);
-                    System.out.println(sigla + " saved");
-                } catch (IOException e) {
-                    e.printStackTrace();
-                    System.out.println(sigla + " not saved");
-                }
-
-            }
-        }
     }
 
 }

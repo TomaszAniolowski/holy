@@ -4,10 +4,12 @@ import com.arch.holy.model.bible.Bible;
 import com.arch.holy.model.bible.MetadataCollector;
 import com.arch.holy.model.bible.MetadataCollectorFactory;
 import com.arch.holy.model.response.ContentContainerList;
+import org.apache.commons.lang3.StringUtils;
 
+import java.io.File;
 import java.io.IOException;
-import java.util.List;
-import java.util.TreeMap;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class SourceDataManager {
 
@@ -28,9 +30,9 @@ public class SourceDataManager {
     public void run() throws IOException {
         TreeMap<String, String> tomeLastChaptersMap = metadataCollector.getTomeLastChaptersMap();
         List<ContentContainerList> tomesContent = collector.getTomesContent(tomeLastChaptersMap);
-        collector.saveChapterHTML(metadataCollector, tomesContent, SourceDataConstants.BIBLE_CONTENT_FILE_PATH, true);
+        collector.saveChapterHTML(metadataCollector, tomesContent);
 
-        Bible bible = extractor.extractData(metadataCollector, SourceDataConstants.BIBLE_CONTENT_FILE_PATH);
+        Bible bible = extractor.extractData(metadataCollector, getLatestBibleContentPath());
         if (loadStructureIndexes) extractor.fillBibleStructureIndexes(metadataCollector, bible);
 
 //        SourceDataParameters sourceDataParameters = new SourceDataParameters(false, false, true, false, false, false);
@@ -46,5 +48,17 @@ public class SourceDataManager {
     public SourceDataManager setLoadStructureIndexes(boolean loadStructureIndexes) {
         this.loadStructureIndexes = loadStructureIndexes;
         return this;
+    }
+
+    private String getLatestBibleContentPath(){
+        String storagePath = StringUtils.substringBefore(SourceDataConstants.BIBLE_CONTENT_FILE_PATH, "bible-content");
+        File file = new File(storagePath);
+        String latestContentPath = Arrays.stream(Objects.requireNonNull(file.list()))
+            .filter(s -> s.matches("bible-content_(\\d){14}"))
+            .sorted(Comparator.reverseOrder())
+            .limit(1)
+            .collect(Collectors.joining());
+
+        return latestContentPath;
     }
 }

@@ -15,9 +15,9 @@ public class Holy {
             put(BrowserUser.PASSWORD_KEY, args[1]);
         }};
         BrowserUser user = new PismoSwieteUser();
-        String sessiondId = user.login(credentials);
+        String sessionId = user.login(credentials);
 
-        SourceDataManager manager = new SourceDataManager(sessiondId);
+        SourceDataManager manager = new SourceDataManager(sessionId);
         try {
             manager.run();
         } catch (IOException e) {

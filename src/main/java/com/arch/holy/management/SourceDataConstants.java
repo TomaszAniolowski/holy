@@ -16,7 +16,7 @@ public class SourceDataConstants {
     public static final String SIGLA_SEPARATOR = "/";
     public static final String DATA_SEPARATOR = "::-::";
     public static final String DICTIONARY_DEFINIENS_SEPARATOR = "%-%";
-    public static final String BIBLE_CONTENT_FILE_PATH = "src/main/resources/source-data/bible-content";
+    public static final String BIBLE_CONTENT_FILE_PATH = "src/main/resources/source-data/bible-content_%tY%1$tm%1$td%1$tH%1$tM%1$tS";
 
     // SOURCE DATA COLLECTOR CONSTANTS
     public static final String CHAPTER_LIST_REST_API_URL = "https://pismoswiete.pl/api/tome";
