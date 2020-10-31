@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenLocal()
+    maven {
+        url = uri('https://repo.maven.apache.org/maven2/')
+    }
+}
+
+dependencies {
+    implementation 'org.jsoup:jsoup:1.12.1'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.10.2'
+    implementation 'org.apache.commons:commons-lang3:3.9'
+    implementation 'commons-io:commons-io:2.7'
+    implementation 'commons-collections:commons-collections:3.2.2'
+    implementation 'com.google.guava:guava:28.2-jre'
+}
+
+group = 'com.arch'
+version = '1.0-SNAPSHOT'
+description = 'holy'
+java.sourceCompatibility = JavaVersion.VERSION_11
+compileJava.options.encoding = 'UTF-8'
+compileTestJava.options.encoding = 'UTF-8'
+javadoc.options.encoding = 'UTF-8'

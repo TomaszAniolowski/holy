@@ -1,8 +1,12 @@
 .idea/
-target/
+build/
 output/
 /**/my-notes/
 /**/source-data/
+gradle/
+.gradle/
 
 bible-content
 *.iml
+gradlew
+gradlew.bat
