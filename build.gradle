@@ -1,8 +1,27 @@
-plugins {
-    id 'java'
+buildscript {
+    repositories {
+        jcenter()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies {
+        classpath "com.marklogic:ml-data-hub:5.2.5"
+        classpath "com.marklogic:marklogic-unit-test-client:1.0.0"
+        classpath "com.marklogic:ml-gradle:3.14.0"
+    }
 }
 
+plugins {
+    id 'java'
+    id "com.marklogic.ml-gradle" version "3.16.0"
+}
+
+apply plugin: "com.marklogic.ml-data-hub"
+apply plugin: "com.marklogic.ml-gradle"
+
 repositories {
+    jcenter()
     mavenLocal()
     maven {
         url = uri('https://repo.maven.apache.org/maven2/')
@@ -16,6 +35,7 @@ dependencies {
     implementation 'commons-io:commons-io:2.7'
     implementation 'commons-collections:commons-collections:3.2.2'
     implementation 'com.google.guava:guava:28.2-jre'
+    mlBundle "com.marklogic:marklogic-unit-test-modules:1.0.0"
 }
 
 group = 'com.arch'
@@ -25,3 +45,4 @@ java.sourceCompatibility = JavaVersion.VERSION_11
 compileJava.options.encoding = 'UTF-8'
 compileTestJava.options.encoding = 'UTF-8'
 javadoc.options.encoding = 'UTF-8'
+
