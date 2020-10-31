@@ -18,6 +18,8 @@ import com.google.common.io.Files;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.URLEncoder;
+import java.nio.charset.StandardCharsets;
 import java.util.*;
 
 public class SourceDataCollector {
@@ -104,7 +106,7 @@ public class SourceDataCollector {
     }
 
     private ContentContainer getSpecificChapterContent(String tome, String chapter) {
-        String urlLiteral = String.format(SourceDataConstants.CHAPTERS_CONTENT_REST_API_URL_TMPLT, tome, chapter);
+        String urlLiteral = String.format(SourceDataConstants.CHAPTERS_CONTENT_REST_API_URL_TMPLT, URLEncoder.encode(tome, StandardCharsets.UTF_8), chapter);
         String response = sender.GET(urlLiteral, SECURED_URL_REQ_PARAMS_MAP);
         ContentContainer chapterData = jsonUtils.convertToContentContainer(response);
         String rawContent = chapterData.getChapterContentDecoded();
