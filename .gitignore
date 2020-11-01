@@ -5,6 +5,7 @@ output/
 /**/source-data/
 gradle/
 .gradle/
+.tmp/
 
 bible-content
 *.iml
