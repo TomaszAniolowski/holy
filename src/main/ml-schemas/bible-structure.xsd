@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://marklogic.com/holy/ml-modules/bible-structure" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:bs="http://marklogic.com/holy/ml-modules/bible-structure">
+
+  <xs:simpleType name="firstChapterType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="1"/>
+      <xs:enumeration value="Prolog"/>
+    </xs:restriction>
+  </xs:simpleType>
+  
+  <xs:complexType name="tomeType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="siglum"/>
+      <xs:element type="xs:string" name="name"/>
+      <xs:element type="bs:firstChapterType" name="first-chapter"/>
+      <xs:element type="xs:string" name="last-chapter"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="cardNum" use="required"/>
+  </xs:complexType>
+  
+  <xs:complexType name="oldTestamentType">
+    <xs:sequence>
+      <xs:element type="bs:tomeType" name="tome" maxOccurs="46" minOccurs="46"/>
+    </xs:sequence>
+  </xs:complexType>
+  
+  <xs:complexType name="newTestamentType">
+    <xs:sequence>
+      <xs:element type="bs:tomeType" name="tome" maxOccurs="27" minOccurs="27"/>
+    </xs:sequence>
+  </xs:complexType>
+  
+  <xs:complexType name="bibleType">
+    <xs:sequence>
+      <xs:element type="bs:oldTestamentType" name="old-testament"/>
+      <xs:element type="bs:newTestamentType" name="new-testament"/>
+    </xs:sequence>
+  </xs:complexType>
+  
+  <xs:element name="bible" type="bs:bibleType"/>
+</xs:schema>
