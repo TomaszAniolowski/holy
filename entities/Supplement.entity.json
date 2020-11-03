@@ -2,40 +2,45 @@
   "info": {
     "title": "Supplement",
     "version": "1.0.0",
-    "baseUri": "http://holy.arch.com/holy-entities/Supplement",
+    "baseUri": "http://holy.arch.com/holy-entities/",
     "description": "An Supplement entity"
   },
   "definitions": {
     "Supplement": {
       "description": "The Supplement entity root.",
-      "required": [
-        "type",
-        "content"
-      ],
+      "namespace": "http://holy.arch.com/extension/supplement",
+      "namespacePrefix": "supp",
       "primaryKey": "id",
+      "required": ["type", "content"],
       "rangeIndex": [],
-      "elementRangeIndex": [],
+      "elementRangeIndex": ["id"],
+      "pathRangeIndex": [],
       "wordLexicon": [],
       "pii": [],
       "properties": {
         "id": {
           "datatype": "string",
+          "collation": "http://marklogic.com/collation/",
           "description": "The unique supplement identifier being md5 created from a concatenation of a type and a definiendum (if exists) or a content values."
         },
         "type": {
           "datatype": "string",
+          "collation": "http://marklogic.com/collation/",
           "description": "The type of a supplement. It can be a 'definition' or a 'dictionary'."
         },
         "definiendum": {
           "datatype": "string",
+          "collation": "http://marklogic.com/collation/",
           "description": "The term defined or described in a supplement content. Mainly it will be filled in case of Dictionary type."
         },
         "definiens": {
           "datatype": "string",
+          "collation": "http://marklogic.com/collation/",
           "description": "The definition or a description in a supplement content. Mainly it will be filled in case of Dictionary type."
         },
         "content": {
           "datatype": "string",
+          "collation": "http://marklogic.com/collation/",
           "description": "The supplement content."
         }
       }

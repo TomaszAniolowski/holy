@@ -2,37 +2,40 @@
   "info": {
     "title": "Chapter",
     "version": "1.0.0",
-    "baseUri": "http://holy.arch.com/holy-entities/Chapter",
+    "baseUri": "http://holy.arch.com/holy-entities/",
     "description": "An Chapter entity storing a chapter properties and a list of verses."
   },
   "definitions": {
     "Chapter": {
       "description": "The Chapter entity root.",
-      "required": [
-        "testament",
-        "tome",
-        "number"
-      ],
+      "namespace": "http://holy.arch.com/data/chapter",
+      "namespacePrefix": "ch",
       "primaryKey": "id",
-      "rangeIndex": [],
+      "required": ["testament", "tome", "number"],
+      "rangeIndex": ["id"],
       "elementRangeIndex": [],
+      "pathRangeIndex": [],
       "wordLexicon": [],
       "pii": [],
       "properties": {
         "id": {
           "datatype": "string",
+          "collation": "http://marklogic.com/collation/",
           "description": "The unique chapter identifier being md5 created from a concatenation of a testament reference, a tome reference and a chapter number values."
         },
         "testament": {
           "datatype": "string",
-          "description": "The testament reference. It can be an 'Old Testament' or a 'New Testament'."
+          "collation": "http://marklogic.com/collation/",
+          "description": "The testament reference. It can be an <<Old Testament>> or a <<New Testament>>."
         },
         "tome": {
           "datatype": "string",
-          "description": "The tome reference in the form of siglum, e.g. 'Mt'."
+          "collation": "http://marklogic.com/collation/",
+          "description": "The tome reference in the form of siglum, e.g. <<Mt>>."
         },
         "number": {
           "datatype": "string",
+          "collation": "http://marklogic.com/collation/",
           "description": "The chapter cardinal number in context of a tome."
         },
         "verses": {
@@ -46,22 +49,24 @@
     },
     "Verse": {
       "description": "The Verse entity (child of Chapter entity).",
-      "required": [
-        "number",
-        "content"
-      ],
+      "namespace": "http://holy.arch.com/data/verse",
+      "namespacePrefix": "v",
       "primaryKey": "id",
+      "required": ["number", "content"],
       "rangeIndex": [],
-      "elementRangeIndex": [],
+      "elementRangeIndex": ["id"],
+      "pathRangeIndex": [],
       "wordLexicon": [],
       "pii": [],
       "properties": {
         "id": {
           "datatype": "string",
+          "collation": "http://marklogic.com/collation/",
           "description": "The unique verse identifier being md5 created from a concatenation of a testament reference, a tome reference, a chapter number and a verse number values."
         },
         "number": {
           "datatype": "string",
+          "collation": "http://marklogic.com/collation/",
           "description": "The verse cardinal number in context of a chapter."
         },
         "chapter": {
@@ -70,6 +75,7 @@
         },
         "content": {
           "datatype": "string",
+          "collation": "http://marklogic.com/collation/",
           "description": "The verse content."
         },
         "supplements": {
