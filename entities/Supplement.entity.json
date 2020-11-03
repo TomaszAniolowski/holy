@@ -1,0 +1,44 @@
+{
+  "info": {
+    "title": "Supplement",
+    "version": "1.0.0",
+    "baseUri": "http://holy.arch.com/holy-entities/Supplement",
+    "description": "An Supplement entity"
+  },
+  "definitions": {
+    "Chapter": {
+      "description": "The Supplement entity root.",
+      "required": [
+        "id",
+        "type",
+        "content"
+      ],
+      "rangeIndex": [],
+      "elementRangeIndex": [],
+      "wordLexicon": [],
+      "pii": [],
+      "properties": {
+        "id": {
+          "datatype": "string",
+          "description": "The unique supplement identifier being md5 created from a concatenation of a type and a definiendum (if exists) or a content values."
+        },
+        "type": {
+          "datatype": "string",
+          "description": "The type of a supplement. It can be a 'definition' or a 'dictionary'."
+        },
+        "definiendum": {
+          "datatype": "string",
+          "description": "The term defined or described in a supplement content. Mainly it will be filled in case of Dictionary type."
+        },
+        "definiens": {
+          "datatype": "string",
+          "description": "The definition or a description in a supplement content. Mainly it will be filled in case of Dictionary type."
+        },
+        "content": {
+          "datatype": "string",
+          "description": "The supplement content."
+        }
+      }
+    }
+  }
+}
