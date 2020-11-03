@@ -6,13 +6,13 @@
     "description": "An Supplement entity"
   },
   "definitions": {
-    "Chapter": {
+    "Supplement": {
       "description": "The Supplement entity root.",
       "required": [
-        "id",
         "type",
         "content"
       ],
+      "primaryKey": "id",
       "rangeIndex": [],
       "elementRangeIndex": [],
       "wordLexicon": [],

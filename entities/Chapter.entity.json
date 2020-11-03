@@ -9,11 +9,11 @@
     "Chapter": {
       "description": "The Chapter entity root.",
       "required": [
-        "id",
         "testament",
         "tome",
         "number"
       ],
+      "primaryKey": "id",
       "rangeIndex": [],
       "elementRangeIndex": [],
       "wordLexicon": [],
@@ -47,10 +47,10 @@
     "Verse": {
       "description": "The Verse entity (child of Chapter entity).",
       "required": [
-        "id",
         "number",
         "content"
       ],
+      "primaryKey": "id",
       "rangeIndex": [],
       "elementRangeIndex": [],
       "wordLexicon": [],
