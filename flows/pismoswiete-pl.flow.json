@@ -1,0 +1,40 @@
+{
+  "name": "pismoswiete-pl",
+  "description": "This is the default flow containing all of the default steps",
+  "batchSize": 100,
+  "threadCount": 4,
+  "options": {
+    "sourceQuery": null
+  },
+  "steps": {
+    "1": {
+      "name": "ingestion-step",
+      "description": "This is the ingestion step for pismoswiete.pl data management",
+      "stepDefinitionName": "pismoswiete-pl-ingestion",
+      "stepDefinitionType": "INGESTION",
+      "customHook" : {
+        "module" : "/custom-modules/ingestion/pismoswiete-pl-ingestion/ingest-xhtmls.xqy",
+        "parameters" : { },
+        "user" : "flow-developer",
+        "runBefore" : true
+      },
+      "batchSize" : 4,
+      "threadCount" : 12,
+      "fileLocations": {},
+      "options": {
+        "targetDatabase": "holy-STAGING",
+        "sourceQuery": "cts:collection-query('xhtml')",
+        "permissions": "data-hub-operator,read,data-hub-operator,update",
+        "outputFormat": "xml",
+        "collections": [
+          "basic-data"
+        ],
+        "headers": {
+          "sources": [{"name":  "pismoswiete-pl"}],
+          "createdOn" : "currentDateTime",
+          "createdBy" : "currentUser"
+        }
+      }
+    }
+  }
+}

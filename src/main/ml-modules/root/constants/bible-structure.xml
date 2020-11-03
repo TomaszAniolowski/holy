@@ -1,3 +1,4 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
 <bs:bible xmlns:bs="http://marklogic.com/holy/ml-modules/bible-structure">
     <bs:old-testament>
         <bs:tome cardNum="1"><bs:siglum>Rdz</bs:siglum><bs:name>Księga Rodzaju</bs:name><bs:first-chapter>1</bs:first-chapter><bs:last-chapter>50</bs:last-chapter></bs:tome>
