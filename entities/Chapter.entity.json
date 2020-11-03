@@ -1,0 +1,85 @@
+{
+  "info": {
+    "title": "Chapter",
+    "version": "1.0.0",
+    "baseUri": "http://holy.arch.com/holy-entities/Chapter",
+    "description": "An Chapter entity storing a chapter properties and a list of verses."
+  },
+  "definitions": {
+    "Chapter": {
+      "description": "The Chapter entity root.",
+      "required": [
+        "id",
+        "testament",
+        "tome",
+        "number"
+      ],
+      "rangeIndex": [],
+      "elementRangeIndex": [],
+      "wordLexicon": [],
+      "pii": [],
+      "properties": {
+        "id": {
+          "datatype": "string",
+          "description": "The unique chapter identifier being md5 created from a concatenation of a testament reference, a tome reference and a chapter number values."
+        },
+        "testament": {
+          "datatype": "string",
+          "description": "The testament reference. It can be an 'Old Testament' or a 'New Testament'."
+        },
+        "tome": {
+          "datatype": "string",
+          "description": "The tome reference in the form of siglum, e.g. 'Mt'."
+        },
+        "number": {
+          "datatype": "string",
+          "description": "The chapter cardinal number in context of a tome."
+        },
+        "verses": {
+          "datatype": "array",
+          "description": "The list of verses being a content of a specific chapter.",
+          "items": {
+            "$ref": "#/definitions/Verse"
+          }
+        }
+      }
+    },
+    "Verse": {
+      "description": "The Verse entity (child of Chapter entity).",
+      "required": [
+        "id",
+        "number",
+        "content"
+      ],
+      "rangeIndex": [],
+      "elementRangeIndex": [],
+      "wordLexicon": [],
+      "pii": [],
+      "properties": {
+        "id": {
+          "datatype": "string",
+          "description": "The unique verse identifier being md5 created from a concatenation of a testament reference, a tome reference, a chapter number and a verse number values."
+        },
+        "number": {
+          "datatype": "string",
+          "description": "The verse cardinal number in context of a chapter."
+        },
+        "chapter": {
+          "$ref": "#/definitions/Chapter",
+          "description": "The chapter reference."
+        },
+        "content": {
+          "datatype": "string",
+          "description": "The verse content."
+        },
+        "supplements": {
+          "datatype": "array",
+          "description": "The list of supplement identifiers connected with a specific verse",
+          "items": {
+            "$ref": "http://holy.arch.com/holy-entities/Supplement"
+          }
+        }
+      }
+    }
+  }
+}
