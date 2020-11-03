@@ -1,58 +1,63 @@
 {
   "info": {
-    "title": "Chapter",
+    "title": "TOme",
     "version": "1.0.0",
     "baseUri": "http://holy.arch.com/holy-entities/",
-    "description": "An Chapter entity storing a chapter properties and a list of verses."
+    "description": "An Tome entity storing a tome properties and a list of pericopes."
   },
   "definitions": {
-    "Chapter": {
-      "description": "The Chapter entity root.",
-      "namespace": "http://holy.arch.com/data/chapter",
-      "namespacePrefix": "ch",
-      "primaryKey": "id",
-      "required": ["testament", "tome", "number", "verses"],
-      "rangeIndex": ["id"],
+    "Tome": {
+      "description": "The Tome entity root.",
+      "namespace": "http://holy.arch.com/data/tome",
+      "namespacePrefix": "t",
+      "primaryKey": "siglum",
+      "required": ["name", "testament", "pericopes"],
+      "rangeIndex": ["siglum"],
       "elementRangeIndex": [],
       "pathRangeIndex": [],
       "wordLexicon": [],
       "pii": [],
       "properties": {
-        "id": {
+        "siglum": {
           "datatype": "string",
           "collation": "http://marklogic.com/collation/",
-          "description": "The unique chapter identifier being md5 created from a concatenation of a testament reference, a tome reference and a chapter number values."
+          "description": "The tome siglum, e.g. <<Mt>>."
+        },
+        "name": {
+          "datatype": "string",
+          "collation": "http://marklogic.com/collation/",
+          "description": "The tome name, e.g. <<Ewangelia wg św. Mateusza>>."
         },
         "testament": {
           "datatype": "string",
           "collation": "http://marklogic.com/collation/",
           "description": "The testament reference. It can be an <<Old Testament>> or a <<New Testament>>."
         },
-        "tome": {
+        "first-chapter": {
           "datatype": "string",
           "collation": "http://marklogic.com/collation/",
-          "description": "The tome reference in the form of siglum, e.g. <<Mt>>."
+          "description": "The first chapter number."
         },
-        "number": {
+        "last-chapter": {
           "datatype": "string",
           "collation": "http://marklogic.com/collation/",
-          "description": "The chapter cardinal number in context of a tome."
+          "description": "The last chapter number."
         },
-        "verses": {
+        "pericopes": {
           "datatype": "array",
-          "description": "The list of verses being a content of a specific chapter.",
+          "description": "The list of pericopes being a contained by a specific tome.",
           "items": {
-            "$ref": "#/definitions/Verse"
+            "$ref": "#/definitions/Pericope"
           }
         }
       }
     },
-    "Verse": {
-      "description": "The Verse entity (child of Chapter entity).",
-      "namespace": "http://holy.arch.com/data/verse",
-      "namespacePrefix": "v",
+    "Pericope": {
+      "description": "The Pericope entity (child of Tome entity).",
+      "namespace": "http://holy.arch.com/data/pericope",
+      "namespacePrefix": "p",
       "primaryKey": "id",
-      "required": ["number", "chapter", "content"],
+      "required": [],
       "rangeIndex": [],
       "elementRangeIndex": ["id"],
       "pathRangeIndex": [],
@@ -64,25 +69,29 @@
           "collation": "http://marklogic.com/collation/",
           "description": "The unique verse identifier being md5 created from a concatenation of a testament reference, a tome reference, a chapter number and a verse number values."
         },
-        "number": {
+        "title": {
           "datatype": "string",
           "collation": "http://marklogic.com/collation/",
           "description": "The verse cardinal number in context of a chapter."
         },
-        "chapter": {
-          "$ref": "#/definitions/Chapter",
+        "tome": {
+          "$ref": "#/definitions/Tome",
           "description": "The chapter reference."
         },
-        "content": {
-          "datatype": "string",
-          "collation": "http://marklogic.com/collation/",
-          "description": "The verse content."
+        "verses": {
+          "datatype": "array",
+          "description": "The list of verses being a content of a specific chapter.",
+          "items": {
+            "$ref": "http://holy.arch.com/holy-entities/Verse"
+          }
         },
-        "supplements": {
+        "origin-references": {
           "datatype": "array",
           "description": "The list of supplement identifiers connected with a specific verse",
           "items": {
-            "$ref": "http://holy.arch.com/holy-entities/Supplement"
+            "datatype": "string",
+            "collation": "http://marklogic.com/collation/",
+            "description": "The verse content."
           }
         }
       }
