@@ -1,3 +1,8 @@
+import com.marklogic.gradle.task.CorbTask
+import org.apache.tools.ant.taskdefs.condition.Os
+import com.arch.holy.utils.BrowserUser
+import com.arch.holy.utils.PismoSwieteUser
+
 buildscript {
     repositories {
         jcenter()
@@ -8,7 +13,10 @@ buildscript {
     dependencies {
         classpath "com.marklogic:ml-data-hub:5.2.5"
         classpath "com.marklogic:marklogic-unit-test-client:1.0.0"
-        classpath "com.marklogic:ml-gradle:3.14.0"
+        classpath "com.marklogic:ml-gradle:3.16.0"
+        classpath 'com.marklogic:marklogic-corb:2.4.6'
+        classpath 'org.jsoup:jsoup:1.12.1'
+        classpath files("build/libs/holy-1.0-SNAPSHOT.jar")
     }
 }
 
@@ -28,6 +36,10 @@ repositories {
     }
 }
 
+configurations {
+    corb
+}
+
 dependencies {
     implementation 'org.jsoup:jsoup:1.12.1'
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.10.2'
@@ -35,14 +47,47 @@ dependencies {
     implementation 'commons-io:commons-io:2.7'
     implementation 'commons-collections:commons-collections:3.2.2'
     implementation 'com.google.guava:guava:28.2-jre'
-    mlBundle "com.marklogic:marklogic-unit-test-modules:1.0.0"
+    mlRestApi "com.marklogic:marklogic-unit-test-modules:1.0.0"
+    corb 'com.marklogic:marklogic-corb:2.4.6'
 }
 
 group = 'com.arch'
 version = '1.0-SNAPSHOT'
 description = 'holy'
-java.sourceCompatibility = JavaVersion.VERSION_11
-compileJava.options.encoding = 'UTF-8'
-compileTestJava.options.encoding = 'UTF-8'
-javadoc.options.encoding = 'UTF-8'
+java.sourceCompatibility = JavaVersion.VERSION_1_8
 
+task ingestXhtml(type: CorbTask) {
+
+    String username = project.hasProperty("username") ? "$username" : ""
+    String password = project.hasProperty("password") ? "$password" : ""
+    String version = project.hasProperty("version") ? "$version" : "v0"
+
+    Map<String, String> credentials = new HashMap<String, String>() {{
+        put(BrowserUser.LOGIN_KEY, username);
+        put(BrowserUser.PASSWORD_KEY, password);
+    }}
+    BrowserUser user = new PismoSwieteUser()
+    String sessionId = user.login(credentials)
+
+    // setting system properties
+    System.setProperty("PROCESS-MODULE.SESSION-ID", sessionId)
+    System.setProperty("PROCESS-MODULE.VERSION", version)
+
+    String protocol =  ("true".equalsIgnoreCase(mlFinalSimpleSsl as String)) ? "xccs" : "xcc"
+    xccConnectionUri = protocol + "://${mlUsername}:${mlPassword}@${mlHost}:${mlStagingPort}"
+    threadCount = project.hasProperty("threadCount") ? "$threadCount" : 16
+    urisModule = (Os.isFamily(Os.FAMILY_WINDOWS)) ?
+            "corb\\ingest-xhtml\\ingest-xhtml-uris.xqy|ADHOC" :
+            "corb/ingest-xhtml/ingest-xhtml-uris.xqy|ADHOC"
+    processModule = (Os.isFamily(Os.FAMILY_WINDOWS)) ?
+            "corb\\ingest-xhtml\\ingest-xhtml-transform.xqy|ADHOC" :
+            "corb/ingest-xhtml/ingest-xhtml-transform.xqy|ADHOC"
+}
+
+gradle.taskGraph.whenReady { graph ->
+    if (graph.hasTask(ingestXhtml)) {
+        if (!project.hasProperty("username") || !project.hasProperty("password") || !project.hasProperty("version")){
+            throw new InvalidUserDataException("Expecting parameters: username, password and version.")
+        }
+    }
+}

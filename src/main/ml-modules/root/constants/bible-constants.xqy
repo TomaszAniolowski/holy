@@ -1,4 +1,4 @@
-xquery version "1.0-ml";
+xquery version "1.0-ml" encoding "utf-8";
 
 module namespace bc = "http://marklogic.com/holy/ml-modules/bible-constants";
 

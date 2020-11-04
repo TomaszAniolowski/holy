@@ -1,6 +1,6 @@
 {
   "info": {
-    "title": "TOme",
+    "title": "Tome",
     "version": "1.0.0",
     "baseUri": "http://holy.arch.com/holy-entities/",
     "description": "An Tome entity storing a tome properties and a list of pericopes."
@@ -12,8 +12,8 @@
       "namespacePrefix": "t",
       "primaryKey": "siglum",
       "required": ["name", "testament", "pericopes"],
-      "rangeIndex": ["siglum"],
-      "elementRangeIndex": [],
+      "rangeIndex": [],
+      "elementRangeIndex": ["siglum"],
       "pathRangeIndex": [],
       "wordLexicon": [],
       "pii": [],
@@ -72,22 +72,22 @@
         "title": {
           "datatype": "string",
           "collation": "http://marklogic.com/collation/",
-          "description": "The verse cardinal number in context of a chapter."
+          "description": "The pericope title."
         },
         "tome": {
           "$ref": "#/definitions/Tome",
-          "description": "The chapter reference."
+          "description": "The tome reference."
         },
         "verses": {
           "datatype": "array",
-          "description": "The list of verses being a content of a specific chapter.",
+          "description": "The list of verses contained by the pericope.",
           "items": {
             "$ref": "http://holy.arch.com/holy-entities/Verse"
           }
         },
         "origin-references": {
           "datatype": "array",
-          "description": "The list of supplement identifiers connected with a specific verse",
+          "description": "The list of supplement identifiers used in source html document",
           "items": {
             "datatype": "string",
             "collation": "http://marklogic.com/collation/",

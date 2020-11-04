@@ -153,14 +153,13 @@
       <search:element ns="" name="siglum"/>
     </search:value>
   </search:constraint>
-  <search:constraint name="Tome.siglum">
-    <search:range type="xs:string" facet="true" collation="http://marklogic.com/collation/">
-      <search:path-index xmlns:es="http://marklogic.com/entity-services" xmlns:t="http://holy.arch.com/data/tome">//*:instance/t:Tome/t:siglum</search:path-index>
-      <search:facet-option>limit=25</search:facet-option>
-      <search:facet-option>frequency-order</search:facet-option>
-      <search:facet-option>descending</search:facet-option>
-    </search:range>
-  </search:constraint>
+  <!--The name of this constraint is a duplicate in the generated XML. It is within a comment so that the XML may be valid, but you may need to edit for your use case.
+ <search:constraint name="siglum" xmlns:search="http://marklogic.com/appservices/search">
+  <search:range type="xs:string" facet="true" collation="http://marklogic.com/collation/">
+    <search:element ns="http://holy.arch.com/data/tome" name="siglum" xmlns:es="http://marklogic.com/entity-services"/>
+  </search:range>
+</search:constraint> 
+-->
   <search:values name="Verse">
     <search:range type="xs:string" facet="true" collation="http://marklogic.com/collation/">
       <search:element ns="http://holy.arch.com/data/verse" name="id" xmlns:es="http://marklogic.com/entity-services"/>
@@ -183,7 +182,7 @@
   </search:values>
   <search:values name="Tome">
     <search:range type="xs:string" facet="true" collation="http://marklogic.com/collation/">
-      <search:path-index xmlns:es="http://marklogic.com/entity-services" xmlns:t="http://holy.arch.com/data/tome">//*:instance/t:Tome/t:siglum</search:path-index>
+      <search:element ns="http://holy.arch.com/data/tome" name="siglum" xmlns:es="http://marklogic.com/entity-services"/>
     </search:range>
   </search:values>
   <!--Uncomment to return no results for a blank search, rather than the default of all results
