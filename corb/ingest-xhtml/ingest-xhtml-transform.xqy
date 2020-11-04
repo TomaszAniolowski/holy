@@ -7,7 +7,6 @@ declare namespace ins = "xdmp:document-insert";
 
 declare variable $URI external;
 declare variable $SESSION-ID external;
-declare variable $VERSION external;
 
 declare variable $doc-options as element(ins:options) :=
     <options xmlns="xdmp:document-insert">
@@ -37,6 +36,6 @@ declare function local:get-chapter-html-body(
     return $body
 };
 
-let $doc-uri := fn:substring-after($URI, $hmc:PISMOSWIETE-PL-API-URL) || "/" || $VERSION
+let $doc-uri := fn:substring-after($URI, $hmc:PISMOSWIETE-PL-API-URL) || "/" || $hmc:CURRENT-HTML-CONTENT-VERSION
 let $doc-root := local:get-chapter-html-body($URI)
 return xdmp:document-insert($doc-uri, $doc-root, $doc-options)

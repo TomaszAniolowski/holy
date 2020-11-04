@@ -55,12 +55,14 @@ group = 'com.arch'
 version = '1.0-SNAPSHOT'
 description = 'holy'
 java.sourceCompatibility = JavaVersion.VERSION_1_8
+compileJava.options.encoding = 'UTF-8'
+compileTestJava.options.encoding = 'UTF-8'
+javadoc.options.encoding = 'UTF-8'
 
 task ingestXhtml(type: CorbTask) {
 
     String username = project.hasProperty("username") ? "$username" : ""
     String password = project.hasProperty("password") ? "$password" : ""
-    String version = project.hasProperty("version") ? "$version" : "v0"
 
     Map<String, String> credentials = new HashMap<String, String>() {{
         put(BrowserUser.LOGIN_KEY, username);
@@ -71,7 +73,6 @@ task ingestXhtml(type: CorbTask) {
 
     // setting system properties
     System.setProperty("PROCESS-MODULE.SESSION-ID", sessionId)
-    System.setProperty("PROCESS-MODULE.VERSION", version)
 
     String protocol =  ("true".equalsIgnoreCase(mlFinalSimpleSsl as String)) ? "xccs" : "xcc"
     xccConnectionUri = protocol + "://${mlUsername}:${mlPassword}@${mlHost}:${mlStagingPort}"
@@ -86,8 +87,8 @@ task ingestXhtml(type: CorbTask) {
 
 gradle.taskGraph.whenReady { graph ->
     if (graph.hasTask(ingestXhtml)) {
-        if (!project.hasProperty("username") || !project.hasProperty("password") || !project.hasProperty("version")){
-            throw new InvalidUserDataException("Expecting parameters: username, password and version.")
+        if (!project.hasProperty("username") || !project.hasProperty("password")){
+            throw new InvalidUserDataException("Expecting parameters: username and password")
         }
     }
 }
