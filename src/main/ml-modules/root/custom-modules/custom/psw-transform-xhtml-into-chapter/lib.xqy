@@ -51,7 +51,7 @@ declare function custom:create-instance(
     let $tome-siglum := fn:tokenize($source-uri, "/")[3]
     let $chapter-num := fn:tokenize($source-uri, "/")[5]
     let $source-version := fn:tokenize($source-uri, "/")[6]
-    let $testament := bib:determine-testament($tome-siglum)
+    let $testament := bib:retrieve-testament($tome-siglum)
     let $verses := custom:extract-verses($content, $source-version, $output-format)
 
     return if ($output-format = 'xml')

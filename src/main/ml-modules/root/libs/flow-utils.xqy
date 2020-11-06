@@ -14,7 +14,7 @@ declare function flow:make-envelope(
     if ($output-format = "xml") then
         document {
             <envelope xmlns="http://marklogic.com/entity-services">
-                <headers>{$headers}</headers>
+                {$headers}
                 <triples>{$triples}</triples>
                 <instance>{$content}</instance>
             </envelope>
@@ -36,25 +36,30 @@ declare function flow:make-envelope(
  :
  : @param $content      - the raw content
  : @param $options      - a map containing options
- : @param $source-uri   - a source-uri
+ : @param $source-uris   - a source-uri
  :
  :)
 declare function flow:create-headers(
         $content as item()?,
         $options as map:map,
-        $source-uri as xs:string
+        $source-uris as xs:string*
 ) as node()*
 {
     let $output-format := if (fn:empty(map:get($options, "outputFormat"))) then "xml" else map:get($options, "outputFormat")
+    let $current-date-time := fn:current-dateTime()
     return
         if ($output-format eq 'xml')
         then
-            (
-                element es:sourceUri {$source-uri}
-            )
+            element es:headers {
+                element es:sourceUris {
+                    $source-uris ! element es:sourceUri {.}
+                },
+                element es:createdOn {$current-date-time}
+            }
         else
             object-node {
-            "sourceUri": $source-uri
+            "sourceUris": array-node {$source-uris},
+            "createdOn": $current-date-time
             }
 };
 

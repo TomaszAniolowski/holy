@@ -85,7 +85,7 @@
             "$ref": "http://holy.arch.com/holy-entities/Verse"
           }
         },
-        "origin-references": {
+        "supplements": {
           "datatype": "array",
           "description": "The list of supplement identifiers used in source html document",
           "items": {
