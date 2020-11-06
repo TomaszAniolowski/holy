@@ -1,0 +1,38 @@
+{
+  "name": "psw",
+  "description": "This is the flow that uses source bible chapter xhtml bodies from pismoswiete.pl and creates final entities",
+  "batchSize": 4,
+  "threadCount": 16,
+  "options": {
+    "sourceQuery": null
+  },
+  "steps": {
+    "1": {
+      "name": "transform-xhtml-into-chapter",
+      "description": "This is the custom step to transform xhtml data from pismoswiete.pl to prototype of Chapter entity",
+      "stepDefinitionName": "psw-transform-xhtml-into-chapter",
+      "stepDefinitionType": "CUSTOM",
+      "modulePath": "/custom-modules/custom/psw-transform-xhtml-into-chapter/main.sjs",
+      "mappingStep": false,
+      "customStep": true,
+      "mappingName": null,
+      "customHook" : {},
+      "retryLimit" : 0,
+      "batchSize" : 4,
+      "threadCount" : 16,
+      "fileLocations": {},
+      "options": {
+        "sourceQuery": "cts.collectionQuery(['holy-chapter-xhtml-body','latest'])",
+        "sourceDatabase": "holy-STAGING",
+        "targetDatabase": "holy-STAGING",
+        "outputFormat": "xml",
+        "collections": ["holy-basic-data", "basic-chapter"],
+        "additionalCollections": ["latest"],
+        "permissions": "data-hub-operator,read,data-hub-operator,update",
+        "headers": {
+          "createdOn" : "currentDateTime"
+        }
+      }
+    }
+  }
+}

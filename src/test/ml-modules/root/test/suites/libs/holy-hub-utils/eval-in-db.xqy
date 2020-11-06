@@ -1,26 +1,26 @@
 xquery version "1.0-ml";
 
 import module namespace test = "http://marklogic.com/test" at "/test/test-helper.xqy";
-import module namespace utils = "http://marklogic.com/holy/ml-modules/holy-utils" at "/libs/holy-utils.xqy";
+import module namespace hh = "http://marklogic.com/holy/ml-modules/holy-hub-utils" at "/libs/holy-hub-utils.xqy";
 import module namespace hhc = "http://marklogic.com/holy/ml-modules/holy-hub-constants" at "/constants/holy-hub-constants.xqy";
 
-let $test-final := utils:eval-in-db(
+let $test-final := hh:eval-in-db(
     function(){xdmp:database()},
     $hhc:FINAL-DB-ID
 )
-let $test-staging := utils:eval-in-db(
+let $test-staging := hh:eval-in-db(
     function(){xdmp:database()},
     $hhc:STAGING-DB-ID
 )
-let $test-job := utils:eval-in-db(
+let $test-job := hh:eval-in-db(
     function(){xdmp:database()},
     $hhc:JOB-DB-ID
 )
-let $test-modules := utils:eval-in-db(
+let $test-modules := hh:eval-in-db(
     function(){xdmp:database()},
     $hhc:MODULES-DB-ID
 )
-let $test-test := utils:eval-in-db(
+let $test-test := hh:eval-in-db(
     function(){xdmp:database()},
     $hhc:TEST-DB-ID
 )

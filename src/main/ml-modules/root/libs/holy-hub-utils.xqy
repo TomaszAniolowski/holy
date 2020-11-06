@@ -1,16 +1,16 @@
 xquery version "1.0-ml";
 
-module namespace utils = "http://marklogic.com/holy/ml-modules/holy-utils";
+module namespace hh = "http://marklogic.com/holy/ml-modules/holy-hub-utils";
 
-declare function utils:read-from-db(
+declare function hh:read-from-db(
     $file-path as xs:string,
     $database-id as xs:unsignedLong
 )
 {
-    utils:eval-in-db(function() {fn:doc($file-path)}, $database-id)
+    hh:eval-in-db(function() {fn:doc($file-path)}, $database-id)
 };
 
-declare function utils:eval-in-db(
+declare function hh:eval-in-db(
     $function as function() as item()*,
     $database-id as xs:unsignedLong
 )

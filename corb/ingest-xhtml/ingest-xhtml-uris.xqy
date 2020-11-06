@@ -1,4 +1,4 @@
-xquery version "3.0";
+xquery version "1.0-ml";
 
 import module namespace bc = "http://marklogic.com/holy/ml-modules/bible-constants" at "/constants/bible-constants.xqy";
 import module namespace hmc = "http://marklogic.com/holy/ml-modules/holy-management-constants" at "/constants/holy-management-constants.xqy";
@@ -6,6 +6,17 @@ import module namespace hmc = "http://marklogic.com/holy/ml-modules/holy-managem
 declare namespace bs = "http://marklogic.com/holy/ml-modules/bible-structure";
 
 declare variable $SESSION-ID as xs:string external;
+
+(: remove the 'latest' collection from  :)
+let $old-uris :=
+    cts:uris((), (),
+        cts:and-query((
+            cts:directory-query("/tome/", "infinity"),
+            cts:collection-query($hmc:CURRENT-XHTML-CONTENT-VERSION) => cts:not-query(),
+            cts:collection-query(($hmc:XHTML-CONTENT-COLLECTION, "latest"))
+        ))
+    )
+let $_ := $old-uris ! xdmp:document-remove-collections(., "latest")
 
 let $uris :=
     for $tome in $bc:BIBLE-STRUCTURE/bs:bible//bs:tome

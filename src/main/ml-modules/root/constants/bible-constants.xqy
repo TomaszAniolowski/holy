@@ -3,7 +3,7 @@ xquery version "1.0-ml" encoding "utf-8";
 module namespace bc = "http://marklogic.com/holy/ml-modules/bible-constants";
 
 import module namespace hhc = "http://marklogic.com/holy/ml-modules/holy-hub-constants" at "/constants/holy-hub-constants.xqy";
-import module namespace utils = "http://marklogic.com/holy/ml-modules/holy-utils" at "/libs/holy-utils.xqy";
+import module namespace hh = "http://marklogic.com/holy/ml-modules/holy-hub-utils" at "/libs/holy-hub-utils.xqy";
 
 (: COUNTITY CONSTANTS :)
 declare variable $bc:TOME-CARD-NUM-RANGE-START as xs:int := 1;
@@ -16,6 +16,11 @@ declare variable $bc:OLD-T-VERSE-CARD-NUM-RANGE-START as xs:int := 1;
 declare variable $bc:OLD-T-VERSE-CARD-NUM-RANGE-END as xs:int := 27626;
 declare variable $bc:NEW-T-VERSE-CARD-NUM-RANGE-START as xs:int := 27627;
 declare variable $bc:NEW-T-VERSE-CARD-NUM-RANGE-END as xs:int := 35567;
+
+(: TESTAMENT NAMES CONSTANTS :)
+
+declare variable $bc:OLD-TESTAMENT as xs:string := "Old Testament";
+declare variable $bc:NEW-TESTAMENT as xs:string := "New Testament";
 
 (: TOME SIGLA CONSTANTS :)
 declare variable $bc:SIGLUM-RDZ as xs:string := "Rdz";
@@ -167,4 +172,4 @@ declare variable $bc:NAME-J-3 as xs:string     := "3. List św. Jana";
 declare variable $bc:NAME-JUD as xs:string     := "List św. Judy";
 declare variable $bc:NAME-AP as xs:string      := "Apokalipsa wg św. Jana";
 
-declare variable $bc:BIBLE-STRUCTURE := utils:read-from-db("/constants/bible-structure.xml", $hhc:MODULES-DB-ID);
+declare variable $bc:BIBLE-STRUCTURE := hh:read-from-db("/constants/bible-structure.xml", $hhc:MODULES-DB-ID);

@@ -12,7 +12,8 @@ declare variable $doc-options as element(ins:options) :=
     <options xmlns="xdmp:document-insert">
         <permissions>{xdmp:default-permissions()}</permissions>
         <collections>{
-            <collection>holy-chapter-xhtml-body</collection>,
+            <collection>{$hmc:XHTML-CONTENT-COLLECTION}</collection>,
+            <collection>{$hmc:CURRENT-XHTML-CONTENT-VERSION}</collection>,
             xdmp:default-collections() ! <collection>{.}</collection>
         }</collections>
     </options>;
@@ -36,6 +37,6 @@ declare function local:get-chapter-html-body(
     return $body
 };
 
-let $doc-uri := fn:substring-after($URI, $hmc:PISMOSWIETE-PL-API-URL) || "/" || $hmc:CURRENT-HTML-CONTENT-VERSION
+let $doc-uri := fn:substring-after($URI, $hmc:PISMOSWIETE-PL-API-URL) || "/" || $hmc:CURRENT-XHTML-CONTENT-VERSION || ".xml"
 let $doc-root := local:get-chapter-html-body($URI)
 return xdmp:document-insert($doc-uri, $doc-root, $doc-options)

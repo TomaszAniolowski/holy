@@ -15,11 +15,17 @@
 */
 
 const datahubxqymodule = require("lib.xqy");
+const versionRE = /\/v(.)*/;
 
 function main(content, options) {
   let modifiedContent = datahubxqymodule.main(new NodeBuilder().addNode(content).toNode(), options);
   content.value = modifiedContent;
+  content.uri = replaceUri(content.uri, options)
   return content;
+}
+
+function replaceUri(oldUri, options){
+  return oldUri.replace("/tome", "/BasicChapter").replace("/chapter", "").replace(versionRE, "") + "." + options.outputFormat
 }
 
 module.exports = {

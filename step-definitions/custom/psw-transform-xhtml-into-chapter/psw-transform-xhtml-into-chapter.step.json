@@ -1,0 +1,24 @@
+{
+  "lang" : "pl",
+  "name" : "psw-transform-xhtml-into-chapter",
+  "description" : "This is the custom step to transform xhtml data from pismoswiete.pl to prototype of Chapter entity",
+  "type" : "CUSTOM",
+  "version" : 1,
+  "modulePath": "/custom-modules/custom/psw-transform-xhtml-into-chapter/main.sjs",
+  "customHook" : { },
+  "retryLimit" : 0,
+  "batchSize" : 4,
+  "threadCount" : 16,
+  "options" : {
+    "sourceQuery": "cts.collectionQuery(['holy-chapter-xhtml-body','latest'])",
+    "sourceDatabase": "holy-STAGING",
+    "targetDatabase": "holy-STAGING",
+    "outputFormat": "xml",
+    "collections": ["holy-basic-data", "basic-chapter"],
+    "additionalCollections": ["latest"],
+    "permissions": "data-hub-operator,read,data-hub-operator,update",
+    "headers": {
+      "createdOn" : "currentDateTime"
+    }
+  }
+}
