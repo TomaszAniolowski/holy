@@ -25,7 +25,7 @@ function main(content, options) {
 }
 
 function replaceUri(oldUri, options){
-  return oldUri.replace("/BasicChapter", "/BasicTome")..replace(versionRE, "") + "." + options.outputFormat
+  return oldUri.replace("/BasicChapter", "/BasicTome").replace(versionRE, "") + "." + options.outputFormat
 }
 
 

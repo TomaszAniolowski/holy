@@ -5,6 +5,7 @@ module namespace custom = "http://marklogic.com/data-hub/custom";
 import module namespace json = "http://marklogic.com/xdmp/json" at "/MarkLogic/json/json.xqy";
 import module namespace bib = "http://marklogic.com/holy/ml-modules/bible-utils" at "/libs/bible-utils.xqy";
 import module namespace flow = "http://marklogic.com/holy/ml-modules/flow-utils" at "/libs/flow-utils.xqy";
+import module namespace hmc = "http://marklogic.com/holy/ml-modules/holy-management-constants" at "/constants/holy-management-constants.xqy";
 
 declare namespace bt = "http://holy.arch.com/data/tome/basic";
 declare namespace bp = "http://holy.arch.com/data/pericope/basic";
@@ -25,8 +26,12 @@ declare function custom:main(
 
     let $tome-siglum := fn:tokenize($content/uri, "/")[3]
     let $source-uris :=
-        for $uri in cts:uris((), (), cts:directory-query(fn:concat("/tome/", $tome-siglum, "/"), "infinity"))
-        let $chapter := fn:tokenize($uri, "/")[5] => xs:int()
+        for $uri in cts:uris((), (), cts:and-query((
+            cts:collection-query(($hmc:XHTML-CONTENT-COLLECTION, $hmc:CURRENT-XHTML-CONTENT-VERSION)),
+            cts:directory-query(fn:concat("/tome/", $tome-siglum, "/"), "infinity")
+        )))
+        let $chapter := fn:tokenize($uri, "/")[5]
+        let $chapter := if ($chapter eq "Prolog") then 0 else xs:int($chapter)
         order by $chapter
         return $uri
 
@@ -60,7 +65,7 @@ declare function custom:create-instance(
     let $testament := bib:retrieve-testament($tome-siglum)
     let $first-chapter := bib:retrieve-first-chapter($tome-siglum)
     let $last-chapter := bib:retrieve-last-chapter($tome-siglum)
-    let $pericopes := custom:extract-pericopes($content, $source-uris, $output-format)
+    let $pericopes := custom:extract-pericopes($content, $first-chapter, $source-uris, $output-format)
 
     return if ($output-format = 'xml')
     then
@@ -94,43 +99,46 @@ declare function custom:create-instance(
 declare function custom:extract-pericopes
 (
         $content as item()*,
+        $first-chapter as xs:string,
         $source-uris as xs:string*,
         $output-format as xs:string
 )
 {
-(:    for $uri in $source-uris:)
-(:    let $chapter-num := fn:tokenize($uri, "/")[5]:)
+    let $combined-tome := <x:body>{$source-uris ! fn:doc(.)/x:body/child::element()}</x:body>
+    let $pericopes := $combined-tome/x:div[@class eq 'perykopa']
+    for $pericope at $pos in $pericopes
+    let $title := $pericope/xs:string(.) => fn:normalize-space()
+    let $verse-nodes := $pericope/following-sibling::x:span[@class eq 'werset' and fn:not(. = $pericopes[$pos + 1]/following-sibling::x:span)]
+    let $verses := $verse-nodes !
+    object-node {
+    "chapter": ./preceding-sibling::x:span[@class eq 'chapter-number'][1]/xs:string(.) => flow:get-or-else($first-chapter),
+    "number": ./preceding-sibling::x:sup[@class eq 'werset-number'][1]/xs:string(.),
+    "content": ./xs:string(.)
+    }
 
-
-(:    for $verse in $content/x:body/x:span[@class = 'werset']:)
-(:    let $number := $verse/preceding-sibling::x:sup[@class = 'werset-number'][1]/xs:string(.):)
-(:    let $content := $verse/xs:string(.):)
-(:    let $definitions := fn:distinct-values($verse/x:a[@class = 'definition']/@id/fn:string()):)
-(:    let $dictionaries := fn:distinct-values($verse/x:a[@class = 'dictionary']/@id/fn:string()):)
-(:    return:)
-(:        if ($output-format eq 'xml'):)
-(:        then:)
-(:        :)(:            ( :)
-(:            element bp:Pericope {:)
-(:                element bp:title {$title},:)
-(:                element bv:content {$content},:)
-(:                element bv:supplements {:)
-(:                    $definitions ! element bv:definition {.},:)
-(:                    $dictionaries ! element bv:dictionary {.}:)
-(:                }:)
-(:            }:)
-(:        :)(:            ) :)
-(:        else:)
-(:        :)(:            let $info := flow:get-info-node("BasicVerse", $source-version):)
-(:            let $supplements := json:object():)
-(:            => map:with("definitions", json:to-array($definitions)):)
-(:            => map:with("dictionaries", json:to-array($dictionaries)):)
-(:            let $verse := object-node {:)
-(:            "number" : $number,:)
-(:            "content" : $content,:)
-(:            "supplements" : $supplements:)
-(:            }:)
-(:            return json:object():)
-(:            :)(:            => map:with("info", $info):)
-(:            => map:with("BasicVerse", $verse):)
+    return
+        if ($output-format eq 'xml')
+        then
+            (
+                element bp:Pericope {
+                    element bp:title {$title},
+                    element bp:verses {
+                        $verses !
+                        element bp:verse {
+                            element bp:chapter {./chapter},
+                            element bp:number {./number},
+                            element bp:content {./content}
+                        }
+                    }
+                }
+            )
+        else
+        (:            let $info := flow:get-info-node("BasicVerse", $source-version) :)
+            let $pericope := object-node {
+            "title" : $title,
+            "verses" : json:to-array($verses)
+            }
+            return json:object()
+            (:            => map:with("info", $info) :)
+            => map:with("BasicPericope", $pericope)
 };

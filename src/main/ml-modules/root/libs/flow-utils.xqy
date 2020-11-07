@@ -84,3 +84,13 @@ declare function flow:get-info-element(
         element es:version {$version}
     }
 };
+
+declare function flow:get-or-else
+(
+    $optional as item()?,
+    $alternative as item()
+)
+{
+    if ($optional) then $optional else $alternative
+};
+
