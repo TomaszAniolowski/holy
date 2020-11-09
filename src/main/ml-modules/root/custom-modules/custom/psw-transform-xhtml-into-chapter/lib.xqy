@@ -88,7 +88,7 @@ declare function custom:extract-verses
 {
     for $verse in $content/x:body/x:span[@class = 'werset']
     let $number := $verse/preceding-sibling::x:sup[@class = 'werset-number'][1]/xs:string(.)
-    let $content := $verse/xs:string(.)
+    let $content := $verse/xs:string(.) => fn:normalize-space()
     let $definitions := fn:distinct-values($verse/x:a[@class = 'definition']/@id/fn:string())
     let $dictionaries := fn:distinct-values($verse/x:a[@class = 'dictionary']/@id/fn:string())
     return

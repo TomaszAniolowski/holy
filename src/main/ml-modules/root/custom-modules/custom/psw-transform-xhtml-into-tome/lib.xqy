@@ -22,8 +22,7 @@ declare function custom:main(
         $content as item()?,
         $options as map:map)
 {
-    let $doc := if (xdmp:node-kind($content/value) eq "text") then xdmp:unquote($content/value) else $content/value
-
+    let $output-format := if (fn:empty(map:get($options, "outputFormat"))) then "json" else map:get($options, "outputFormat")
     let $tome-siglum := fn:tokenize($content/uri, "/")[3]
     let $source-uris :=
         for $uri in cts:uris((), (), cts:and-query((
@@ -35,10 +34,8 @@ declare function custom:main(
         order by $chapter
         return $uri
 
-    let $headers := flow:create-headers($doc, $options, $source-uris)
-    let $instance := create-instance($doc, $options, $tome-siglum, $source-uris)
-
-    let $output-format := if (fn:empty(map:get($options, "outputFormat"))) then "json" else map:get($options, "outputFormat")
+    let $headers := flow:create-headers((), $options, $source-uris)
+    let $instance := create-instance($output-format, $tome-siglum, $source-uris)
 
     let $envelope := flow:make-envelope($instance, $headers, (), $output-format)
 
@@ -48,24 +45,22 @@ declare function custom:main(
 (:~
  : Creates instance
  :
- : @param $content      - the raw content
- : @param $options      - a map containing options
- : @param $source-uris  - a source-uris
+ : @param $output-format - an output format ('xml' or 'json')
+ : @param $tome-siglum   - a tome siglum
+ : @param $source-uris   - a source-uris
  :
  :)
 declare function custom:create-instance(
-        $content as item()?,
-        $options as map:map,
+        $output-format as xs:string,
         $tome-siglum as xs:string,
         $source-uris as xs:string*
 ) as item()?
 {
-    let $output-format := if (fn:empty(map:get($options, "outputFormat"))) then "xml" else map:get($options, "outputFormat")
     let $tome-name := bib:retrieve-tome-name($tome-siglum)
     let $testament := bib:retrieve-testament($tome-siglum)
     let $first-chapter := bib:retrieve-first-chapter($tome-siglum)
     let $last-chapter := bib:retrieve-last-chapter($tome-siglum)
-    let $pericopes := custom:extract-pericopes($content, $first-chapter, $source-uris, $output-format)
+    let $pericopes := custom:extract-pericopes($first-chapter, $source-uris, $output-format)
 
     return if ($output-format = 'xml')
     then
@@ -98,7 +93,6 @@ declare function custom:create-instance(
 
 declare function custom:extract-pericopes
 (
-        $content as item()*,
         $first-chapter as xs:string,
         $source-uris as xs:string*,
         $output-format as xs:string
@@ -113,7 +107,7 @@ declare function custom:extract-pericopes
     object-node {
     "chapter": ./preceding-sibling::x:span[@class eq 'chapter-number'][1]/xs:string(.) => flow:get-or-else($first-chapter),
     "number": ./preceding-sibling::x:sup[@class eq 'werset-number'][1]/xs:string(.),
-    "content": ./xs:string(.)
+    "content": ./xs:string(.) => fn:normalize-space()
     }
 
     return

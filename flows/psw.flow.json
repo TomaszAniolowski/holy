@@ -58,6 +58,31 @@
         "permissions": "data-hub-operator,read,data-hub-operator,update",
         "headers": { }
       }
+    },
+    "3": {
+      "name": "transform-xhtml-into-supplement",
+      "description": "This is the custom step to transform xhtml data from pismoswiete.pl to prototype of Supplement entity",
+      "stepDefinitionName": "psw-transform-xhtml-into-supplement",
+      "stepDefinitionType": "CUSTOM",
+      "modulePath": "/custom-modules/custom/psw-transform-xhtml-into-supplement/main.sjs",
+      "mappingStep": false,
+      "customStep": true,
+      "mappingName": null,
+      "customHook" : {},
+      "retryLimit" : 0,
+      "batchSize" : 1,
+      "threadCount" : 2,
+      "fileLocations": {},
+      "options": {
+        "sourceQuery": "cts.andQuery([cts.directoryQuery('/BasicChapter/Ag/'), cts.collectionQuery('latest')])",
+        "sourceDatabase": "holy-STAGING",
+        "targetDatabase": "holy-STAGING",
+        "outputFormat": "xml",
+        "collections": ["holy-basic-data", "basic-supplement", "latest"],
+        "additionalCollections": [],
+        "permissions": "data-hub-operator,read,data-hub-operator,update",
+        "headers": { }
+      }
     }
   }
 }

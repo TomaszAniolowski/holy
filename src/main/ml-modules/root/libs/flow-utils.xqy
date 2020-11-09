@@ -94,3 +94,35 @@ declare function flow:get-or-else
     if ($optional) then $optional else $alternative
 };
 
+declare function flow:substring-between
+(
+        $source as xs:string,
+        $after-token as xs:string,
+        $before-token as xs:string
+)
+{
+    fn:substring-after($source, $after-token) => fn:substring-before($before-token)
+};
+
+declare function flow:substring-before-if-contains
+(
+        $source as xs:string,
+        $before-token as xs:string
+)
+{
+    if (fn:contains($source, $before-token))
+    then fn:substring-before($source, $before-token)
+    else $source
+};
+
+declare function flow:substring-after-if-contains
+(
+        $source as xs:string,
+        $after-token as xs:string
+)
+{
+    if (fn:contains($source, $after-token))
+    then fn:substring-after($source, $after-token)
+    else $source
+};
+
