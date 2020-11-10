@@ -37,6 +37,7 @@ declare function local:get-chapter-html-body(
     return $body
 };
 
-let $doc-uri := fn:substring-after($URI, $hmc:PISMOSWIETE-PL-API-URL) || "/" || $hmc:CURRENT-XHTML-CONTENT-VERSION || ".xml"
-let $doc-root := local:get-chapter-html-body($URI)
+for $url in fn:tokenize($URI, ";")
+let $doc-uri := fn:substring-after($url, $hmc:PISMOSWIETE-PL-API-URL) || "/" || $hmc:CURRENT-XHTML-CONTENT-VERSION || ".xml"
+let $doc-root := local:get-chapter-html-body($url)
 return xdmp:document-insert($doc-uri, $doc-root, $doc-options)

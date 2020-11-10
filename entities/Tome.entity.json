@@ -57,7 +57,7 @@
       "namespace": "http://holy.arch.com/data/pericope",
       "namespacePrefix": "p",
       "primaryKey": "id",
-      "required": [],
+      "required": ["title", "tome", "verses"],
       "rangeIndex": [],
       "elementRangeIndex": ["id"],
       "pathRangeIndex": [],
@@ -67,7 +67,7 @@
         "id": {
           "datatype": "string",
           "collation": "http://marklogic.com/collation/",
-          "description": "The unique verse identifier being md5 created from a concatenation of a testament reference, a tome reference, a chapter number and a verse number values."
+          "description": "The unique pericope identifier being md5 created from a concatenation of a tome reference, a first verse number, a last verse number and title values."
         },
         "title": {
           "datatype": "string",
@@ -84,14 +84,40 @@
           "items": {
             "$ref": "http://holy.arch.com/holy-entities/Verse"
           }
+        }
+      }
+    },
+    "Subtitle": {
+      "description": "The Subtitle entity (child of Tome entity).",
+      "namespace": "http://holy.arch.com/data/subtitle",
+      "namespacePrefix": "st",
+      "primaryKey": "id",
+      "required": ["title", "tome", "verses"],
+      "rangeIndex": [],
+      "elementRangeIndex": ["id"],
+      "pathRangeIndex": [],
+      "wordLexicon": [],
+      "pii": [],
+      "properties": {
+        "id": {
+          "datatype": "string",
+          "collation": "http://marklogic.com/collation/",
+          "description": "The unique subtitle identifier being md5 created from a concatenation of a tome reference, a first verse number, a last verse number and a title values."
         },
-        "supplements": {
+        "title": {
+          "datatype": "string",
+          "collation": "http://marklogic.com/collation/",
+          "description": "The subtitle title."
+        },
+        "tome": {
+          "$ref": "#/definitions/Tome",
+          "description": "The tome reference."
+        },
+        "verses": {
           "datatype": "array",
-          "description": "The list of supplement identifiers used in source html document",
+          "description": "The list of verses contained by the subtitle.",
           "items": {
-            "datatype": "string",
-            "collation": "http://marklogic.com/collation/",
-            "description": "The verse content."
+            "$ref": "http://holy.arch.com/holy-entities/Verse"
           }
         }
       }
