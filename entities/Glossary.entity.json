@@ -1,11 +1,38 @@
 {
   "info": {
-    "title": "Supplement",
+    "title": "Glossary",
     "version": "1.0.0",
     "baseUri": "http://holy.arch.com/holy-entities/",
-    "description": "An Supplement entity"
+    "description": "An Glossary entity"
   },
   "definitions": {
+    "Glossary": {
+      "description": "The Glossary entity root.",
+      "namespace": "http://holy.arch.com/extension/glossary",
+      "namespacePrefix": "gloss",
+      "required": [],
+      "rangeIndex": [],
+      "elementRangeIndex": [],
+      "pathRangeIndex": [],
+      "wordLexicon": [],
+      "pii": [],
+      "properties": {
+        "definitions": {
+          "datatype": "array",
+          "description": "The list of definitions.",
+          "items": {
+            "$ref": "#/definitions/Supplement"
+          }
+        },
+        "dictionary": {
+          "datatype": "array",
+          "description": "The list of dictionary entries.",
+          "items": {
+            "$ref": "#/definitions/Supplement"
+          }
+        }
+      }
+    },
     "Supplement": {
       "description": "The Supplement entity root.",
       "namespace": "http://holy.arch.com/extension/supplement",

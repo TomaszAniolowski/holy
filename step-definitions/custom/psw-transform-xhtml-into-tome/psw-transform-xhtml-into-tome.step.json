@@ -1,7 +1,7 @@
 {
   "lang": "pl",
   "name": "psw-transform-xhtml-into-tome",
-  "description": "This is the custom step to transform xhtml data from pismoswiete.pl to prototype of Tome entity",
+  "description": "This is the custom step to transform xhtml data from pismoswiete.pl to Tome entity",
   "type": "CUSTOM",
   "version": 1,
   "modulePath": "/custom-modules/custom/psw-transform-xhtml-into-tome/main.sjs",
@@ -10,13 +10,13 @@
   "batchSize": 4,
   "threadCount": 16,
   "options": {
-    "sourceQuery": "cts.andQuery([cts.collectionQuery(['holy-basic-data','basic-chapter','latest']), cts.elementWordQuery(fn.QName(\"http://holy.arch.com/data/chapter/basic\", \"number\"), \"1\")])",
-    "sourceDatabase": "holy-STAGING",
-    "targetDatabase": "holy-STAGING",
+    "sourceQuery": "cts.andQuery([cts.collectionQuery(['holy-data','chapter','latest']), cts.elementWordQuery(fn.QName(\"http://holy.arch.com/data/chapter\", \"number\"), \"1\")])",
+    "sourceDatabase": "holy-FINAL",
+    "targetDatabase": "holy-FINAL",
     "outputFormat": "xml",
     "collections": [
-      "holy-basic-data",
-      "basic-tome",
+      "holy-data",
+      "tome",
       "latest"
     ],
     "additionalCollections": [],

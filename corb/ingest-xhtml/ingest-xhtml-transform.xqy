@@ -14,6 +14,7 @@ declare variable $doc-options as element(ins:options) :=
         <collections>{
             <collection>{$hmc:XHTML-CONTENT-COLLECTION}</collection>,
             <collection>{$hmc:CURRENT-XHTML-CONTENT-VERSION}</collection>,
+            <collection>{$hmc:LATEST-COLLECTION}</collection>,
             xdmp:default-collections() ! <collection>{.}</collection>
         }</collections>
     </options>;

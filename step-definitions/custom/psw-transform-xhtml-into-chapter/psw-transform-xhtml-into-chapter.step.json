@@ -12,11 +12,11 @@
   "options": {
     "sourceQuery": "cts.collectionQuery(['holy-chapter-xhtml-body','latest'])",
     "sourceDatabase": "holy-STAGING",
-    "targetDatabase": "holy-STAGING",
+    "targetDatabase": "holy-FINAL",
     "outputFormat": "xml",
     "collections": [
-      "holy-basic-data",
-      "basic-chapter",
+      "holy-data",
+      "chapter",
       "latest"
     ],
     "additionalCollections": [],

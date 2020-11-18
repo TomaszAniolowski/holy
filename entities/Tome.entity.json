@@ -11,7 +11,7 @@
       "namespace": "http://holy.arch.com/data/tome",
       "namespacePrefix": "t",
       "primaryKey": "siglum",
-      "required": ["name", "testament", "pericopes"],
+      "required": ["name", "testament", "first-chapter", "last-chapter"],
       "rangeIndex": [],
       "elementRangeIndex": ["siglum"],
       "pathRangeIndex": [],
@@ -45,9 +45,16 @@
         },
         "pericopes": {
           "datatype": "array",
-          "description": "The list of pericopes being a contained by a specific tome.",
+          "description": "The list of pericopes contained by a specific tome.",
           "items": {
             "$ref": "#/definitions/Pericope"
+          }
+        },
+        "subtitles": {
+          "datatype": "array",
+          "description": "The list of subtitles contained by a specific tome.",
+          "items": {
+            "$ref": "#/definitions/Subtitle"
           }
         }
       }

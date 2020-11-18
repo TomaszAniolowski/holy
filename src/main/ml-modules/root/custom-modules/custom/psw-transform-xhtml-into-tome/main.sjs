@@ -15,7 +15,7 @@
 */
 
 const datahubxqymodule = require("lib.xqy");
-const versionRE = /\/1\.xml/;
+const chapterRE = /\/1\.xml/;
 
 function main(content, options) {
   let modifiedContent = datahubxqymodule.main(new NodeBuilder().addNode(content).toNode(), options);
@@ -25,7 +25,7 @@ function main(content, options) {
 }
 
 function replaceUri(oldUri, options){
-  return oldUri.replace("/BasicChapter", "/BasicTome").replace(versionRE, "") + "." + options.outputFormat
+  return oldUri.replace("/Chapter", "/Tome").replace(chapterRE, "") + "." + options.outputFormat
 }
 
 

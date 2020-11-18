@@ -9,9 +9,12 @@ declare variable $hmc:COLL-SEP as xs:string := "-"; (: it is different than $hmc
 declare variable $hmc:SUPP-SEP as xs:string := "–"; (: it is different than $hmc:COLL-SEP :)
 
 (: COLLECTIONS :)
+declare variable $hmc:LATEST-COLLECTION as xs:string := "latest";
 declare variable $hmc:XHTML-CONTENT-COLLECTION as xs:string := "holy-chapter-xhtml-body";
+declare variable $hmc:HOLY-DATA-COLLECTION as xs:string := "holy-data";
 declare variable $hmc:BASIC-DATA-COLLECTION as xs:string := "holy-basic-data";
 declare variable $hmc:BASIC-CHAPTER-COLLECTION as xs:string := "basic-chapter";
+declare variable $hmc:HOLY-DATA-DEFAULT-COLLS as xs:string* := (xdmp:default-collections(), $hmc:HOLY-DATA-COLLECTION, $hmc:CURRENT-XHTML-CONTENT-VERSION, $hmc:LATEST-COLLECTION);
 
 declare variable $hmc:PISMOSWIETE-PL-BASE-URL as xs:string := "https://pismoswiete.pl";
 declare variable $hmc:PISMOSWIETE-PL-API-URL as xs:string := $hmc:PISMOSWIETE-PL-BASE-URL || "/api";

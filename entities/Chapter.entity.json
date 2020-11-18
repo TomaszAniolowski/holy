@@ -12,8 +12,8 @@
       "namespacePrefix": "ch",
       "primaryKey": "id",
       "required": ["testament", "tome", "number", "verses"],
-      "rangeIndex": ["id"],
-      "elementRangeIndex": [],
+      "rangeIndex": [],
+      "elementRangeIndex": ["id", "tome"],
       "pathRangeIndex": [],
       "wordLexicon": [],
       "pii": [],
@@ -52,7 +52,7 @@
       "namespace": "http://holy.arch.com/data/verse",
       "namespacePrefix": "v",
       "primaryKey": "id",
-      "required": ["number", "chapter", "content"],
+      "required": ["number", "sub-number","chapter", "content"],
       "rangeIndex": [],
       "elementRangeIndex": ["id"],
       "pathRangeIndex": [],
@@ -69,6 +69,11 @@
           "collation": "http://marklogic.com/collation/",
           "description": "The verse cardinal number in context of a chapter."
         },
+        "sub-number": {
+          "datatype": "string",
+          "collation": "http://marklogic.com/collation/",
+          "description": "The verse part cardinal number in context of a verse."
+        },
         "chapter": {
           "$ref": "#/definitions/Chapter",
           "description": "The chapter reference."
@@ -78,9 +83,16 @@
           "collation": "http://marklogic.com/collation/",
           "description": "The verse content."
         },
-        "supplements": {
+        "definitions": {
           "datatype": "array",
-          "description": "The list of supplement identifiers connected with a specific verse",
+          "description": "The list of definition identifiers connected with a specific verse",
+          "items": {
+            "$ref": "http://holy.arch.com/holy-entities/Supplement"
+          }
+        },
+        "dictionary": {
+          "datatype": "array",
+          "description": "The list of dictionary entry identifiers connected with a specific verse",
           "items": {
             "$ref": "http://holy.arch.com/holy-entities/Supplement"
           }

@@ -15,7 +15,6 @@
 */
 
 const datahubxqymodule = require("lib.xqy");
-const versionRE = /\/1\.xml/;
 
 function main(content, options) {
   let modifiedContent = datahubxqymodule.main(new NodeBuilder().addNode(content).toNode(), options);
@@ -26,9 +25,9 @@ function main(content, options) {
 
 function getUri(oldUri, options){
   if (oldUri.includes('1')){
-    return "/BasicSupplement/dictionary." + options.outputFormat
+    return "/Glossary/dictionary." + options.outputFormat
   } else {
-    return "/BasicSupplement/definitions." + options.outputFormat
+    return "/Glossary/definitions." + options.outputFormat
   }
 }
 
