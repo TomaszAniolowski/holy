@@ -8,7 +8,7 @@
   "definitions": {
     "Glossary": {
       "description": "The Glossary entity root.",
-      "namespace": "http://holy.arch.com/extension/glossary",
+      "namespace": "http://holy.arch.com/holy-entities/glossary",
       "namespacePrefix": "gloss",
       "required": [],
       "rangeIndex": [],
@@ -35,7 +35,7 @@
     },
     "Supplement": {
       "description": "The Supplement entity root.",
-      "namespace": "http://holy.arch.com/extension/supplement",
+      "namespace": "http://holy.arch.com/holy-entities/supplement",
       "namespacePrefix": "supp",
       "primaryKey": "id",
       "required": ["type", "content"],

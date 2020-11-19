@@ -1,6 +1,6 @@
 xquery version "1.0-ml";
 
-import module namespace hmc = "http://marklogic.com/holy/ml-modules/holy-management-constants" at "/constants/holy-management-constants.xqy";
+import module namespace fc = "http://marklogic.com/holy/ml-modules/flow-constants" at "/constants/flow-constants.xqy";
 
 declare namespace xhtml = "http://www.w3.org/1999/xhtml";
 declare namespace ins = "xdmp:document-insert";
@@ -12,9 +12,9 @@ declare variable $doc-options as element(ins:options) :=
     <options xmlns="xdmp:document-insert">
         <permissions>{xdmp:default-permissions()}</permissions>
         <collections>{
-            <collection>{$hmc:XHTML-CONTENT-COLLECTION}</collection>,
-            <collection>{$hmc:CURRENT-XHTML-CONTENT-VERSION}</collection>,
-            <collection>{$hmc:LATEST-COLLECTION}</collection>,
+            <collection>{$fc:XHTML-CONTENT-COLLECTION}</collection>,
+            <collection>{$fc:CURRENT-XHTML-CONTENT-VERSION}</collection>,
+            <collection>{$fc:LATEST-COLLECTION}</collection>,
             xdmp:default-collections() ! <collection>{.}</collection>
         }</collections>
     </options>;
@@ -39,6 +39,6 @@ declare function local:get-chapter-html-body(
 };
 
 for $url in fn:tokenize($URI, ";")
-let $doc-uri := fn:substring-after($url, $hmc:PISMOSWIETE-PL-API-URL) || "/" || $hmc:CURRENT-XHTML-CONTENT-VERSION || ".xml"
+let $doc-uri := fn:substring-after($url, $fc:PISMOSWIETE-PL-API-URL) || "/" || $fc:CURRENT-XHTML-CONTENT-VERSION || ".xml"
 let $doc-root := local:get-chapter-html-body($url)
 return xdmp:document-insert($doc-uri, $doc-root, $doc-options)

@@ -8,7 +8,7 @@
   "definitions": {
     "Chapter": {
       "description": "The Chapter entity root.",
-      "namespace": "http://holy.arch.com/data/chapter",
+      "namespace": "http://holy.arch.com/holy-entities/chapter",
       "namespacePrefix": "ch",
       "primaryKey": "id",
       "required": ["testament", "tome", "number", "verses"],
@@ -49,7 +49,7 @@
     },
     "Verse": {
       "description": "The Verse entity (child of Chapter entity).",
-      "namespace": "http://holy.arch.com/data/verse",
+      "namespace": "http://holy.arch.com/holy-entities/verse",
       "namespacePrefix": "v",
       "primaryKey": "id",
       "required": ["number", "sub-number","chapter", "content"],

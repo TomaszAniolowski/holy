@@ -1,5 +1,10 @@
 xquery version "1.0-ml" encoding "utf-8";
 
+(:~
+ : The bible-constants.xqy library module contains constants
+ : directly releted to the bible, mainly related to the bible structure.
+ : It contains e.g. tome sigla and tome names.
+ :)
 module namespace bc = "http://marklogic.com/holy/ml-modules/bible-constants";
 
 import module namespace hhc = "http://marklogic.com/holy/ml-modules/holy-hub-constants" at "/constants/holy-hub-constants.xqy";

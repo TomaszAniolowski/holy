@@ -1,5 +1,9 @@
 xquery version "1.0-ml";
 
+(:~
+ : The holy-hub-constants.xqy library module contains constants
+ : directly releted to the holy hub, e.g. database names and database ids.
+ :)
 module namespace hhc = "http://marklogic.com/holy/ml-modules/holy-hub-constants";
 
 declare variable $hhc:CURRENT-DB-ID as xs:unsignedLong := xdmp:database();

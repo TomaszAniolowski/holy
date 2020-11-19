@@ -5,6 +5,7 @@ module namespace custom = "http://marklogic.com/data-hub/custom";
 import module namespace json = "http://marklogic.com/xdmp/json" at "/MarkLogic/json/json.xqy";
 import module namespace dhf = "http://marklogic.com/dhf" at "/data-hub/4/dhf.xqy";
 import module namespace es = "http://marklogic.com/entity-services" at "/MarkLogic/entity-services/entity-services.xqy";
+import module namespace fc = "http://marklogic.com/holy/ml-modules/flow-constants" at "/constants/flow-constants.xqy";
 import module namespace bib = "http://marklogic.com/holy/ml-modules/bible-utils" at "/libs/bible-utils.xqy";
 import module namespace flow = "http://marklogic.com/holy/ml-modules/flow-utils" at "/libs/flow-utils.xqy";
 
@@ -13,9 +14,10 @@ declare namespace x = "http://www.w3.org/1999/xhtml";
 (:~
  : Plugin Entry point
  :
- : @param $content     - the raw content
- : @param $options     - a map containing options
+ : @param $content - the raw content
+ : @param $options - a map containing options
  :
+ : @return es:envelope document node
  :)
 declare function custom:main(
         $content as item()?,
@@ -24,7 +26,7 @@ declare function custom:main(
     let $doc := if (xdmp:node-kind($content/value) eq "text") then xdmp:unquote($content/value) else $content/value
 
     let $headers := flow:create-headers($content/uri, $options)
-    let $instance := custom:create-instance($content/uri, $doc)
+    let $instance := custom:create-chapter-instance($content/uri, $doc)
 
     let $output-format := if (fn:empty(map:get($options, "outputFormat"))) then "xml" else map:get($options, "outputFormat")
 
@@ -34,38 +36,49 @@ declare function custom:main(
 };
 
 (:~
-: Creates a map:map representing Chapter model instance.
-:
-: @param $source-uri  - a source document uri
-: @param $source-doc  - a source document
-:
-: @return a map:map instance with extracted data and metadata about the Chapter instance.
-:)
-declare function custom:create-instance(
+ : Creates a map:map representing Chapter model instance.
+ :
+ : @param $source-uri - a source document uri
+ : @param $source-doc - a source document
+ :
+ : @return a map:map instance with extracted data and metadata about the Chapter instance.
+ :)
+declare function custom:create-chapter-instance(
         $source-uri as xs:string,
         $source-doc as node()?
 ) as map:map
 {
-    let $tome-siglum := fn:tokenize($source-uri, "/")[3]
-    let $chapter-num := fn:tokenize($source-uri, "/")[5]
+    let $tome-siglum := fn:tokenize($source-uri, $fc:URI-SEP)[3]
+    let $chapter-num := fn:tokenize($source-uri, $fc:URI-SEP)[5]
     let $testament := bib:retrieve-testament($tome-siglum)
     let $id := fn:concat($testament, $tome-siglum, $chapter-num) => flow:generate-unique-id()
     let $verses := custom:extract-verses($source-doc, $testament, $tome-siglum, $chapter-num, $id) => json:to-array()
 
     let $model := json:object()
-    => map:with('$type', 'Chapter')
-    => map:with('$version', '1.0.0')
-    => map:with('$namespace', 'http://holy.arch.com/data/chapter')
-    => map:with('$namespacePrefix', 'ch')
-    => map:with('id', $id)
-    => map:with('testament', $testament)
-    => map:with('tome', $tome-siglum)
-    => map:with('number', $chapter-num)
-    => map:with('verses', $verses)
+    => map:with($fc:DHF-TYPE, $fc:CHAPTER-ENTITY)
+    => map:with($fc:DHF-VERSION, $fc:CHAPTER-VERSION)
+    => map:with($fc:DHF-NS, $fc:CHAPTER-NS-URI)
+    => map:with($fc:DHF-NS-PREFIX, $fc:CHAPTER-NS-PREFIX)
+    => map:with($fc:ID, $id)
+    => map:with($fc:TESTAMENT, $testament)
+    => map:with($fc:TOME, $tome-siglum)
+    => map:with($fc:NUMBER, $chapter-num)
+    => map:with($fc:VERSES, $verses)
 
     return $model
 };
 
+(:~
+ : Creates a sequence of map:map instances representing Verse model instances.
+ :
+ : @param $source-doc  - a source document
+ : @param $testament   - a testament name
+ : @param $tome-siglum - a tome siglum
+ : @param $chapter-num - a chapter number
+ : @param $chapter-id  - a chapter id
+ :
+ : @return a sequence of map:map instances with extracted data and metadata about the Verse instance.
+ :)
 declare function custom:extract-verses
 (
         $source-doc as node(),
@@ -75,7 +88,7 @@ declare function custom:extract-verses
         $chapter-id as xs:string
 ) as map:map*
 {
-    let $chapter := flow:make-reference-object("Chapter", $chapter-id, 'v', 'http://holy.arch.com/data/verse')
+    let $chapter := flow:make-reference-object($fc:CHAPTER-ENTITY, $chapter-id, $fc:CHAPTER-NS-PREFIX, $fc:CHAPTER-NS-URI)
 
     let $verse-sub-numbers := map:map()
     for $verse in $source-doc/x:body/x:span[@class = 'werset']
@@ -85,7 +98,7 @@ declare function custom:extract-verses
     let $_ := map:put($verse-sub-numbers, $number, (map:get($verse-sub-numbers, $number), $sub-number))
     let $verse-id := fn:concat($testament, $tome-siglum, $chapter-num, $number, $sub-number) => flow:generate-unique-id()
 
-    let $content := $verse/xs:string(.) => flow:clean-content()
+    let $content := $verse/xs:string(.) => flow:clear-content()
     let $definition-origin-ids := fn:distinct-values($verse/x:a[@class = 'definition']/@data-target-id/fn:string())
     let $dictionary-origin-ids := fn:distinct-values($verse/x:a[@class = 'dictionary']/@data-target-id/fn:string())
 
@@ -94,26 +107,26 @@ declare function custom:extract-verses
     let $definition-holy-ids :=
         for $definition-id in $definition-origin-ids
         let $definition-value := $definition-nodes[@id = $definition-id][1]/xs:string(.)
-        return $definition-value => flow:clean-content() => flow:generate-unique-id()
+        return $definition-value => flow:clear-content() => flow:generate-unique-id()
     let $dictionary-holy-ids :=
         for $dictionary-id in $dictionary-origin-ids
         let $dictionary-value := $dictionary-nodes[@id = $dictionary-id][1]/xs:string(.)
-        return $dictionary-value => flow:clean-content() => flow:generate-unique-id()
-    let $definitions := $definition-holy-ids ! flow:make-reference-object("Supplement", ., 'supp', 'http://holy.arch.com/extension/supplement')
-    let $dictionary := $dictionary-holy-ids ! flow:make-reference-object("Supplement", ., 'supp', 'http://holy.arch.com/extension/supplement')
+        return $dictionary-value => flow:clear-content() => flow:generate-unique-id()
+    let $definitions := $definition-holy-ids ! flow:make-reference-object($fc:SUPPLEMENT-ENTITY, ., $fc:SUPPLEMENT-NS-PREFIX, $fc:SUPPLEMENT-NS-URI)
+    let $dictionary := $dictionary-holy-ids ! flow:make-reference-object($fc:SUPPLEMENT-ENTITY, ., $fc:SUPPLEMENT-NS-PREFIX, $fc:SUPPLEMENT-NS-URI)
 
     let $model := json:object()
-    => map:with('$type', 'Verse')
-    => map:with('$version', '1.0.0')
-    => map:with('$namespace', 'http://holy.arch.com/data/verse')
-    => map:with('$namespacePrefix', 'v')
-    => map:with('id', $verse-id)
-    => map:with('number', $number)
-    => map:with('sub-number', $sub-number)
-    => map:with('chapter', $chapter)
-    => map:with('content', $content)
-    => es:optional('definitions', $definitions)
-    => es:optional('dictionary', $dictionary)
+    => map:with($fc:DHF-TYPE, $fc:VERSE-ENTITY)
+    => map:with($fc:DHF-VERSION, $fc:VERSE-VERSION)
+    => map:with($fc:DHF-NS, $fc:VERSE-NS-URI)
+    => map:with($fc:DHF-NS-PREFIX, $fc:VERSE-NS-PREFIX)
+    => map:with($fc:ID, $verse-id)
+    => map:with($fc:NUMBER, $number)
+    => map:with($fc:SUB-NUMBER, $sub-number)
+    => map:with($fc:CHAPTER, $chapter)
+    => map:with($fc:CONTENT, $content)
+    => es:optional($fc:DEFINITIONS, $definitions)
+    => es:optional($fc:DICTIONARY, $dictionary)
 
     return $model
 };

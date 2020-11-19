@@ -8,7 +8,7 @@
   "definitions": {
     "Tome": {
       "description": "The Tome entity root.",
-      "namespace": "http://holy.arch.com/data/tome",
+      "namespace": "http://holy.arch.com/holy-entities/tome",
       "namespacePrefix": "t",
       "primaryKey": "siglum",
       "required": ["name", "testament", "first-chapter", "last-chapter"],
@@ -61,7 +61,7 @@
     },
     "Pericope": {
       "description": "The Pericope entity (child of Tome entity).",
-      "namespace": "http://holy.arch.com/data/pericope",
+      "namespace": "http://holy.arch.com/holy-entities/pericope",
       "namespacePrefix": "p",
       "primaryKey": "id",
       "required": ["title", "tome", "verses"],
@@ -96,7 +96,7 @@
     },
     "Subtitle": {
       "description": "The Subtitle entity (child of Tome entity).",
-      "namespace": "http://holy.arch.com/data/subtitle",
+      "namespace": "http://holy.arch.com/holy-entities/subtitle",
       "namespacePrefix": "st",
       "primaryKey": "id",
       "required": ["title", "tome", "verses"],
