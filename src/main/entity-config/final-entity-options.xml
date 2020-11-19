@@ -25,7 +25,7 @@
   </search:constraint>
   <search:constraint name="Glossary-xml">
     <search:container>
-      <search:element ns="http://holy.arch.com/extension/glossary" name="Glossary"/>
+      <search:element ns="http://holy.arch.com/holy-entities/glossary" name="Glossary"/>
     </search:container>
   </search:constraint>
   <search:constraint name="Verse">
@@ -35,7 +35,7 @@
   </search:constraint>
   <search:constraint name="Verse-xml">
     <search:container>
-      <search:element ns="http://holy.arch.com/data/verse" name="Verse"/>
+      <search:element ns="http://holy.arch.com/holy-entities/verse" name="Verse"/>
     </search:container>
   </search:constraint>
   <search:constraint name="id">
@@ -46,7 +46,7 @@
   <!--The name of this constraint is a duplicate in the generated XML. It is within a comment so that the XML may be valid, but you may need to edit for your use case.
  <search:constraint name="id" xmlns:search="http://marklogic.com/appservices/search">
   <search:range type="xs:string" facet="true" collation="http://marklogic.com/collation/">
-    <search:element ns="http://holy.arch.com/data/verse" name="id" xmlns:es="http://marklogic.com/entity-services"/>
+    <search:element ns="http://holy.arch.com/holy-entities/verse" name="id" xmlns:es="http://marklogic.com/entity-services"/>
   </search:range>
 </search:constraint> 
 -->
@@ -57,7 +57,7 @@
   </search:constraint>
   <search:constraint name="Pericope-xml">
     <search:container>
-      <search:element ns="http://holy.arch.com/data/pericope" name="Pericope"/>
+      <search:element ns="http://holy.arch.com/holy-entities/pericope" name="Pericope"/>
     </search:container>
   </search:constraint>
   <!--The name of this constraint is a duplicate in the generated XML. It is within a comment so that the XML may be valid, but you may need to edit for your use case.
@@ -70,7 +70,7 @@
   <!--The name of this constraint is a duplicate in the generated XML. It is within a comment so that the XML may be valid, but you may need to edit for your use case.
  <search:constraint name="id" xmlns:search="http://marklogic.com/appservices/search">
   <search:range type="xs:string" facet="true" collation="http://marklogic.com/collation/">
-    <search:element ns="http://holy.arch.com/data/pericope" name="id" xmlns:es="http://marklogic.com/entity-services"/>
+    <search:element ns="http://holy.arch.com/holy-entities/pericope" name="id" xmlns:es="http://marklogic.com/entity-services"/>
   </search:range>
 </search:constraint> 
 -->
@@ -81,7 +81,7 @@
   </search:constraint>
   <search:constraint name="Supplement-xml">
     <search:container>
-      <search:element ns="http://holy.arch.com/extension/supplement" name="Supplement"/>
+      <search:element ns="http://holy.arch.com/holy-entities/supplement" name="Supplement"/>
     </search:container>
   </search:constraint>
   <!--The name of this constraint is a duplicate in the generated XML. It is within a comment so that the XML may be valid, but you may need to edit for your use case.
@@ -94,7 +94,7 @@
   <!--The name of this constraint is a duplicate in the generated XML. It is within a comment so that the XML may be valid, but you may need to edit for your use case.
  <search:constraint name="id" xmlns:search="http://marklogic.com/appservices/search">
   <search:range type="xs:string" facet="true" collation="http://marklogic.com/collation/">
-    <search:element ns="http://holy.arch.com/extension/supplement" name="id" xmlns:es="http://marklogic.com/entity-services"/>
+    <search:element ns="http://holy.arch.com/holy-entities/supplement" name="id" xmlns:es="http://marklogic.com/entity-services"/>
   </search:range>
 </search:constraint> 
 -->
@@ -105,7 +105,7 @@
   </search:constraint>
   <search:constraint name="Chapter-xml">
     <search:container>
-      <search:element ns="http://holy.arch.com/data/chapter" name="Chapter"/>
+      <search:element ns="http://holy.arch.com/holy-entities/chapter" name="Chapter"/>
     </search:container>
   </search:constraint>
   <!--The name of this constraint is a duplicate in the generated XML. It is within a comment so that the XML may be valid, but you may need to edit for your use case.
@@ -118,13 +118,13 @@
   <!--The name of this constraint is a duplicate in the generated XML. It is within a comment so that the XML may be valid, but you may need to edit for your use case.
  <search:constraint name="id" xmlns:search="http://marklogic.com/appservices/search">
   <search:range type="xs:string" facet="true" collation="http://marklogic.com/collation/">
-    <search:element ns="http://holy.arch.com/data/chapter" name="id" xmlns:es="http://marklogic.com/entity-services"/>
+    <search:element ns="http://holy.arch.com/holy-entities/chapter" name="id" xmlns:es="http://marklogic.com/entity-services"/>
   </search:range>
 </search:constraint> 
 -->
   <search:constraint name="tome">
     <search:range type="xs:string" facet="true" collation="http://marklogic.com/collation/">
-      <search:element ns="http://holy.arch.com/data/chapter" name="tome" xmlns:es="http://marklogic.com/entity-services"/>
+      <search:element ns="http://holy.arch.com/holy-entities/chapter" name="tome" xmlns:es="http://marklogic.com/entity-services"/>
       <search:facet-option>limit=25</search:facet-option>
     </search:range>
   </search:constraint>
@@ -135,7 +135,7 @@
   </search:constraint>
   <search:constraint name="Tome-xml">
     <search:container>
-      <search:element ns="http://holy.arch.com/data/tome" name="Tome"/>
+      <search:element ns="http://holy.arch.com/holy-entities/tome" name="Tome"/>
     </search:container>
   </search:constraint>
   <search:constraint name="siglum">
@@ -146,7 +146,7 @@
   <!--The name of this constraint is a duplicate in the generated XML. It is within a comment so that the XML may be valid, but you may need to edit for your use case.
  <search:constraint name="siglum" xmlns:search="http://marklogic.com/appservices/search">
   <search:range type="xs:string" facet="true" collation="http://marklogic.com/collation/">
-    <search:element ns="http://holy.arch.com/data/tome" name="siglum" xmlns:es="http://marklogic.com/entity-services"/>
+    <search:element ns="http://holy.arch.com/holy-entities/tome" name="siglum" xmlns:es="http://marklogic.com/entity-services"/>
   </search:range>
 </search:constraint> 
 -->
@@ -157,7 +157,7 @@
   </search:constraint>
   <search:constraint name="Subtitle-xml">
     <search:container>
-      <search:element ns="http://holy.arch.com/data/subtitle" name="Subtitle"/>
+      <search:element ns="http://holy.arch.com/holy-entities/subtitle" name="Subtitle"/>
     </search:container>
   </search:constraint>
   <!--The name of this constraint is a duplicate in the generated XML. It is within a comment so that the XML may be valid, but you may need to edit for your use case.
@@ -170,41 +170,41 @@
   <!--The name of this constraint is a duplicate in the generated XML. It is within a comment so that the XML may be valid, but you may need to edit for your use case.
  <search:constraint name="id" xmlns:search="http://marklogic.com/appservices/search">
   <search:range type="xs:string" facet="true" collation="http://marklogic.com/collation/">
-    <search:element ns="http://holy.arch.com/data/subtitle" name="id" xmlns:es="http://marklogic.com/entity-services"/>
+    <search:element ns="http://holy.arch.com/holy-entities/subtitle" name="id" xmlns:es="http://marklogic.com/entity-services"/>
   </search:range>
 </search:constraint> 
 -->
   <search:values name="Verse">
     <search:range type="xs:string" facet="true" collation="http://marklogic.com/collation/">
-      <search:element ns="http://holy.arch.com/data/verse" name="id" xmlns:es="http://marklogic.com/entity-services"/>
+      <search:element ns="http://holy.arch.com/holy-entities/verse" name="id" xmlns:es="http://marklogic.com/entity-services"/>
     </search:range>
   </search:values>
   <search:values name="Pericope">
     <search:range type="xs:string" facet="true" collation="http://marklogic.com/collation/">
-      <search:element ns="http://holy.arch.com/data/pericope" name="id" xmlns:es="http://marklogic.com/entity-services"/>
+      <search:element ns="http://holy.arch.com/holy-entities/pericope" name="id" xmlns:es="http://marklogic.com/entity-services"/>
     </search:range>
   </search:values>
   <search:values name="Supplement">
     <search:range type="xs:string" facet="true" collation="http://marklogic.com/collation/">
-      <search:element ns="http://holy.arch.com/extension/supplement" name="id" xmlns:es="http://marklogic.com/entity-services"/>
+      <search:element ns="http://holy.arch.com/holy-entities/supplement" name="id" xmlns:es="http://marklogic.com/entity-services"/>
     </search:range>
   </search:values>
   <search:tuples name="Chapter">
     <search:range type="xs:string" facet="true" collation="http://marklogic.com/collation/">
-      <search:element ns="http://holy.arch.com/data/chapter" name="id" xmlns:es="http://marklogic.com/entity-services"/>
+      <search:element ns="http://holy.arch.com/holy-entities/chapter" name="id" xmlns:es="http://marklogic.com/entity-services"/>
     </search:range>
     <search:range type="xs:string" facet="true" collation="http://marklogic.com/collation/">
-      <search:element ns="http://holy.arch.com/data/chapter" name="tome" xmlns:es="http://marklogic.com/entity-services"/>
+      <search:element ns="http://holy.arch.com/holy-entities/chapter" name="tome" xmlns:es="http://marklogic.com/entity-services"/>
     </search:range>
   </search:tuples>
   <search:values name="Tome">
     <search:range type="xs:string" facet="true" collation="http://marklogic.com/collation/">
-      <search:element ns="http://holy.arch.com/data/tome" name="siglum" xmlns:es="http://marklogic.com/entity-services"/>
+      <search:element ns="http://holy.arch.com/holy-entities/tome" name="siglum" xmlns:es="http://marklogic.com/entity-services"/>
     </search:range>
   </search:values>
   <search:values name="Subtitle">
     <search:range type="xs:string" facet="true" collation="http://marklogic.com/collation/">
-      <search:element ns="http://holy.arch.com/data/subtitle" name="id" xmlns:es="http://marklogic.com/entity-services"/>
+      <search:element ns="http://holy.arch.com/holy-entities/subtitle" name="id" xmlns:es="http://marklogic.com/entity-services"/>
     </search:range>
   </search:values>
   <!--Uncomment to return no results for a blank search, rather than the default of all results
@@ -219,7 +219,7 @@
   <search:search-option>unfiltered</search:search-option>
   <!--Modify document extraction to change results returned-->
   <search:extract-document-data selected="include">
-    <search:extract-path xmlns:es="http://marklogic.com/entity-services" xmlns:gloss="http://holy.arch.com/extension/glossary" xmlns:v="http://holy.arch.com/data/verse" xmlns:p="http://holy.arch.com/data/pericope" xmlns:supp="http://holy.arch.com/extension/supplement" xmlns:ch="http://holy.arch.com/data/chapter" xmlns:t="http://holy.arch.com/data/tome" xmlns:st="http://holy.arch.com/data/subtitle">//*:instance/(gloss:Glossary|v:Verse|p:Pericope|supp:Supplement|ch:Chapter|t:Tome|st:Subtitle)</search:extract-path>
+    <search:extract-path xmlns:es="http://marklogic.com/entity-services" xmlns:gloss="http://holy.arch.com/holy-entities/glossary" xmlns:v="http://holy.arch.com/holy-entities/verse" xmlns:p="http://holy.arch.com/holy-entities/pericope" xmlns:supp="http://holy.arch.com/holy-entities/supplement" xmlns:ch="http://holy.arch.com/holy-entities/chapter" xmlns:t="http://holy.arch.com/holy-entities/tome" xmlns:st="http://holy.arch.com/holy-entities/subtitle">//*:instance/(gloss:Glossary|v:Verse|p:Pericope|supp:Supplement|ch:Chapter|t:Tome|st:Subtitle)</search:extract-path>
   </search:extract-document-data>
   <!--Change or remove this additional-query to broaden search beyond entity instance documents-->
   <!--To return facets, change this option to 'true' and edit constraints-->

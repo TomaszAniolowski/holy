@@ -79,10 +79,10 @@ declare function flow:make-reference-object(
 ) as map:map
 {
     let $reference := json:object()
-    => map:with('$type', $type)
-    => map:with('$ref', $ref)
-    => map:with('$namespacePrefix', $namespace-prefix)
-    => map:with('$namespace', $namespace)
+    => map:with($fc:DHF-TYPE, $type)
+    => map:with($fc:DHF-REF, $ref)
+    => map:with($fc:DHF-NS-PREFIX, $namespace-prefix)
+    => map:with($fc:DHF-NS, $namespace)
 
     return $reference
 };

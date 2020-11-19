@@ -110,7 +110,7 @@ declare function custom:extract-pericopes
             cts:search(/es:envelope/es:instance/ch:Chapter/ch:verses/v:Verse,
                     cts:and-query((
                         cts:directory-query($fc:CHAPTER-BASE-URI || $tome-siglum || $fc:URI-SEP),
-                        cts:element-value-query(xs:QName("v:Chapter"), $chapter-id),
+                        cts:element-value-query(xs:QName("ch:Chapter"), $chapter-id),
                         cts:element-value-query(xs:QName("v:number"), $verse-number),
                         cts:element-value-query(xs:QName("v:content"), $verse-content)
                     )),
@@ -119,7 +119,9 @@ declare function custom:extract-pericopes
             )/v:id/xs:string(.)
         return flow:make-reference-object($fc:VERSE-ENTITY, $verse-id, $fc:VERSE-NS-PREFIX, $fc:VERSE-NS-URI)
 
-    let $pericope-id := fn:concat($tome-siglum, map:get($verse-refs[1], '$ref'), map:get($verse-refs[fn:last()], '$ref')) => flow:generate-unique-id()
+    let $first-verse-id := map:get($verse-refs[1], $fc:DHF-REF)
+    let $last-verse-id := map:get($verse-refs[fn:last()], $fc:DHF-REF)
+    let $pericope-id := fn:concat($tome-siglum, $first-verse-id, $last-verse-id) => flow:generate-unique-id()
 
     let $model := json:object()
     => map:with($fc:DHF-TYPE, $fc:PERICOPE-ENTITY)

@@ -56,6 +56,7 @@ declare variable $fc:DHF-TYPE as xs:string := '$type';
 declare variable $fc:DHF-VERSION as xs:string := '$version';
 declare variable $fc:DHF-NS as xs:string := '$namespace';
 declare variable $fc:DHF-NS-PREFIX as xs:string := '$namespacePrefix';
+declare variable $fc:DHF-REF as xs:string := '$ref';
 
 declare variable $fc:TESTAMENT as xs:string := 'testament';
 declare variable $fc:TOME as xs:string := 'tome';
