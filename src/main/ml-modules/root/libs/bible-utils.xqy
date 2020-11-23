@@ -23,11 +23,7 @@ declare function bib:retrieve-testament(
         $tome-siglum as xs:string
 ) as xs:string
 {
-    let $bs-tst-name := $bc:BIBLE-STRUCTURE/bs:bible/child::node()[bs:tome/bs:siglum = $tome-siglum] => fn:local-name()
-    return
-        if ($bs-tst-name = 'old-testament')
-        then $bc:OLD-TESTAMENT
-        else $bc:NEW-TESTAMENT
+    $bc:BIBLE-STRUCTURE/bs:bible/bs:testament[bs:tome/bs:siglum = $tome-siglum]/@name/fn:string(.)
 };
 
 (:~
@@ -41,7 +37,7 @@ declare function bib:retrieve-tome-name(
         $tome-siglum as xs:string
 ) as xs:string
 {
-    $bc:BIBLE-STRUCTURE/bs:bible/child::node()/bs:tome[bs:siglum = $tome-siglum]/bs:name/xs:string(.)
+    $bc:BIBLE-STRUCTURE/bs:bible/bs:testament/bs:tome[bs:siglum = $tome-siglum]/bs:name/xs:string(.)
 };
 
 (:~
@@ -55,7 +51,7 @@ declare function bib:retrieve-first-chapter(
         $tome-siglum as xs:string
 ) as xs:string
 {
-    $bc:BIBLE-STRUCTURE/bs:bible/child::node()/bs:tome[bs:siglum = $tome-siglum]/bs:first-chapter/xs:string(.)
+    $bc:BIBLE-STRUCTURE/bs:bible/bs:testament/bs:tome[bs:siglum = $tome-siglum]/bs:first-chapter/xs:string(.)
 };
 
 (:~
@@ -69,5 +65,5 @@ declare function bib:retrieve-last-chapter(
         $tome-siglum as xs:string
 ) as xs:string
 {
-    $bc:BIBLE-STRUCTURE/bs:bible/child::node()/bs:tome[bs:siglum = $tome-siglum]/bs:last-chapter/xs:string(.)
+    $bc:BIBLE-STRUCTURE/bs:bible/bs:testament/bs:tome[bs:siglum = $tome-siglum]/bs:last-chapter/xs:string(.)
 };

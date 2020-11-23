@@ -1,6 +1,6 @@
 <?xml version = "1.0" encoding = "UTF-8"?>
 <bs:bible xmlns:bs="http://marklogic.com/holy/ml-modules/bible-structure">
-    <bs:old-testament>
+    <bs:testament name="Old Testament">
         <bs:tome cardNum="1"><bs:siglum>Rdz</bs:siglum><bs:name>Księga Rodzaju</bs:name><bs:first-chapter>1</bs:first-chapter><bs:last-chapter>50</bs:last-chapter></bs:tome>
         <bs:tome cardNum="2"><bs:siglum>Wj</bs:siglum><bs:name>Księga Wyjścia</bs:name><bs:first-chapter>1</bs:first-chapter><bs:last-chapter>40</bs:last-chapter></bs:tome>
         <bs:tome cardNum="3"><bs:siglum>Kpł</bs:siglum><bs:name>Księga Kapłańska</bs:name><bs:first-chapter>1</bs:first-chapter><bs:last-chapter>27</bs:last-chapter></bs:tome>
@@ -47,8 +47,8 @@
         <bs:tome cardNum="44"><bs:siglum>Ag</bs:siglum><bs:name>Księga Aggeusza</bs:name><bs:first-chapter>1</bs:first-chapter><bs:last-chapter>2</bs:last-chapter></bs:tome>
         <bs:tome cardNum="45"><bs:siglum>Za</bs:siglum><bs:name>Księga Zachariasza</bs:name><bs:first-chapter>1</bs:first-chapter><bs:last-chapter>14</bs:last-chapter></bs:tome>
         <bs:tome cardNum="46"><bs:siglum>Ml</bs:siglum><bs:name>Księga Malachiasza</bs:name><bs:first-chapter>1</bs:first-chapter><bs:last-chapter>3</bs:last-chapter></bs:tome>
-    </bs:old-testament>
-    <bs:new-testament>
+    </bs:testament>
+    <bs:testament name="New Testament">
         <bs:tome cardNum="47"><bs:siglum>Mt</bs:siglum><bs:name>Ewangelia wg św. Mateusza</bs:name><bs:first-chapter>1</bs:first-chapter><bs:last-chapter>28</bs:last-chapter></bs:tome>
         <bs:tome cardNum="48"><bs:siglum>Mk</bs:siglum><bs:name>Ewangelia wg św. Marka</bs:name><bs:first-chapter>1</bs:first-chapter><bs:last-chapter>16</bs:last-chapter></bs:tome>
         <bs:tome cardNum="49"><bs:siglum>Łk</bs:siglum><bs:name>Ewangelia wg św. Łukasza</bs:name><bs:first-chapter>1</bs:first-chapter><bs:last-chapter>24</bs:last-chapter></bs:tome>
@@ -76,5 +76,5 @@
         <bs:tome cardNum="71"><bs:siglum>3J</bs:siglum><bs:name>3. List św. Jana</bs:name><bs:first-chapter>1</bs:first-chapter><bs:last-chapter>1</bs:last-chapter></bs:tome>
         <bs:tome cardNum="72"><bs:siglum>Jud</bs:siglum><bs:name>List św. Judy</bs:name><bs:first-chapter>1</bs:first-chapter><bs:last-chapter>1</bs:last-chapter></bs:tome>
         <bs:tome cardNum="73"><bs:siglum>Ap</bs:siglum><bs:name>Apokalipsa wg św. Jana</bs:name><bs:first-chapter>1</bs:first-chapter><bs:last-chapter>22</bs:last-chapter></bs:tome>
-    </bs:new-testament>
+    </bs:testament>
 </bs:bible>
