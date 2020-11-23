@@ -3,12 +3,12 @@ xquery version "1.0-ml";
 import module namespace test = "http://marklogic.com/test" at "/test/test-helper.xqy";
 import module namespace xqy3 = 'http://marklogic.com/holy/ml-modules/xqy-3-utils' at '/libs/xqy-3-utils.xqy';
 
-declare variable $SENTENCE-1 := 'Na całej ziemi mówiono jednym językiem i posługiwano się jednakowymi wyrazami.';
-declare variable $SENTENCE-2 := 'Izaak modlił się do Pana za swoją żonę, ponieważ była niepłodna. Pan go wysłuchał i jego żona Rebeka zaszła w ciążę.';
-declare variable $SENTENCE-3 := 'Pan zstąpił , aby zobaczyć miasto i wieżę , które ludzie budowali.';
-declare variable $SENTENCE-4 := 'AniołPana znalazł ją w pobliżu źródła na pustyni , przy drodze wiodącej do Szur.';
-declare variable $SENTENCE-5 := 'i zdolnym myśliwym. Dlatego mówi się: „Myśliwy, uzdolniony przezPANA jak Nimrod”.';
-declare variable $SENTENCE-6 := 'Mojżesz odpowiedział: „Gdy tylko wyjdę za miasto , wzniosę ręce doPana. Ustaną grzmoty , grad przestanie padać , żebyś przekonał się , że doPana należy ziemia.';
+declare variable $SENTENCE-1 as xs:string := 'Na całej ziemi mówiono jednym językiem i posługiwano się jednakowymi wyrazami.';
+declare variable $SENTENCE-2 as xs:string := 'Izaak modlił się do Pana za swoją żonę, ponieważ była niepłodna. Pan go wysłuchał i jego żona Rebeka zaszła w ciążę.';
+declare variable $SENTENCE-3 as xs:string := 'Pan zstąpił , aby zobaczyć miasto i wieżę , które ludzie budowali.';
+declare variable $SENTENCE-4 as xs:string := 'AniołPana znalazł ją w pobliżu źródła na pustyni , przy drodze wiodącej do Szur.';
+declare variable $SENTENCE-5 as xs:string := 'i zdolnym myśliwym. Dlatego mówi się: „Myśliwy, uzdolniony przezPANA jak Nimrod”.';
+declare variable $SENTENCE-6 as xs:string := 'Mojżesz odpowiedział: „Gdy tylko wyjdę za miasto , wzniosę ręce doPana. Ustaną grzmoty , grad przestanie padać , żebyś przekonał się , że doPana należy ziemia.';
 
 let $expected-sentence-1 := $SENTENCE-1
 let $expected-sentence-2 := $SENTENCE-2

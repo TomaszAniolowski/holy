@@ -151,7 +151,10 @@ declare function flow:get-or-else
         $alternative as item()
 ) as item()
 {
-    if ($optional) then $optional else $alternative
+    let $is-string := xdmp:type($optional) => xs:string() eq 'string'
+    return if (fn:exists($optional) and fn:not($is-string and fn:normalize-space($optional) eq ''))
+    then $optional
+    else $alternative
 };
 
 (:~
@@ -179,10 +182,15 @@ declare function flow:get-roman-numeral(
         $arabic-numeral as xs:string
 ) as xs:string
 {
-    let $arabic-int := xs:int($arabic-numeral)
-    return if ($arabic-int ge 0 and $arabic-int le 10)
-    then map:get($roman-numerals, $arabic-numeral)
-    else 'OUT_OF_RANGE'
+    try {
+        let $arabic-int := xs:int($arabic-numeral)
+        return if ($arabic-int gt 0 and $arabic-int le 10)
+        then map:get($roman-numerals, $arabic-numeral)
+        else 'OUT_OF_RANGE'
+    }
+    catch( $e ) {
+        'NaN'
+    }
 };
 
 (:~
@@ -200,7 +208,7 @@ declare function flow:substring-before-if-contains
         $before as xs:string
 )
 {
-    if (fn:contains($input, $before))
+    if ($before ne '' and fn:contains($input, $before))
     then fn:substring-before($input, $before)
     else $input
 };
@@ -220,7 +228,7 @@ declare function flow:substring-after-if-contains
         $after as xs:string
 )
 {
-    if (fn:contains($input, $after))
+    if ($after ne '' and fn:contains($input, $after))
     then fn:substring-after($input, $after)
     else $input
 };
@@ -241,6 +249,10 @@ declare function flow:substring-between
         $before as xs:string
 )
 {
-    fn:substring-after($input, $after) => fn:substring-before($before)
+    let $after-before := fn:substring-after($input, $after) => fn:substring-before($before)
+    let $before-after := fn:substring-before($input, $before) => fn:substring-after($after)
+    return if ($after-before eq $before-after and $after ne '' and $before ne '')
+    then $after-before
+    else ''
 };
 
