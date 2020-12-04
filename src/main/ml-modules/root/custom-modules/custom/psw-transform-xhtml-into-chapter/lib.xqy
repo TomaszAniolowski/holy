@@ -112,8 +112,8 @@ declare function custom:extract-verses
         for $dictionary-id in $dictionary-origin-ids
         let $dictionary-value := $dictionary-nodes[@id = $dictionary-id][1]/xs:string(.)
         return $dictionary-value => flow:clear-content() => flow:generate-unique-id()
-    let $definitions := $definition-holy-ids ! flow:make-reference-object($fc:SUPPLEMENT-ENTITY, ., $fc:SUPPLEMENT-NS-PREFIX, $fc:SUPPLEMENT-NS-URI)
-    let $dictionary := $dictionary-holy-ids ! flow:make-reference-object($fc:SUPPLEMENT-ENTITY, ., $fc:SUPPLEMENT-NS-PREFIX, $fc:SUPPLEMENT-NS-URI)
+    let $definitions :=  json:to-array($definition-holy-ids ! flow:make-reference-object($fc:SUPPLEMENT-ENTITY, ., $fc:SUPPLEMENT-NS-PREFIX, $fc:SUPPLEMENT-NS-URI))
+    let $dictionary := json:to-array($dictionary-holy-ids ! flow:make-reference-object($fc:SUPPLEMENT-ENTITY, ., $fc:SUPPLEMENT-NS-PREFIX, $fc:SUPPLEMENT-NS-URI))
 
     let $model := json:object()
     => map:with($fc:DHF-TYPE, $fc:VERSE-ENTITY)

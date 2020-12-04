@@ -92,7 +92,6 @@ declare variable $fc:XHTML-CONTENT-COLLECTION as xs:string := 'holy-chapter-xhtm
 declare variable $fc:HOLY-DATA-COLLECTION as xs:string := 'holy-data';
 declare variable $fc:BASIC-DATA-COLLECTION as xs:string := 'holy-basic-data';
 declare variable $fc:BASIC-CHAPTER-COLLECTION as xs:string := 'basic-chapter';
-declare variable $fc:HOLY-DATA-DEFAULT-COLLS as xs:string* := (xdmp:default-collections(), $fc:HOLY-DATA-COLLECTION, $fc:CURRENT-XHTML-CONTENT-VERSION, $fc:LATEST-COLLECTION);
 
 declare variable $fc:PISMOSWIETE-PL-BASE-URL as xs:string := 'https://pismoswiete.pl';
 declare variable $fc:PISMOSWIETE-PL-API-URL as xs:string := $fc:PISMOSWIETE-PL-BASE-URL || '/api';

@@ -71,6 +71,7 @@ declare function custom:extract-definitions
 ) as map:map*
 {
     let $source-uris := flow:get-xhtml-source-uris()
+    let $source-uris := if ($hhc:CURRENT-DB-ID eq $hhc:TEST-DB-ID) then $source-uris[fn:contains(., '/tome/Iz/chapter/10')] else $source-uris
 
     let $definition-unique-ids := map:map()
     let $definition-nodes := hh:eval-in-db(function(){
@@ -123,6 +124,7 @@ declare function custom:extract-dictionaries
 ) as map:map*
 {
     let $source-uris := flow:get-xhtml-source-uris()
+    let $source-uris := if ($hhc:CURRENT-DB-ID eq $hhc:TEST-DB-ID) then $source-uris[fn:contains(., '/tome/Iz/chapter/10')] else $source-uris
 
     let $dictionary-unique-ids := map:map()
     let $dictionary-nodes := hh:eval-in-db(function(){

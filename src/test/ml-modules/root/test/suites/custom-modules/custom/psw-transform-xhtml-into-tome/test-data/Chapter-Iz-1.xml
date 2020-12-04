@@ -1,0 +1,1520 @@
+<?xml  version="1.0" encoding="UTF-8"?>
+<envelope xmlns="http://marklogic.com/entity-services">
+    <headers>
+        <headers xmlns:es="http://marklogic.com/entity-services">
+            <sourceUris>
+                <sourceUri>/tome/Iz/chapter/1/v1.xml</sourceUri>
+            </sourceUris>
+            <createdOn>2020-11-18T15:25:04.999088Z</createdOn>
+        </headers>
+    </headers>
+    <triples>
+    </triples>
+    <instance>
+        <info>
+            <title>Chapter</title>
+            <version>1.0.0</version>
+        </info>
+        <ch:Chapter xmlns:ch="http://holy.arch.com/holy-entities/chapter">
+            <ch:id>b9e5d6d38230cee031448e17fc3bdc26</ch:id>
+            <ch:testament>Old Testament</ch:testament>
+            <ch:tome>Iz</ch:tome>
+            <ch:number>1</ch:number>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>05f853de849d58e0c58ac097c1d717b0</v:id>
+                    <v:number>1</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Widzenie Izajasza, syna Amosa, które miał za dni królów judzkich: Ozjasza, Jotama, Achaza i Ezechiasza, o Judzie i Jerozolimie.</v:content>
+                    <v:definitions>
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">0569027ea68b009666f58dbb420da4db</supp:Supplement>
+                    </v:definitions>
+                    <v:dictionary>
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">dfc9ee351c3843b4cb1d6aaf7ac8d947</supp:Supplement>
+                    </v:dictionary>
+                    <v:dictionary>
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">7c64b0b336edd71184215656337859da</supp:Supplement>
+                    </v:dictionary>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>897de3861ac2b280d3698f3595d21708</v:id>
+                    <v:number>2</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Posłuchaj, niebo!</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>f126739efbf1d3870cb7fbf7e9d01371</v:id>
+                    <v:number>2</v:number>
+                    <v:sub-number>II</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Nakłoń uszu, ziemio,</v:content>
+                    <v:definitions>
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">d3dc1d01fdb193888d515e5ac211e4d7</supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>b9f1f19ef09b75d55821812d7e733ad6</v:id>
+                    <v:number>2</v:number>
+                    <v:sub-number>III</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>bo Pan przemawia!</v:content>
+                    <v:dictionary>
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">05aece6b6fd41c7414a49e07d0072e35</supp:Supplement>
+                    </v:dictionary>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>9cc857c539e71f2c2859a965cab39980</v:id>
+                    <v:number>2</v:number>
+                    <v:sub-number>IV</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>„Wychowałem synów i wyniosłem wysoko,</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>17fa87cbe78ffac94c44be618b9e4354</v:id>
+                    <v:number>2</v:number>
+                    <v:sub-number>V</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>a oni Mnie zdradzili!</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>b0a169ba1a862e5978e494b64e7a4bcc</v:id>
+                    <v:number>3</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Wół zna swego gospodarza</v:content>
+                    <v:definitions>
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">398f60c3e97c0a9413f9b96a56164126</supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>dc3c6a01df324ebc08f3769601b56e21</v:id>
+                    <v:number>3</v:number>
+                    <v:sub-number>II</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>i osioł – żłób swego pana,</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>36c11688200a99575bb14a49aeee2bd9</v:id>
+                    <v:number>3</v:number>
+                    <v:sub-number>III</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>a Izrael Mnie nie poznaje,</v:content>
+                    <v:dictionary>
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">31883fbde67362aedc7a974074a80f13</supp:Supplement>
+                    </v:dictionary>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>3e4fa3fafc6db0d96729d8fb7ec83c02</v:id>
+                    <v:number>3</v:number>
+                    <v:sub-number>IV</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>mój lud niczego nie rozumie”.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>2b6600beb6a37ca9b8295359e75ded78</v:id>
+                    <v:number>4</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Biada narodowi grzesznemu,</v:content>
+                    <v:definitions>
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">8846db81de676f0fec2c1397721d9352</supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>91d8b703db38be460397d7f5f694b240</v:id>
+                    <v:number>4</v:number>
+                    <v:sub-number>II</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>ludowi obciążonemu winą,</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>9577373882782f4e44c99a06b8744323</v:id>
+                    <v:number>4</v:number>
+                    <v:sub-number>III</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>potomstwu złoczyńców</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>48c76445e3c0d5e980ff85600a6959ed</v:id>
+                    <v:number>4</v:number>
+                    <v:sub-number>IV</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>i synom wyrodnym!</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>f9c57619ed951ed9009725bfd885841f</v:id>
+                    <v:number>4</v:number>
+                    <v:sub-number>V</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Opuścili Pana,</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>9522c5de4a8b19cef49640f04eb0392d</v:id>
+                    <v:number>4</v:number>
+                    <v:sub-number>VI</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>wzgardzili Świętym Izraela,</v:content>
+                    <v:definitions>
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">cb164b64c4f5766d81e9f1f97278e825</supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>b85d27951c242081aeb99f88475a4616</v:id>
+                    <v:number>4</v:number>
+                    <v:sub-number>VII</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>odwrócili się od Niego.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>627ee20e158ead0ce9c95b0af324c098</v:id>
+                    <v:number>5</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Gdzie was jeszcze chłostać?</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>91f077ae2d8d7adb262afbdbb1860906</v:id>
+                    <v:number>5</v:number>
+                    <v:sub-number>II</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Mnożycie przestępstwa!</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>19a61945d220e3315c2ac4e68f673b0d</v:id>
+                    <v:number>5</v:number>
+                    <v:sub-number>III</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Cała głowa już chora,</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>1640e6f63b1695aa1240f2a574b640b4</v:id>
+                    <v:number>5</v:number>
+                    <v:sub-number>IV</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>całe serce osłabłe!</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>420ad74248c74e11b7ec08bae5bbd0c2</v:id>
+                    <v:number>6</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Od stóp do głowy</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>b9d1a86e78c8747b4970f0d40db73e08</v:id>
+                    <v:number>6</v:number>
+                    <v:sub-number>II</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>nie ma zdrowego miejsca.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>734d8ebd5d04195d9f5f20246ce3c7ba</v:id>
+                    <v:number>6</v:number>
+                    <v:sub-number>III</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Same blizny i sińce,</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>c62f6419b0ed806169e77a36f9ea13ce</v:id>
+                    <v:number>6</v:number>
+                    <v:sub-number>IV</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>a świeże rany – nieprzewiązane,</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>a295b782f96fe6e0e7a3eedde57dc3b0</v:id>
+                    <v:number>6</v:number>
+                    <v:sub-number>V</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>nieopatrzone i niezwilżone oliwą.</v:content>
+                    <v:definitions>
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">4821c601f1be448591567189fcbeda6a</supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>d93de4faa37aeae4f6ff286942b936ed</v:id>
+                    <v:number>7</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Wasza ziemia jest pustynią,</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>fad12bbea12e2e0a5cc569fa17701cd6</v:id>
+                    <v:number>7</v:number>
+                    <v:sub-number>II</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>wasze miasta – spalone w ogniu!</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>b7d88a7aaea53488db3890df0292afdf</v:id>
+                    <v:number>7</v:number>
+                    <v:sub-number>III</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Plony pól waszych</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>9b67efbc769b591aac9e83bde462a611</v:id>
+                    <v:number>7</v:number>
+                    <v:sub-number>IV</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>zjadają obcy na waszych oczach.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>9fb54a3ca3ee196c7cc122b5e3cbb26d</v:id>
+                    <v:number>7</v:number>
+                    <v:sub-number>V</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Spustoszenie jak po zniszczeniu Sodomy.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>4141ea8f63e0b5f33539bc2fce5036c3</v:id>
+                    <v:number>8</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Opuszczona więc córka Syjonu</v:content>
+                    <v:definitions>
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">9356b38ca7ddafd20f8eadb6b1196d24</supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>71d7e2940dd0ec3a746e25ac2a0615dd</v:id>
+                    <v:number>8</v:number>
+                    <v:sub-number>II</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>jak szałas w winnicy,</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>ad808e5ae26da3dcbe9cc3e820b3b521</v:id>
+                    <v:number>8</v:number>
+                    <v:sub-number>III</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>jak altanka w ogrodzie warzywnym,</v:content>
+                    <v:definitions>
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">6582b8932ec09da1a8eba124229dca54</supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>3e0b7dee1eb560abc3f326975a66db24</v:id>
+                    <v:number>8</v:number>
+                    <v:sub-number>IV</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>jak oblężone miasto!</v:content>
+                    <v:definitions>
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">bc0ef87eb9d2d5e80f3ddc8bf34470c2</supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>6a876d2f65a6f6c80322a3c2fabae9a8</v:id>
+                    <v:number>9</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Gdyby Pan Zastępów</v:content>
+                    <v:dictionary>
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">239d4b356d598507527bab7ee03377b8</supp:Supplement>
+                    </v:dictionary>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>add895065dee98f995569a6ca25a43bd</v:id>
+                    <v:number>9</v:number>
+                    <v:sub-number>II</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>nie pozostawił nam reszty,</v:content>
+                    <v:dictionary>
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">4c28ed1f5e22879dc70fc25f5d5ed298</supp:Supplement>
+                    </v:dictionary>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>fd62d67f8fe0ad1a79a5353d67c23be5</v:id>
+                    <v:number>9</v:number>
+                    <v:sub-number>III</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>stalibyśmy się jak Sodoma,</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>c02ff01c49b7928d0d2e03591cd70fff</v:id>
+                    <v:number>9</v:number>
+                    <v:sub-number>IV</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>bylibyśmy podobni do Gomory.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>d81e58d9359ced95796b46e66c5f32ec</v:id>
+                    <v:number>10</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Słuchajcie słów Pana,</v:content>
+                    <v:dictionary>
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">05aece6b6fd41c7414a49e07d0072e35</supp:Supplement>
+                    </v:dictionary>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>2cbfd5e0e95f27542aa36ff956e4ec3f</v:id>
+                    <v:number>10</v:number>
+                    <v:sub-number>II</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>przywódcy Sodomy!</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>7d22e60603b56c6ca669eb4597cf6f84</v:id>
+                    <v:number>10</v:number>
+                    <v:sub-number>III</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Otwórz się na naukę naszego Boga,</v:content>
+                    <v:definitions>
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">99556cae0e743c0c9f78f8945ee2b904</supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>5bd240cf85b774610ad3635d29a635a7</v:id>
+                    <v:number>10</v:number>
+                    <v:sub-number>IV</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>o, ludu Gomory!</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>44bd2c0808bb262431521ca89abf5c49</v:id>
+                    <v:number>11</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>„Po cóż Mi wasze niezliczone ofiary?</v:content>
+                    <v:dictionary>
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">7c5c79c8badd62a8ad4c13b957c763aa</supp:Supplement>
+                    </v:dictionary>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>9697d1844647157f0c3995e70f6130b4</v:id>
+                    <v:number>11</v:number>
+                    <v:sub-number>II</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>– mówi Pan.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>2139610767541912bae15576b56b4df1</v:id>
+                    <v:number>11</v:number>
+                    <v:sub-number>III</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Dość mam całopaleń z baranów</v:content>
+                    <v:dictionary>
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">e9c1a8fb41364c64f319e218a1e98194</supp:Supplement>
+                    </v:dictionary>
+                    <v:dictionary>
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">3e679fa164027086a85af0bb3e138391</supp:Supplement>
+                    </v:dictionary>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>287505e0e72a0491f2a11671cb8acaf7</v:id>
+                    <v:number>11</v:number>
+                    <v:sub-number>IV</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>i tłuszczu tuczonych cielców!</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>10f080c2a934ed78b31eafc1718dbabf</v:id>
+                    <v:number>11</v:number>
+                    <v:sub-number>V</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Nie mam już upodobania</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>e0bf32851d11624b6e891b59dca3fd5e</v:id>
+                    <v:number>11</v:number>
+                    <v:sub-number>VI</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>we krwi wołów, jagniąt i kozłów.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>5b563735ace1aced9e4cc3c9a854600d</v:id>
+                    <v:number>12</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Gdy przychodzicie przed moje oblicze,</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>f58b492ef4c3f63bc1d6d7b50ea4ccf8</v:id>
+                    <v:number>12</v:number>
+                    <v:sub-number>II</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>czy ktoś od was wymaga,</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>ff07b73c7e18a6339c1fde591d57bd6c</v:id>
+                    <v:number>12</v:number>
+                    <v:sub-number>III</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>żebyście wydeptywali moje dziedzińce?</v:content>
+                    <v:definitions>
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">cd5564d8e1af6a31aa566aabc85b079e</supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>e32f2327ef191755928e43591f4890fe</v:id>
+                    <v:number>13</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Nie przynoście Mi więcej ofiar nieszczerych.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>da89818d2f0a88e71d1b88a12bb551a1</v:id>
+                    <v:number>13</v:number>
+                    <v:sub-number>II</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Wstręt budzi we Mnie wasze kadzidło,</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>a54c3cbdd5fc77d6c6a00d8581998692</v:id>
+                    <v:number>13</v:number>
+                    <v:sub-number>III</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>nie znoszę świąt nowiu, szabatu, zwoływania zgromadzeń,</v:content>
+                    <v:definitions>
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">00f1da94c0358ffbb2f67e4475436d61</supp:Supplement>
+                    </v:definitions>
+                    <v:dictionary>
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">df7556865fc651f0304f0447bd4a4b40</supp:Supplement>
+                    </v:dictionary>
+                    <v:dictionary>
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">150bc0312239032b5f65c99c73a49c61</supp:Supplement>
+                    </v:dictionary>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>f1e5bdb09462245c41c6b472447936ee</v:id>
+                    <v:number>13</v:number>
+                    <v:sub-number>IV</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>uroczystych obrzędów naznaczonych grzechem.</v:content>
+                    <v:dictionary>
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">b50fd41e46785d78079dd524de054545</supp:Supplement>
+                    </v:dictionary>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>80dd70b636216030e37faac58aef4634</v:id>
+                    <v:number>14</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Dni nowiu i świąt waszych</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>7af1268d9c78c82f4e842a360009b82f</v:id>
+                    <v:number>14</v:number>
+                    <v:sub-number>II</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>na wskroś już nie cierpię,</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>3ecded55d4d0ad376a30f14d122cc3a9</v:id>
+                    <v:number>14</v:number>
+                    <v:sub-number>III</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>stały Mi się ciężarem,</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>7494539bceb71716e4fc8ab7aa67b0e3</v:id>
+                    <v:number>14</v:number>
+                    <v:sub-number>IV</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>już nie mogę ich znieść.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>65e02441ed04e71279c7ccd82c109037</v:id>
+                    <v:number>15</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Gdy wyciągniecie do Mnie swe ręce,</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>61c6ed5f0f4e951e8d752fc0ae99ff08</v:id>
+                    <v:number>15</v:number>
+                    <v:sub-number>II</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>zasłonię przed wami moje oczy,</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>7955a1bb4feeb8c8269832631ea75ded</v:id>
+                    <v:number>15</v:number>
+                    <v:sub-number>III</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>choćbyście mnożyli modły,</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>e790b2e2e53cb93ff2d670e45205e924</v:id>
+                    <v:number>15</v:number>
+                    <v:sub-number>IV</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Ja ich nie wysłucham.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>afd858078c0da2bd0ec7bb9bde34b7a6</v:id>
+                    <v:number>15</v:number>
+                    <v:sub-number>V</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Ręce wasze są pełne krwi!</v:content>
+                    <v:dictionary>
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">8211856fcc27117ed69dffb569a36b63</supp:Supplement>
+                    </v:dictionary>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>2f1a1030ad85fdf329ea98c602e4d6cf</v:id>
+                    <v:number>16</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Obmyjcie się! Oczyśćcie!</v:content>
+                    <v:dictionary>
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">c81ee60cbd6a2a0e17c7895f509193f4</supp:Supplement>
+                    </v:dictionary>
+                    <v:dictionary>
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">eaebc613b8595eb791d1836867a30f64</supp:Supplement>
+                    </v:dictionary>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>18c1d8e7c0f7d2ed09516282cc4c3cd7</v:id>
+                    <v:number>16</v:number>
+                    <v:sub-number>II</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Usuńcie sprzed mojego oblicza</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>75b15b32829888bab30a61d975987f17</v:id>
+                    <v:number>16</v:number>
+                    <v:sub-number>III</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>zło waszych niecnych czynów.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>2c739e712929064e3696780585a6edfe</v:id>
+                    <v:number>16</v:number>
+                    <v:sub-number>IV</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Przestańcie czynić źle!</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>c10ef1618eac4f294144d1e3269a0e2f</v:id>
+                    <v:number>17</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Uczcie się czynić dobrze!</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>fb02613057668b2174853af62b899ff3</v:id>
+                    <v:number>17</v:number>
+                    <v:sub-number>II</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Szukajcie tego, co prawe!</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>662fb0947b384b6bc563daf1de8bb43f</v:id>
+                    <v:number>17</v:number>
+                    <v:sub-number>III</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Poskramiajcie ciemięzcę,</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>85dc8fb2fd6a1ca5bc9d5c7f67b2aeb6</v:id>
+                    <v:number>17</v:number>
+                    <v:sub-number>IV</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>brońcie prawa sieroty,</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>09ebbb3d05cd84769bf4280269b6a58a</v:id>
+                    <v:number>17</v:number>
+                    <v:sub-number>V</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>stawajcie w obronie wdowy!</v:content>
+                    <v:definitions>
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">2b644064c38dc91a6e9fbec8d90cd0a0</supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>6ebcb65978a0b10c51ce030b014356e9</v:id>
+                    <v:number>18</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Chodźcie, rozsądźmy</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>ab5021d76524f866334e00fef9cd4dfb</v:id>
+                    <v:number>18</v:number>
+                    <v:sub-number>II</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>– mówi Pan.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>01bb43cbfee7d945296be2aea2ec83f5</v:id>
+                    <v:number>18</v:number>
+                    <v:sub-number>III</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Choćby wasze grzechy były jak szkarłat –</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>7a73e8457ad0369d8cacf3b303a60c5f</v:id>
+                    <v:number>18</v:number>
+                    <v:sub-number>IV</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>nad śnieg wybieleją.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>f9332cbe52727df06c1a6fdb0e4c325b</v:id>
+                    <v:number>18</v:number>
+                    <v:sub-number>V</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Choćby były czerwone jak purpura –</v:content>
+                    <v:definitions>
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">6b9e1a901303a8039009bd32ac2404f1</supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>33ae726157146ad0067afe47620dbc45</v:id>
+                    <v:number>18</v:number>
+                    <v:sub-number>VI</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>staną się białe jak wełna.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>fab3890b71b5347409f813c62e2f14d3</v:id>
+                    <v:number>19</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Jeżeli naprawdę posłuchacie,</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>68a2f9c1c74a833dbee10fac8427c38a</v:id>
+                    <v:number>19</v:number>
+                    <v:sub-number>II</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>będziecie zażywali dóbr ziemi.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>4c58283c085a8392cee0fec4199a8ec3</v:id>
+                    <v:number>20</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Lecz jeśli będziecie trwać w uporze –</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>8ecbb937a2ca5eccd11e72b7e4319204</v:id>
+                    <v:number>20</v:number>
+                    <v:sub-number>II</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>miecz was wytępi”.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>b45d8209bce01541922bf5860c23cdd3</v:id>
+                    <v:number>20</v:number>
+                    <v:sub-number>III</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Tak orzekły usta Pana!</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>8efab466b2a13c53688cb03135e1cbfc</v:id>
+                    <v:number>21</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Ach, jakąż nierządnicą stał się</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>9d6abcfa8cf8387207f2e6b1d18ed75d</v:id>
+                    <v:number>21</v:number>
+                    <v:sub-number>II</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Gród Wierności!</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>21ec871283bff583675ccda810424f86</v:id>
+                    <v:number>21</v:number>
+                    <v:sub-number>III</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Syjon był pełen prawości,</v:content>
+                    <v:dictionary>
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">0c8cf461abadba707a4f0aaf8adfc669</supp:Supplement>
+                    </v:dictionary>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>3aa2067c0e96eed34b868d82478d82d1</v:id>
+                    <v:number>21</v:number>
+                    <v:sub-number>IV</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>siedzibą sprawiedliwości,</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>ea32c6e4b598dcfcb1606d47fb38ab09</v:id>
+                    <v:number>21</v:number>
+                    <v:sub-number>V</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>a teraz są w nim mordercy.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>cd37f1d418ffcad80664ef0cd07ef7ad</v:id>
+                    <v:number>22</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Twoje srebro zamieniło się w żużel,</v:content>
+                    <v:definitions>
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">1818d141bcf11a40837df13fe1c90247</supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>423a3d64d8279a14be2b29f3dfcf5822</v:id>
+                    <v:number>22</v:number>
+                    <v:sub-number>II</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>twoje wino zmieszane z wodą.</v:content>
+                    <v:definitions>
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">acc36d11e49ab8a8c33fcfd28b73923a</supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>0b2788a67bc30e992dbf9f8428f5495e</v:id>
+                    <v:number>23</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Przywódcy twoi to buntownicy</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>97522fcc354e87dccb9a6ced85cd27b0</v:id>
+                    <v:number>23</v:number>
+                    <v:sub-number>II</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>i wspólnicy złodziei!</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>cabf30fd976d6f27420aa5353121769a</v:id>
+                    <v:number>23</v:number>
+                    <v:sub-number>III</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Każdemu miłe przekupstwo</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>ce0fe70e45ad85503a862402a9199f04</v:id>
+                    <v:number>23</v:number>
+                    <v:sub-number>IV</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>i pogoń za podarkami.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>76163738b52333e598481cb0d00e05ef</v:id>
+                    <v:number>23</v:number>
+                    <v:sub-number>V</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Nie bronią prawa sieroty,</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>c75a6e0fe721c39269925b3855e26660</v:id>
+                    <v:number>23</v:number>
+                    <v:sub-number>VI</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>głusi są na skargi wdowy.</v:content>
+                    <v:definitions>
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">2b644064c38dc91a6e9fbec8d90cd0a0</supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>49d79e8c580a8b25d872b0a06e418074</v:id>
+                    <v:number>24</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Dlatego tak mówi Pan, Bóg Zastępów,</v:content>
+                    <v:dictionary>
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">05aece6b6fd41c7414a49e07d0072e35</supp:Supplement>
+                    </v:dictionary>
+                    <v:dictionary>
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">239d4b356d598507527bab7ee03377b8</supp:Supplement>
+                    </v:dictionary>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>46023747db31c161eed11b0e02b59a5d</v:id>
+                    <v:number>24</v:number>
+                    <v:sub-number>II</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Mocarz Izraela:</v:content>
+                    <v:dictionary>
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">31883fbde67362aedc7a974074a80f13</supp:Supplement>
+                    </v:dictionary>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>66999be3520321cbe1461dc5417737c3</v:id>
+                    <v:number>24</v:number>
+                    <v:sub-number>III</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>„Biada moim wrogom! Dokonam na nich pomsty,</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>fb61baab4952c07b777baa653afe36d6</v:id>
+                    <v:number>24</v:number>
+                    <v:sub-number>IV</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>odpłacę moim nieprzyjaciołom.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>4fa188831eb87c05acaaf414aa5bf8d2</v:id>
+                    <v:number>25</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>I zwrócę moją rękę przeciwko tobie,</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>4934822a852b2b3477b41f806f9a2746</v:id>
+                    <v:number>25</v:number>
+                    <v:sub-number>II</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>wytopię w tyglu twój żużel</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>dc4926147364876442758e2f9a2b5a6c</v:id>
+                    <v:number>25</v:number>
+                    <v:sub-number>III</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>i usunę wszelki ołów!</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>d04217e4d433f08fc608bbfec275c9d6</v:id>
+                    <v:number>26</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Przywrócę twoich sędziów jak dawniej,</v:content>
+                    <v:dictionary>
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">6d5ed0277845356cab411bd362d01b37</supp:Supplement>
+                    </v:dictionary>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>dedb460500765d60bae851370abea1c9</v:id>
+                    <v:number>26</v:number>
+                    <v:sub-number>II</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>i twoich doradców – jak na początku.</v:content>
+                    <v:definitions>
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">c1a252228987258429d5a1ea12e17431</supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>c4deecb2700dbe3f919e014efd1ff8e7</v:id>
+                    <v:number>26</v:number>
+                    <v:sub-number>III</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Znowu cię nazwą Miastem Sprawiedliwości,</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>6aa44b158f5e693477aa456d4f3872be</v:id>
+                    <v:number>26</v:number>
+                    <v:sub-number>IV</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Grodem Wierności”.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>270c3e61dffab334e6d76376aff56668</v:id>
+                    <v:number>27</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Syjon będzie odkupiony dzięki prawości,</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>7f1145ed8eb59e1cd7c21a8a64ff282d</v:id>
+                    <v:number>27</v:number>
+                    <v:sub-number>II</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>a ci, którzy się w nim nawrócą – przez sprawiedliwość!</v:content>
+                    <v:definitions>
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">8e2db48c7d6e02d6aa4f4458acc626f5</supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>89e655155fb94353d313a697349c8cca</v:id>
+                    <v:number>28</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Odstępcy zostaną zgładzeni wraz z grzesznymi,</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>ca26b64086a3a2a8dc28bdc97d86c379</v:id>
+                    <v:number>28</v:number>
+                    <v:sub-number>II</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>zginą ci, którzy opuszczają Pana.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>e6c63867b1c2a2659b8ad8ca40f514d4</v:id>
+                    <v:number>29</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Będziecie się wstydzili terebintów,</v:content>
+                    <v:definitions>
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">d7e0ed3d079f3444c98686e5ec57d163</supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>0f4801cb272d5a714306c89991df6b2d</v:id>
+                    <v:number>29</v:number>
+                    <v:sub-number>II</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>którymi się rozkoszujecie.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>71bed9926f546b58d4cd979564094d90</v:id>
+                    <v:number>29</v:number>
+                    <v:sub-number>III</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Zarumienicie się z powodu gajów,</v:content>
+                    <v:definitions>
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">76e7b4547fd2904c4be1076ffc95a369</supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>423aa641babe4a011cbb0c5df295c1bd</v:id>
+                    <v:number>29</v:number>
+                    <v:sub-number>IV</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>które sobie upodobaliście.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>7ecf6583653c947c4ccfff9d0863a8b0</v:id>
+                    <v:number>30</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Bo sami staniecie się jak terebint,</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>db478194fe8f6b535c2fd0cc8684fb11</v:id>
+                    <v:number>30</v:number>
+                    <v:sub-number>II</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>którego liście więdną,</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>27af7d1834660252b9e98070865c35af</v:id>
+                    <v:number>30</v:number>
+                    <v:sub-number>III</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>i jak gaj bez wody.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>288116a73eb053d10fc7eccc4b255b35</v:id>
+                    <v:number>31</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Siłacz stanie się jak paździerz,</v:content>
+                    <v:definitions>
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">f9609e1443e410ae891480f6cae28f1a</supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>17604e3d0d7d1177cfe539fcac683470</v:id>
+                    <v:number>31</v:number>
+                    <v:sub-number>II</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>a jego dzieło jak iskra.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>9111c9c3d90d9db63711ce6d4eca2116</v:id>
+                    <v:number>31</v:number>
+                    <v:sub-number>III</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>Spłoną razem</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>a1deb8688a4dd18b2f48ac420f918fc0</v:id>
+                    <v:number>31</v:number>
+                    <v:sub-number>IV</v:sub-number>
+                    <ch:Chapter>
+                        <ch:Chapter>b9e5d6d38230cee031448e17fc3bdc26</ch:Chapter>
+                    </ch:Chapter>
+                    <v:content>i nikt nie zdoła ich zagasić.</v:content>
+                </v:Verse>
+            </ch:verses>
+        </ch:Chapter>
+    </instance>
+    <attachments>
+    </attachments>
+</envelope>

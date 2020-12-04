@@ -7,7 +7,7 @@ declare namespace bs = "http://marklogic.com/holy/ml-modules/bible-structure";
 
 declare variable $SESSION-ID as xs:string external;
 
-(: remove the 'latest' collection from  :)
+(: remove the 'latest' collection from all xhtml data documents stored in db with version different than current one :)
 let $old-uris :=
     cts:uris((), (),
         cts:and-query((

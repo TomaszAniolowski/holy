@@ -1,0 +1,5 @@
+<tdc:root xmlns:tdc="http://marklogic.com/holy/test-data/constants">
+    <tdc:child>1</tdc:child>
+    <tdc:child>2</tdc:child>
+    <tdc:child>3</tdc:child>
+</tdc:root>

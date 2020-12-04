@@ -25,9 +25,9 @@ let $test-test := hh:eval-in-db(
     $hhc:TEST-DB-ID
 )
 return (
-    test:assert-equal($hhc:FINAL-DB-ID, $test-final, "holy-FINAL"),
-    test:assert-equal($hhc:STAGING-DB-ID, $test-staging, "holy-STAGING"),
-    test:assert-equal($hhc:JOB-DB-ID, $test-job, "holy-JOBS"),
-    test:assert-equal($hhc:MODULES-DB-ID, $test-modules, "holy-MODULES"),
-    test:assert-equal($hhc:TEST-DB-ID, $test-test, "holy-TEST")
+    test:assert-equal($hhc:FINAL-DB-ID, $test-final, $hhc:FINAL-DB-NAME),
+    test:assert-equal($hhc:STAGING-DB-ID, $test-staging, $hhc:STAGING-DB-NAME),
+    test:assert-equal($hhc:JOB-DB-ID, $test-job, $hhc:JOB-DB-NAME),
+    test:assert-equal($hhc:MODULES-DB-ID, $test-modules, $hhc:MODULES-DB-NAME),
+    test:assert-equal($hhc:TEST-DB-ID, $test-test, $hhc:TEST-DB-NAME)
 )
