@@ -1,0 +1,88 @@
+{
+  "name": "psw",
+  "description": "This is the flow that uses source bible chapter xhtml bodies from pismoswiete.pl and creates final entities",
+  "batchSize": 4,
+  "threadCount": 16,
+  "options": {
+    "sourceQuery": null
+  },
+  "steps": {
+    "1": {
+      "name": "transform-xhtml-into-chapter",
+      "description": "This is the custom step to transform xhtml data from pismoswiete.pl to prototype of Chapter entity",
+      "stepDefinitionName": "psw-transform-xhtml-into-chapter",
+      "stepDefinitionType": "CUSTOM",
+      "modulePath": "/custom-modules/custom/psw-transform-xhtml-into-chapter/main.sjs",
+      "mappingStep": false,
+      "customStep": true,
+      "mappingName": null,
+      "customHook" : {},
+      "retryLimit" : 0,
+      "batchSize" : 4,
+      "threadCount" : 16,
+      "fileLocations": {},
+      "options": {
+        "sourceQuery": "cts.collectionQuery(['holy-chapter-xhtml-body','latest'])",
+        "sourceDatabase": "holy-STAGING",
+        "targetDatabase": "holy-FINAL",
+        "outputFormat": "xml",
+        "collections": ["holy-data", "chapter", "latest"],
+        "additionalCollections": [],
+        "permissions": "data-hub-operator,read,data-hub-operator,update",
+        "headers": {
+          "createdOn" : "currentDateTime"
+        }
+      }
+    },
+    "2": {
+      "name": "transform-xhtml-into-tome",
+      "description": "This is the custom step to transform xhtml data from pismoswiete.pl to Tome entity",
+      "stepDefinitionName": "psw-transform-xhtml-into-tome",
+      "stepDefinitionType": "CUSTOM",
+      "modulePath": "/custom-modules/custom/psw-transform-xhtml-into-tome/main.sjs",
+      "mappingStep": false,
+      "customStep": true,
+      "mappingName": null,
+      "customHook" : {},
+      "retryLimit" : 0,
+      "batchSize" : 4,
+      "threadCount" : 16,
+      "fileLocations": {},
+      "options": {
+        "sourceQuery": "cts.andQuery([cts.collectionQuery(['holy-data','chapter','latest']), cts.elementWordQuery(fn.QName(\"http://holy.arch.com/data/chapter\", \"number\"), \"1\")])",
+        "sourceDatabase": "holy-FINAL",
+        "targetDatabase": "holy-FINAL",
+        "outputFormat": "xml",
+        "collections": ["holy-data", "tome", "latest"],
+        "additionalCollections": [],
+        "permissions": "data-hub-operator,read,data-hub-operator,update",
+        "headers": { }
+      }
+    },
+    "3": {
+      "name": "transform-xhtml-into-glossary",
+      "description": "This is the custom step to transform xhtml data from pismoswiete.pl to Glossary entity",
+      "stepDefinitionName": "psw-transform-xhtml-into-glossary",
+      "stepDefinitionType": "CUSTOM",
+      "modulePath": "/custom-modules/custom/psw-transform-xhtml-into-glossary/main.sjs",
+      "mappingStep": false,
+      "customStep": true,
+      "mappingName": null,
+      "customHook" : {},
+      "retryLimit" : 0,
+      "batchSize" : 1,
+      "threadCount" : 2,
+      "fileLocations": {},
+      "options": {
+        "sourceQuery": "cts.andQuery([cts.directoryQuery('/Chapter/Ag/'), cts.collectionQuery('latest')])",
+        "sourceDatabase": "holy-FINAL",
+        "targetDatabase": "holy-FINAL",
+        "outputFormat": "xml",
+        "collections": ["holy-data", "glossary", "latest"],
+        "additionalCollections": [],
+        "permissions": "data-hub-operator,read,data-hub-operator,update",
+        "headers": { }
+      }
+    }
+  }
+}

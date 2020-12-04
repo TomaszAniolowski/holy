@@ -1,0 +1,26 @@
+{
+  "lang": "pl",
+  "name": "psw-transform-xhtml-into-glossary",
+  "description": "This is the custom step to transform xhtml data from pismoswiete.pl to Glossary entity",
+  "type": "CUSTOM",
+  "version": 1,
+  "modulePath": "/custom-modules/custom/psw-transform-xhtml-into-glossary/main.sjs",
+  "customHook": {},
+  "retryLimit": 0,
+  "batchSize": 1,
+  "threadCount": 2,
+  "options": {
+    "sourceQuery": "cts.andQuery([cts.directoryQuery('/Chapter/Ag/'), cts.collectionQuery('latest')])",
+    "sourceDatabase": "holy-FINAL",
+    "targetDatabase": "holy-FINAL",
+    "outputFormat": "xml",
+    "collections": [
+      "holy-data",
+      "glossary",
+      "latest"
+    ],
+    "additionalCollections": [],
+    "permissions": "data-hub-operator,read,data-hub-operator,update",
+    "headers": {}
+  }
+}

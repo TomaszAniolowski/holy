@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://marklogic.com/holy/ml-modules/bible-structure" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:bs="http://marklogic.com/holy/ml-modules/bible-structure">
+
+  <xs:element name="bible" type="bib:bibleType" xmlns:bib="http://marklogic.com/holy/ml-modules/bible-structure"/>
+
+  <xs:simpleType name="siglumType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Rdz"/>
+      <xs:enumeration value="Wj"/>
+      <xs:enumeration value="Kpł"/>
+      <xs:enumeration value="Lb"/>
+      <xs:enumeration value="Pwt"/>
+      <xs:enumeration value="Joz"/>
+      <xs:enumeration value="Sdz"/>
+      <xs:enumeration value="Rt"/>
+      <xs:enumeration value="1Sm"/>
+      <xs:enumeration value="2Sm"/>
+      <xs:enumeration value="1Krl"/>
+      <xs:enumeration value="2Krl"/>
+      <xs:enumeration value="1Krn"/>
+      <xs:enumeration value="2Krn"/>
+      <xs:enumeration value="Ezd"/>
+      <xs:enumeration value="Ne"/>
+      <xs:enumeration value="Tb"/>
+      <xs:enumeration value="Jdt"/>
+      <xs:enumeration value="Est"/>
+      <xs:enumeration value="1Mch"/>
+      <xs:enumeration value="2Mch"/>
+      <xs:enumeration value="Hi"/>
+      <xs:enumeration value="Ps"/>
+      <xs:enumeration value="Prz"/>
+      <xs:enumeration value="Koh"/>
+      <xs:enumeration value="Pnp"/>
+      <xs:enumeration value="Mdr"/>
+      <xs:enumeration value="Syr"/>
+      <xs:enumeration value="Iz"/>
+      <xs:enumeration value="Jr"/>
+      <xs:enumeration value="Lm"/>
+      <xs:enumeration value="Ba"/>
+      <xs:enumeration value="Ez"/>
+      <xs:enumeration value="Dn"/>
+      <xs:enumeration value="Oz"/>
+      <xs:enumeration value="Jl"/>
+      <xs:enumeration value="Am"/>
+      <xs:enumeration value="Ab"/>
+      <xs:enumeration value="Jon"/>
+      <xs:enumeration value="Mi"/>
+      <xs:enumeration value="Na"/>
+      <xs:enumeration value="Ha"/>
+      <xs:enumeration value="So"/>
+      <xs:enumeration value="Ag"/>
+      <xs:enumeration value="Za"/>
+      <xs:enumeration value="Ml"/>
+      <xs:enumeration value="Mt"/>
+      <xs:enumeration value="Mk"/>
+      <xs:enumeration value="Łk"/>
+      <xs:enumeration value="J"/>
+      <xs:enumeration value="Dz"/>
+      <xs:enumeration value="Rz"/>
+      <xs:enumeration value="1Kor"/>
+      <xs:enumeration value="2Kor"/>
+      <xs:enumeration value="Ga"/>
+      <xs:enumeration value="Ef"/>
+      <xs:enumeration value="Flp"/>
+      <xs:enumeration value="Kol"/>
+      <xs:enumeration value="1Tes"/>
+      <xs:enumeration value="2Tes"/>
+      <xs:enumeration value="1Tm"/>
+      <xs:enumeration value="2Tm"/>
+      <xs:enumeration value="Tt"/>
+      <xs:enumeration value="Flm"/>
+      <xs:enumeration value="Hbr"/>
+      <xs:enumeration value="Jk"/>
+      <xs:enumeration value="1P"/>
+      <xs:enumeration value="2P"/>
+      <xs:enumeration value="1J"/>
+      <xs:enumeration value="2J"/>
+      <xs:enumeration value="3J"/>
+      <xs:enumeration value="Jud"/>
+      <xs:enumeration value="Ap"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="nameType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Księga Rodzaju"/>
+      <xs:enumeration value="Księga Wyjścia"/>
+      <xs:enumeration value="Księga Kapłańska"/>
+      <xs:enumeration value="Księga Liczb"/>
+      <xs:enumeration value="Księga Powtórzonego Prawa"/>
+      <xs:enumeration value="Księga Jozuego"/>
+      <xs:enumeration value="Księga Sędziów"/>
+      <xs:enumeration value="Księga Rut"/>
+      <xs:enumeration value="1. Księga Samuela"/>
+      <xs:enumeration value="2. Księga Samuela"/>
+      <xs:enumeration value="1. Księga Królewska"/>
+      <xs:enumeration value="2. Księga Królewska"/>
+      <xs:enumeration value="1. Księga Kronik"/>
+      <xs:enumeration value="2. Księga Kronik"/>
+      <xs:enumeration value="Księga Ezdrasza"/>
+      <xs:enumeration value="Księga Nehemiasza"/>
+      <xs:enumeration value="Księga Tobiasza"/>
+      <xs:enumeration value="Księga Judyty"/>
+      <xs:enumeration value="Księga Estery"/>
+      <xs:enumeration value="1. Księga Machabejska"/>
+      <xs:enumeration value="2. Księga Machabejska"/>
+      <xs:enumeration value="Księga Hioba"/>
+      <xs:enumeration value="Księga Psalmów"/>
+      <xs:enumeration value="Księga Przysłów"/>
+      <xs:enumeration value="Księga Koheleta"/>
+      <xs:enumeration value="Pieśń nad Pieśniami"/>
+      <xs:enumeration value="Księga Mądrości"/>
+      <xs:enumeration value="Mądrość Syracha (Syracydesa)"/>
+      <xs:enumeration value="Księga Izajasza"/>
+      <xs:enumeration value="Księga Jeremiasza"/>
+      <xs:enumeration value="Lamentacje"/>
+      <xs:enumeration value="Księga Barucha"/>
+      <xs:enumeration value="Księga Ezechiela"/>
+      <xs:enumeration value="Księga Daniela"/>
+      <xs:enumeration value="Księga Ozeasza"/>
+      <xs:enumeration value="Księga Joela"/>
+      <xs:enumeration value="Księga Amosa"/>
+      <xs:enumeration value="Księga Abdiama"/>
+      <xs:enumeration value="Księga Jonasza"/>
+      <xs:enumeration value="Księga Micheasza"/>
+      <xs:enumeration value="Księga Nahuma"/>
+      <xs:enumeration value="Księga Habakuka"/>
+      <xs:enumeration value="Księga Sofoniasza"/>
+      <xs:enumeration value="Księga Aggeusza"/>
+      <xs:enumeration value="Księga Zachariasza"/>
+      <xs:enumeration value="Księga Malachiasza"/>
+      <xs:enumeration value="Ewangelia wg św. Mateusza"/>
+      <xs:enumeration value="Ewangelia wg św. Marka"/>
+      <xs:enumeration value="Ewangelia wg św. Łukasza"/>
+      <xs:enumeration value="Ewangelia wg św. Jana"/>
+      <xs:enumeration value="Dzieje Apostolskie"/>
+      <xs:enumeration value="List do Rzymian"/>
+      <xs:enumeration value="1. List do Koryntian"/>
+      <xs:enumeration value="2. List do Koryntian"/>
+      <xs:enumeration value="List do Galatów"/>
+      <xs:enumeration value="List do Efezjan"/>
+      <xs:enumeration value="List do Filipian"/>
+      <xs:enumeration value="List do Kolosan"/>
+      <xs:enumeration value="1. List do Tesaloniczan"/>
+      <xs:enumeration value="2. List do Tesaloniczan"/>
+      <xs:enumeration value="1. List do Tymoteusza"/>
+      <xs:enumeration value="2. List do Tymoteusza"/>
+      <xs:enumeration value="List do Tytusa"/>
+      <xs:enumeration value="List do Filemona"/>
+      <xs:enumeration value="List do Hebrajczyków"/>
+      <xs:enumeration value="List św. Jakuba"/>
+      <xs:enumeration value="1. List św. Piotra"/>
+      <xs:enumeration value="2. List św. Piotra"/>
+      <xs:enumeration value="1. List św. Jana"/>
+      <xs:enumeration value="2. List św. Jana"/>
+      <xs:enumeration value="3. List św. Jana"/>
+      <xs:enumeration value="List św. Judy"/>
+      <xs:enumeration value="Apokalipsa wg św. Jana"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="firstChapterType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="1"/>
+      <xs:enumeration value="Prolog"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="testamentNameType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Old Testament"/>
+      <xs:enumeration value="New Testament"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="tomeType">
+    <xs:sequence>
+      <xs:element type="bs:siglumType" name="siglum"/>
+      <xs:element type="bs:nameType" name="name"/>
+      <xs:element type="bs:firstChapterType" name="first-chapter"/>
+      <xs:element type="xs:string" name="last-chapter"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="cardNum" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="testamentType">
+    <xs:sequence>
+      <xs:element type="bs:tomeType" name="tome" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute type="bs:testamentNameType" name="name" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="bibleType">
+    <xs:sequence>
+      <xs:element type="bs:testamentType" name="testament" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>

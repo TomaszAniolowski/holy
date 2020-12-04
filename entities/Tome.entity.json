@@ -1,0 +1,133 @@
+{
+  "info": {
+    "title": "Tome",
+    "version": "1.0.0",
+    "baseUri": "http://holy.arch.com/holy-entities/",
+    "description": "An Tome entity storing a tome properties and a list of pericopes."
+  },
+  "definitions": {
+    "Tome": {
+      "description": "The Tome entity root.",
+      "namespace": "http://holy.arch.com/holy-entities/tome",
+      "namespacePrefix": "t",
+      "primaryKey": "siglum",
+      "required": ["name", "testament", "first-chapter", "last-chapter"],
+      "rangeIndex": [],
+      "elementRangeIndex": ["siglum"],
+      "pathRangeIndex": [],
+      "wordLexicon": [],
+      "pii": [],
+      "properties": {
+        "siglum": {
+          "datatype": "string",
+          "collation": "http://marklogic.com/collation/",
+          "description": "The tome siglum, e.g. <<Mt>>."
+        },
+        "name": {
+          "datatype": "string",
+          "collation": "http://marklogic.com/collation/",
+          "description": "The tome name, e.g. <<Ewangelia wg św. Mateusza>>."
+        },
+        "testament": {
+          "datatype": "string",
+          "collation": "http://marklogic.com/collation/",
+          "description": "The testament reference. It can be an <<Old Testament>> or a <<New Testament>>."
+        },
+        "first-chapter": {
+          "datatype": "string",
+          "collation": "http://marklogic.com/collation/",
+          "description": "The first chapter number."
+        },
+        "last-chapter": {
+          "datatype": "string",
+          "collation": "http://marklogic.com/collation/",
+          "description": "The last chapter number."
+        },
+        "pericopes": {
+          "datatype": "array",
+          "description": "The list of pericopes contained by a specific tome.",
+          "items": {
+            "$ref": "#/definitions/Pericope"
+          }
+        },
+        "subtitles": {
+          "datatype": "array",
+          "description": "The list of subtitles contained by a specific tome.",
+          "items": {
+            "$ref": "#/definitions/Subtitle"
+          }
+        }
+      }
+    },
+    "Pericope": {
+      "description": "The Pericope entity (child of Tome entity).",
+      "namespace": "http://holy.arch.com/holy-entities/pericope",
+      "namespacePrefix": "p",
+      "primaryKey": "id",
+      "required": ["title", "tome", "verses"],
+      "rangeIndex": [],
+      "elementRangeIndex": ["id"],
+      "pathRangeIndex": [],
+      "wordLexicon": [],
+      "pii": [],
+      "properties": {
+        "id": {
+          "datatype": "string",
+          "collation": "http://marklogic.com/collation/",
+          "description": "The unique pericope identifier being md5 created from a concatenation of a tome reference, a first verse number, a last verse number and title values."
+        },
+        "title": {
+          "datatype": "string",
+          "collation": "http://marklogic.com/collation/",
+          "description": "The pericope title."
+        },
+        "tome": {
+          "$ref": "#/definitions/Tome",
+          "description": "The tome reference."
+        },
+        "verses": {
+          "datatype": "array",
+          "description": "The list of verses contained by the pericope.",
+          "items": {
+            "$ref": "http://holy.arch.com/holy-entities/Verse"
+          }
+        }
+      }
+    },
+    "Subtitle": {
+      "description": "The Subtitle entity (child of Tome entity).",
+      "namespace": "http://holy.arch.com/holy-entities/subtitle",
+      "namespacePrefix": "st",
+      "primaryKey": "id",
+      "required": ["title", "tome", "verses"],
+      "rangeIndex": [],
+      "elementRangeIndex": ["id"],
+      "pathRangeIndex": [],
+      "wordLexicon": [],
+      "pii": [],
+      "properties": {
+        "id": {
+          "datatype": "string",
+          "collation": "http://marklogic.com/collation/",
+          "description": "The unique subtitle identifier being md5 created from a concatenation of a tome reference, a first verse number, a last verse number and a title values."
+        },
+        "title": {
+          "datatype": "string",
+          "collation": "http://marklogic.com/collation/",
+          "description": "The subtitle title."
+        },
+        "tome": {
+          "$ref": "#/definitions/Tome",
+          "description": "The tome reference."
+        },
+        "verses": {
+          "datatype": "array",
+          "description": "The list of verses contained by the subtitle.",
+          "items": {
+            "$ref": "http://holy.arch.com/holy-entities/Verse"
+          }
+        }
+      }
+    }
+  }
+}
