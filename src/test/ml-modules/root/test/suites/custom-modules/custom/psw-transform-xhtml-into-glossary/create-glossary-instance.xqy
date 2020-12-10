@@ -9,17 +9,6 @@ import module namespace fc = "http://marklogic.com/holy/ml-modules/flow-constant
 let $glossary-1 := custom:create-glossary-instance(1)
 let $glossary-2 := custom:create-glossary-instance(2)
 
-(:let $model := json:object():)
-(:=> map:with($fc:DHF-TYPE, $fc:SUPPLEMENT-ENTITY):)
-(:=> map:with($fc:DHF-VERSION, $fc:SUPPLEMENT-VERSION):)
-(:=> map:with($fc:DHF-NS, $fc:SUPPLEMENT-NS-URI):)
-(:=> map:with($fc:DHF-NS-PREFIX, $fc:SUPPLEMENT-NS-PREFIX):)
-(:=> map:with($fc:ID, $definition-unique-id):)
-(:=> map:with($fc:TYPE, $fc:DEFINITION):)
-(:=> map:with($fc:CONTENT, $content):)
-(:=> es:optional($fc:DEFINIENDUM, $definiendum):)
-(:=> es:optional($fc:DEFINIENS, $definiens):)
-
 let $from := 1
 let $to := 10
 let $dictionary := json:array-values(map:get($glossary-1, $fc:DICTIONARY))[$from to $to]

@@ -55,7 +55,7 @@ declare function bib:retrieve-first-chapter(
 };
 
 (:~
- : Retrives the last chapter for the tome provided
+ : Retrives the last chapter for the tome provided.
  :
  : @param $tome-siglum - the tome siglum (e.g. 'Jdt')
  :
@@ -66,4 +66,19 @@ declare function bib:retrieve-last-chapter(
 ) as xs:string
 {
     $bc:BIBLE-STRUCTURE/bs:bible/bs:testament/bs:tome[bs:siglum = $tome-siglum]/bs:last-chapter/xs:string(.)
+};
+
+(:~
+ : Verifies the correctness of the siglum provided.
+ : It uses javascript module because marklogic regex tools return wrong values.
+ :
+ : @param $siglum - the bible siglum (e.g. 'Jdt 5,4-7')
+ :
+ : @return the boolean value representing the correctness of the siglum provided
+ :)
+declare function bib:validate-siglum(
+    $siglum as xs:string
+) as xs:boolean
+{
+    xdmp:invoke('/js/validate-siglum.sjs', map:entry("siglum", $siglum))
 };
