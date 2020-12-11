@@ -85,6 +85,8 @@ declare variable $siglum-79 as xs:string := 'Rdz 1-3; 5,8; 9-12';
 declare variable $siglum-80 as xs:string := 'Rdz 1-3; 5,7-8. 10n. 15-20; 9-12';
 declare variable $siglum-81 as xs:string := 'Rdz 1-3; 5-7,8; 9-12';
 declare variable $siglum-82 as xs:string := 'Rdz 1,2nn; 3,6nn';
+declare variable $siglum-83 as xs:string := 'Syr Prolog';
+declare variable $siglum-84 as xs:string := 'Syr Prolog,3';
 
 let $siglum-01-validation := bib:validate-siglum($siglum-01)
 let $siglum-02-validation := bib:validate-siglum($siglum-02)
@@ -168,6 +170,8 @@ let $siglum-79-validation := bib:validate-siglum($siglum-79)
 let $siglum-80-validation := bib:validate-siglum($siglum-80)
 let $siglum-81-validation := bib:validate-siglum($siglum-81)
 let $siglum-82-validation := bib:validate-siglum($siglum-82)
+let $siglum-83-validation := bib:validate-siglum($siglum-83)
+let $siglum-84-validation := bib:validate-siglum($siglum-84)
 
 return (
     test:assert-true($siglum-01-validation, 'Wrong validation verification for a siglum ' || $siglum-01),
@@ -251,5 +255,7 @@ return (
     test:assert-true($siglum-79-validation, 'Wrong validation verification for a siglum ' || $siglum-79),
     test:assert-true($siglum-80-validation, 'Wrong validation verification for a siglum ' || $siglum-80),
     test:assert-false($siglum-81-validation, 'Wrong validation verification for a siglum ' || $siglum-81),
-    test:assert-true($siglum-82-validation, 'Wrong validation verification for a siglum ' || $siglum-82)
+    test:assert-true($siglum-82-validation, 'Wrong validation verification for a siglum ' || $siglum-82),
+    test:assert-true($siglum-83-validation, 'Wrong validation verification for a siglum ' || $siglum-83),
+    test:assert-true($siglum-84-validation, 'Wrong validation verification for a siglum ' || $siglum-84)
 )

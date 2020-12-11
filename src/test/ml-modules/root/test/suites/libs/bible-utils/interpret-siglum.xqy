@@ -40,6 +40,9 @@ let $expected-siglum-invalid :=
 let $expected-siglum-tome :=
     map:map()
     => map:with('tome', 'Rdz')
+    => map:with('chapters',
+            map:new(((1 to 50) ! map:entry(xs:string(.), '_all')))
+    )
 
 let $expected-single-chapter :=
     map:map()
