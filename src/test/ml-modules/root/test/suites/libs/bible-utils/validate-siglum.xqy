@@ -7,7 +7,7 @@ declare variable $siglum-01 as xs:string := 'Rdz';
 declare variable $siglum-02 as xs:string := 'Rdz; Wj';
 declare variable $siglum-03 as xs:string := 'Rdz 1';
 declare variable $siglum-04 as xs:string := 'Rdz 11';
-declare variable $siglum-05 as xs:string := 'Rdz 112';
+declare variable $siglum-05 as xs:string := 'Rdz 1112';
 declare variable $siglum-06 as xs:string := 'Rdz 1,';
 declare variable $siglum-07 as xs:string := 'Rdz 1,1';
 declare variable $siglum-08 as xs:string := 'Rdz 1,1n';
@@ -16,7 +16,7 @@ declare variable $siglum-10 as xs:string := 'Rdz 1,1nnn';
 declare variable $siglum-11 as xs:string := 'Rdz 1,11';
 declare variable $siglum-12 as xs:string := 'Rdz 1,11n';
 declare variable $siglum-13 as xs:string := 'Rdz 1,11nn';
-declare variable $siglum-14 as xs:string := 'Rdz 1,111';
+declare variable $siglum-14 as xs:string := 'Rdz 1,1111';
 declare variable $siglum-15 as xs:string := 'Rdz 11,1';
 declare variable $siglum-16 as xs:string := 'Rdz 11,1n';
 declare variable $siglum-17 as xs:string := 'Rdz 11,1nn';
@@ -24,19 +24,19 @@ declare variable $siglum-18 as xs:string := 'Rdz 11,11';
 declare variable $siglum-19 as xs:string := 'Rdz 11,11n';
 declare variable $siglum-20 as xs:string := 'Rdz 11,11nn';
 declare variable $siglum-21 as xs:string := 'Rdz 11,11nnn';
-declare variable $siglum-22 as xs:string := 'Rdz 11,111';
-declare variable $siglum-23 as xs:string := 'Rdz 111,1';
+declare variable $siglum-22 as xs:string := 'Rdz 11,1111';
+declare variable $siglum-23 as xs:string := 'Rdz 1111,1';
 declare variable $siglum-24 as xs:string := 'Rdz 1,1-';
 declare variable $siglum-25 as xs:string := 'Rdz 1,1-5';
 declare variable $siglum-26 as xs:string := 'Rdz 1,1-5n';
 declare variable $siglum-27 as xs:string := 'Rdz 1,1-55';
 declare variable $siglum-28 as xs:string := 'Rdz 1,1-55n';
-declare variable $siglum-29 as xs:string := 'Rdz 1,1-555';
+declare variable $siglum-29 as xs:string := 'Rdz 1,1-5555';
 declare variable $siglum-30 as xs:string := 'Rdz 1,11-5n';
 declare variable $siglum-31 as xs:string := 'Rdz 1,11-55';
 declare variable $siglum-32 as xs:string := 'Rdz 1,11-55n';
-declare variable $siglum-33 as xs:string := 'Rdz 1,11-555';
-declare variable $siglum-34 as xs:string := 'Rdz 1,111-5';
+declare variable $siglum-33 as xs:string := 'Rdz 1,11-5555';
+declare variable $siglum-34 as xs:string := 'Rdz 1,1111-5';
 declare variable $siglum-35 as xs:string := 'Rdz 1,1.';
 declare variable $siglum-36 as xs:string := 'Rdz 1,1. 3';
 declare variable $siglum-37 as xs:string := 'Rdz 1,1. 3n';
@@ -49,22 +49,22 @@ declare variable $siglum-43 as xs:string := 'Rdz 1,1n. 3n';
 declare variable $siglum-44 as xs:string := 'Rdz 1,1nn. 3nn';
 declare variable $siglum-45 as xs:string := 'Rdz 1,1. 33';
 declare variable $siglum-46 as xs:string := 'Rdz 1,1. 33n';
-declare variable $siglum-47 as xs:string := 'Rdz 1,1. 333';
+declare variable $siglum-47 as xs:string := 'Rdz 1,1. 3333';
 declare variable $siglum-48 as xs:string := 'Rdz 1,11. 3';
 declare variable $siglum-49 as xs:string := 'Rdz 1,11. 3n';
 declare variable $siglum-50 as xs:string := 'Rdz 1,11. 33';
 declare variable $siglum-51 as xs:string := 'Rdz 1,11. 33n';
-declare variable $siglum-52 as xs:string := 'Rdz 1,11. 333';
-declare variable $siglum-53 as xs:string := 'Rdz 1,111. 3';
+declare variable $siglum-52 as xs:string := 'Rdz 1,11. 3333';
+declare variable $siglum-53 as xs:string := 'Rdz 1,1111. 3';
 declare variable $siglum-54 as xs:string := 'Rdz 1,1-5.';
 declare variable $siglum-55 as xs:string := 'Rdz 1,1-5. 7';
 declare variable $siglum-56 as xs:string := 'Rdz 1,1-5. 7n';
 declare variable $siglum-57 as xs:string := 'Rdz 1,11-51. 71';
 declare variable $siglum-58 as xs:string := 'Rdz 1,11-51n. 71';
 declare variable $siglum-59 as xs:string := 'Rdz 1,11-51. 71n';
-declare variable $siglum-60 as xs:string := 'Rdz 1,111-51. 71';
-declare variable $siglum-61 as xs:string := 'Rdz 1,11-511. 71';
-declare variable $siglum-62 as xs:string := 'Rdz 1,11-51. 711';
+declare variable $siglum-60 as xs:string := 'Rdz 1,1111-51. 71';
+declare variable $siglum-61 as xs:string := 'Rdz 1,11-5111. 71';
+declare variable $siglum-62 as xs:string := 'Rdz 1,11-51. 7111';
 declare variable $siglum-63 as xs:string := 'Rdz 1,1. 5-';
 declare variable $siglum-64 as xs:string := 'Rdz 1,1. 5-7';
 declare variable $siglum-65 as xs:string := 'Rdz 1,1-3. 5-';
@@ -87,6 +87,19 @@ declare variable $siglum-81 as xs:string := 'Rdz 1-3; 5-7,8; 9-12';
 declare variable $siglum-82 as xs:string := 'Rdz 1,2nn; 3,6nn';
 declare variable $siglum-83 as xs:string := 'Syr Prolog';
 declare variable $siglum-84 as xs:string := 'Syr Prolog,3';
+declare variable $siglum-85 as xs:string := 'Ps 112';
+declare variable $siglum-86 as xs:string := 'Ps 1,111';
+declare variable $siglum-87 as xs:string := 'Ps 11,111';
+declare variable $siglum-88 as xs:string := 'Ps 111,1';
+declare variable $siglum-89 as xs:string := 'Ps 1,1-111';
+declare variable $siglum-90 as xs:string := 'Ps 1,11-111';
+declare variable $siglum-91 as xs:string := 'Ps 1,111-5';
+declare variable $siglum-92 as xs:string := 'Ps 1,1. 111';
+declare variable $siglum-93 as xs:string := 'Ps 1,11. 111';
+declare variable $siglum-94 as xs:string := 'Ps 1,111. 3';
+declare variable $siglum-95 as xs:string := 'Ps 1,111-51. 71';
+declare variable $siglum-96 as xs:string := 'Ps 1,11-111. 71';
+declare variable $siglum-97 as xs:string := 'Ps 1,11-51. 111';
 
 let $siglum-01-validation := bib:validate-siglum($siglum-01)
 let $siglum-02-validation := bib:validate-siglum($siglum-02)
@@ -172,6 +185,19 @@ let $siglum-81-validation := bib:validate-siglum($siglum-81)
 let $siglum-82-validation := bib:validate-siglum($siglum-82)
 let $siglum-83-validation := bib:validate-siglum($siglum-83)
 let $siglum-84-validation := bib:validate-siglum($siglum-84)
+let $siglum-85-validation := bib:validate-siglum($siglum-85)
+let $siglum-86-validation := bib:validate-siglum($siglum-86)
+let $siglum-87-validation := bib:validate-siglum($siglum-87)
+let $siglum-88-validation := bib:validate-siglum($siglum-88)
+let $siglum-89-validation := bib:validate-siglum($siglum-89)
+let $siglum-90-validation := bib:validate-siglum($siglum-90)
+let $siglum-91-validation := bib:validate-siglum($siglum-91)
+let $siglum-92-validation := bib:validate-siglum($siglum-92)
+let $siglum-93-validation := bib:validate-siglum($siglum-93)
+let $siglum-94-validation := bib:validate-siglum($siglum-94)
+let $siglum-95-validation := bib:validate-siglum($siglum-95)
+let $siglum-96-validation := bib:validate-siglum($siglum-96)
+let $siglum-97-validation := bib:validate-siglum($siglum-97)
 
 return (
     test:assert-true($siglum-01-validation, 'Wrong validation verification for a siglum ' || $siglum-01),
@@ -257,5 +283,18 @@ return (
     test:assert-false($siglum-81-validation, 'Wrong validation verification for a siglum ' || $siglum-81),
     test:assert-true($siglum-82-validation, 'Wrong validation verification for a siglum ' || $siglum-82),
     test:assert-true($siglum-83-validation, 'Wrong validation verification for a siglum ' || $siglum-83),
-    test:assert-true($siglum-84-validation, 'Wrong validation verification for a siglum ' || $siglum-84)
+    test:assert-true($siglum-84-validation, 'Wrong validation verification for a siglum ' || $siglum-84),
+    test:assert-true($siglum-85-validation, 'Wrong validation verification for a siglum ' || $siglum-85),
+    test:assert-true($siglum-86-validation, 'Wrong validation verification for a siglum ' || $siglum-86),
+    test:assert-true($siglum-87-validation, 'Wrong validation verification for a siglum ' || $siglum-87),
+    test:assert-true($siglum-88-validation, 'Wrong validation verification for a siglum ' || $siglum-88),
+    test:assert-true($siglum-89-validation, 'Wrong validation verification for a siglum ' || $siglum-89),
+    test:assert-true($siglum-90-validation, 'Wrong validation verification for a siglum ' || $siglum-90),
+    test:assert-true($siglum-91-validation, 'Wrong validation verification for a siglum ' || $siglum-91),
+    test:assert-true($siglum-92-validation, 'Wrong validation verification for a siglum ' || $siglum-92),
+    test:assert-true($siglum-93-validation, 'Wrong validation verification for a siglum ' || $siglum-93),
+    test:assert-true($siglum-94-validation, 'Wrong validation verification for a siglum ' || $siglum-94),
+    test:assert-true($siglum-95-validation, 'Wrong validation verification for a siglum ' || $siglum-95),
+    test:assert-true($siglum-96-validation, 'Wrong validation verification for a siglum ' || $siglum-96),
+    test:assert-true($siglum-97-validation, 'Wrong validation verification for a siglum ' || $siglum-97)
 )

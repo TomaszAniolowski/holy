@@ -10,7 +10,7 @@
   "batchSize": 4,
   "threadCount": 16,
   "options": {
-    "sourceQuery": "cts.andQuery([cts.collectionQuery(['holy-data','chapter','latest']), cts.elementWordQuery(fn.QName(\"http://holy.arch.com/data/chapter\", \"number\"), \"1\")])",
+    "sourceQuery": "cts.andQuery([cts.collectionQuery(['holy-data','chapter','latest']), cts.elementWordQuery(fn.QName(\"http://holy.arch.com/holy-entities/chapter\", \"number\"), \"1\")])",
     "sourceDatabase": "holy-FINAL",
     "targetDatabase": "holy-FINAL",
     "outputFormat": "xml",
