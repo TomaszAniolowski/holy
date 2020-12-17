@@ -1,0 +1,29 @@
+{
+  "tome": "Rdz",
+  "testament": "Old Testament",
+  "chapters": [
+    {
+      "number": "1",
+      "verses": [
+        {
+          "number": "1",
+          "content": {
+            "I": "Na początku Bóg stworzył niebo i ziemię."
+          }
+        },
+        {
+          "number": "3",
+          "content": {
+            "I": "Bóg rzekł: „Niech się stanie światłość”. I stała się światłość."
+          }
+        },
+        {
+          "number": "4",
+          "content": {
+            "I": "I widział Bóg, że światłość jest dobra. Oddzielił więc światłość od ciemności."
+          }
+        }
+      ]
+    }
+  ]
+}

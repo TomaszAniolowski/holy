@@ -19,3 +19,5 @@ declare variable $hhc:STAGING-DB-ID as xs:unsignedLong := xdmp:database($hhc:STA
 declare variable $hhc:JOB-DB-ID as xs:unsignedLong := xdmp:database($hhc:JOB-DB-NAME);
 declare variable $hhc:MODULES-DB-ID as xs:unsignedLong := xdmp:database($hhc:MODULES-DB-NAME);
 declare variable $hhc:TEST-DB-ID as xs:unsignedLong := xdmp:database($hhc:TEST-DB-NAME);
+
+declare variable $hhc:RESOURCES-GET-VERSES as xs:string := 'get-verses';

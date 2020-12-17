@@ -41,3 +41,17 @@ declare function xqy3:clear-content(
             return xdmp:set($content, $replaced-content)
     return $content
 };
+
+(:~
+ : Splits verse number into digit part and letter part (e.g. '1a' => ('1', 'a'))
+ :
+ : @param $verse-num - the verse number
+ :
+ : @return the sequence storing verse digit and verse letter
+ :)
+declare function xqy3:split-verse-num(
+        $verse-num as xs:string
+) as xs:string*
+{
+    fn:analyze-string($verse-num, '\D')/child::node()/xs:string(.)
+};
