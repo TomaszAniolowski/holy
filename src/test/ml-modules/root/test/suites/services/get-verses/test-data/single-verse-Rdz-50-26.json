@@ -1,0 +1,17 @@
+{
+  "tome": "Rdz",
+  "testament": "Old Testament",
+  "chapters": [
+    {
+      "number": "50",
+      "verses": [
+        {
+          "number": "26",
+          "content": {
+            "I": "Józef umarł, mając sto dziesięć lat. Zabalsamowano go i złożono do sarkofagu w Egipcie."
+          }
+        }
+      ]
+    }
+  ]
+}

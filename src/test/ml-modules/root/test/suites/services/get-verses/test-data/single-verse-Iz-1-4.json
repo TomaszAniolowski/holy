@@ -1,0 +1,23 @@
+{
+  "tome": "Iz",
+  "testament": "Old Testament",
+  "chapters": [
+    {
+      "number": "1",
+      "verses": [
+        {
+          "number": "4",
+          "content": {
+            "I": "Biada narodowi grzesznemu,",
+            "II": "ludowi obciążonemu winą,",
+            "III": "potomstwu złoczyńców",
+            "IV": "i synom wyrodnym!",
+            "V": "Opuścili Pana,",
+            "VI": "wzgardzili Świętym Izraela,",
+            "VII": "odwrócili się od Niego."
+          }
+        }
+      ]
+    }
+  ]
+}

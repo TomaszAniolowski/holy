@@ -1,0 +1,423 @@
+{
+  "tome": "Rdz",
+  "testament": "Old Testament",
+  "chapters": [
+    {
+      "number": "1",
+      "verses": [
+        {
+          "number": "1",
+          "content": {
+            "I": "Na początku Bóg stworzył niebo i ziemię."
+          }
+        },
+        {
+          "number": "2",
+          "content": {
+            "I": "A ziemia była bezładną pustką. Ciemność zalegała nad bezmiarem wód, a duch Boży unosił się nad wodami."
+          }
+        },
+        {
+          "number": "3",
+          "content": {
+            "I": "Bóg rzekł: „Niech się stanie światłość”. I stała się światłość."
+          }
+        },
+        {
+          "number": "4",
+          "content": {
+            "I": "I widział Bóg, że światłość jest dobra. Oddzielił więc światłość od ciemności."
+          }
+        },
+        {
+          "number": "5",
+          "content": {
+            "I": "I nazwał Bóg światłość dniem, a ciemność – nocą. Zapadł wieczór i zaświtał poranek dnia pierwszego."
+          }
+        },
+        {
+          "number": "6",
+          "content": {
+            "I": "I rzekł Bóg: „Niech się stanie sklepienie wśród wód i niech oddzieli jedne wody od drugich”."
+          }
+        },
+        {
+          "number": "7",
+          "content": {
+            "I": "Uczynił więc Bóg to sklepienie i oddzielił wody pod sklepieniem od wód, które były nad nim. I tak się stało."
+          }
+        },
+        {
+          "number": "8",
+          "content": {
+            "I": "I nazwał Bóg sklepienie niebem. Zapadł wieczór i zaświtał poranek dnia drugiego."
+          }
+        },
+        {
+          "number": "9",
+          "content": {
+            "I": "I rzekł Bóg: „Niech się zbierze woda pod sklepieniem na jedno miejsce i niech się odsłoni sucha powierzchnia”. I tak się stało."
+          }
+        },
+        {
+          "number": "10",
+          "content": {
+            "I": "I nazwał Bóg suchą powierzchnię lądem, a zbiorowisko wody – morzem. I widział Bóg, że było to dobre."
+          }
+        },
+        {
+          "number": "11",
+          "content": {
+            "I": "I rzekł Bóg: „Niech ziemia napełni się zielonymi roślinami rozsiewającymi nasiona oraz różnymi gatunkami drzew, które rodzą owoce pełne nasion”. I tak się stało."
+          }
+        },
+        {
+          "number": "12",
+          "content": {
+            "I": "Ziemia wydała różne rodzaje zielonych roślin rozsiewających nasiona oraz różne gatunki drzew, które rodzą owoce pełne nasion. I widział Bóg, że było to dobre."
+          }
+        },
+        {
+          "number": "13",
+          "content": {
+            "I": "Zapadł wieczór i zaświtał poranek dnia trzeciego."
+          }
+        },
+        {
+          "number": "14",
+          "content": {
+            "I": "I rzekł Bóg: „Niech się staną światła na sklepieniu niebieskim, by oddzielały dzień od nocy i wyznaczały święta, dni i lata."
+          }
+        },
+        {
+          "number": "15",
+          "content": {
+            "I": "Niech jaśnieją na sklepieniu niebieskim i świecą nad ziemią”. I tak się stało."
+          }
+        },
+        {
+          "number": "16",
+          "content": {
+            "I": "I uczynił Bóg dwa wielkie światła: światło większe, aby rządziło dniem, i światło mniejsze, aby rządziło nocą, oraz gwiazdy."
+          }
+        },
+        {
+          "number": "17",
+          "content": {
+            "I": "Umieścił je Bóg na sklepieniu niebieskim, by świeciły nad ziemią,"
+          }
+        },
+        {
+          "number": "18",
+          "content": {
+            "I": "by rządziły dniem i nocą i oddzielały światło od ciemności. I widział Bóg, że było to dobre."
+          }
+        },
+        {
+          "number": "19",
+          "content": {
+            "I": "Zapadł wieczór i zaświtał poranek dnia czwartego."
+          }
+        },
+        {
+          "number": "20",
+          "content": {
+            "I": "I rzekł Bóg: „Niech się zaroją wody od istot żyjących, a ptactwo niech lata nad ziemią, pod sklepieniem niebieskim”."
+          }
+        },
+        {
+          "number": "21",
+          "content": {
+            "I": "I stworzył Bóg wielkie potwory morskie i wszelkie pływające istoty żywe, których pełno było w wodach, i wszelkie latające ptactwo różnego rodzaju."
+          }
+        },
+        {
+          "number": "22",
+          "content": {
+            "I": "Pobłogosławił je Bóg tymi słowami: „Bądźcie płodne, mnóżcie się i zapełniajcie wody morskie. Ptactwo zaś niech się mnoży na ziemi”."
+          }
+        },
+        {
+          "number": "23",
+          "content": {
+            "I": "Zapadł wieczór i zaświtał poranek dnia piątego."
+          }
+        },
+        {
+          "number": "24",
+          "content": {
+            "I": "I rzekł Bóg: „Niech ziemia zrodzi różne żywe istoty: bydło, zwierzęta pełzające i polne”. I tak się stało."
+          }
+        },
+        {
+          "number": "25",
+          "content": {
+            "I": "I Bóg uczynił różne polne zwierzęta, wszelkie bydło i zwierzęta pełzające. I widział Bóg, że było to dobre."
+          }
+        },
+        {
+          "number": "26",
+          "content": {
+            "I": "I rzekł Bóg: „Uczyńmy ludzi na Nasz obraz, podobnych do Nas. Niech panują nad rybami morskimi, nad ptactwem powietrznym, nad bydłem, nad całą ziemią i nad wszelkimi zwierzętami pełzającymi po ziemi”."
+          }
+        },
+        {
+          "number": "27",
+          "content": {
+            "I": "I stworzył Bóg ludzi na swój obraz: na obraz Boży ich stworzył. Stworzył ich jako mężczyznę i kobietę."
+          }
+        },
+        {
+          "number": "28",
+          "content": {
+            "I": "I błogosławił im, mówiąc: „Bądźcie płodni, mnóżcie się i zaludniajcie ziemię oraz czyńcie ją sobie poddaną. Panujcie nad rybami morskimi, nad ptactwem powietrznym i nad wszelką istotą poruszającą się po ziemi”."
+          }
+        },
+        {
+          "number": "29",
+          "content": {
+            "I": "I rzekł Bóg: „Oto dałem wam wszelkie rośliny na całej ziemi, wydające nasienie, i wszelkie drzewa owocowe, zawierające nasienie. Będą one dla was pokarmem."
+          }
+        },
+        {
+          "number": "30",
+          "content": {
+            "I": "A dla wszelkiego zwierzęcia polnego i wszelkiego ptactwa powietrznego, i dla wszystkiego, co się porusza po ziemi i ma w sobie życie, daję na pokarm wszelkie rośliny zielone”. I tak się stało."
+          }
+        },
+        {
+          "number": "31",
+          "content": {
+            "I": "I widział Bóg, że wszystko, co stworzył, było bardzo dobre. Zapadł wieczór i zaświtał poranek dnia szóstego."
+          }
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "verses": [
+        {
+          "number": "5",
+          "content": {
+            "I": "Ale Bóg wie, że gdy zjecie ten owoc, otworzą się wam oczy i staniecie się jak Bóg: poznacie dobro i zło”."
+          }
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "verses": [
+        {
+          "number": "6",
+          "content": {
+            "I": "Set miał sto pięć lat, gdy spłodził Enosza."
+          }
+        },
+        {
+          "number": "7",
+          "content": {
+            "I": "Po urodzeniu się Enosza Set żył jeszcze osiemset siedem lat i miał synów i córki."
+          }
+        },
+        {
+          "number": "8",
+          "content": {
+            "I": "Przeżył więc Set dziewięćset dwanaście lat i wtedy umarł."
+          }
+        },
+        {
+          "number": "9",
+          "content": {
+            "I": "Gdy Enosz miał dziewięćdziesiąt lat, spłodził Kenana."
+          }
+        },
+        {
+          "number": "10",
+          "content": {
+            "I": "Po urodzeniu się Kenana Enosz żył jeszcze osiemset piętnaście lat i miał synów i córki."
+          }
+        }
+      ]
+    },
+    {
+      "number": "8",
+      "verses": [
+        {
+          "number": "1",
+          "content": {
+            "I": "Pamiętał jednak Bóg o Noem i o wszystkich żywych istotach, o wszelkim bydle, które było z nim w arce. Posłał więc Bóg wiatr na ziemię i wody zaczęły opadać."
+          }
+        },
+        {
+          "number": "2",
+          "content": {
+            "I": "Źródła otchłani i zawory nieba zamknęły się, a deszcz z nieba przestał padać."
+          }
+        },
+        {
+          "number": "3",
+          "content": {
+            "I": "Woda stopniowo ustępowała z ziemi, a po stu pięćdziesięciu dniach ustąpiła zupełnie."
+          }
+        },
+        {
+          "number": "4",
+          "content": {
+            "I": "W siedemnastym dniu siódmego miesiąca arka spoczęła na górze Ararat."
+          }
+        },
+        {
+          "number": "5",
+          "content": {
+            "I": "Woda obniżała się coraz bardziej aż do dziesiątego miesiąca. W pierwszym dniu dziesiątego miesiąca ukazały się szczyty gór."
+          }
+        },
+        {
+          "number": "6",
+          "content": {
+            "I": "Po czterdziestu dniach Noe otworzył w arce okno, które zrobił,"
+          }
+        },
+        {
+          "number": "7",
+          "content": {
+            "I": "i wypuścił kruka. Wylatywał on i wracał, aż wyschła woda na ziemi."
+          }
+        },
+        {
+          "number": "8",
+          "content": {
+            "I": "Potem wypuścił gołębicę, aby zobaczyć, czy woda ustąpiła z powierzchni ziemi."
+          }
+        },
+        {
+          "number": "9",
+          "content": {
+            "I": "Gołębica nie znalazła miejsca, gdzie mogłaby spocząć, gdyż woda była jeszcze na całej ziemi. Wyciągnął więc Noe rękę, chwycił gołębicę i wziął do siebie do arki."
+          }
+        },
+        {
+          "number": "10",
+          "content": {
+            "I": "Odczekał jeszcze siedem dni i ponownie ją wypuścił."
+          }
+        },
+        {
+          "number": "11",
+          "content": {
+            "I": "Gołębica powróciła do niego pod wieczór, mając w dziobie świeżą gałązkę oliwną. Poznał więc Noe, że woda odpłynęła z ziemi."
+          }
+        },
+        {
+          "number": "12",
+          "content": {
+            "I": "Odczekał znów siedem dni i posłał gołębicę, ale już do niego nie powróciła."
+          }
+        },
+        {
+          "number": "13",
+          "content": {
+            "I": "W sześćset pierwszym roku, w pierwszym dniu pierwszego miesiąca wyschła woda na ziemi. Wtedy podniósł Noe dach arki i zobaczył, że ziemia już obeschła."
+          }
+        },
+        {
+          "number": "14",
+          "content": {
+            "I": "W siedemnastym dniu drugiego miesiąca ziemia była zupełnie sucha."
+          }
+        },
+        {
+          "number": "15",
+          "content": {
+            "I": "Przemówił wtedy Bóg do Noego:"
+          }
+        },
+        {
+          "number": "16",
+          "content": {
+            "I": "„Wyjdź z arki wraz z żoną, z twoimi synami i synowymi."
+          }
+        },
+        {
+          "number": "17",
+          "content": {
+            "I": "Wyprowadź z sobą wszelkie zwierzęta, wszystkie istoty żyjące: ptaki, bydło i wszystko, co pełza po ziemi. Niech się zaroją na ziemi, niech będą płodne i niech się rozmnażają”."
+          }
+        },
+        {
+          "number": "18",
+          "content": {
+            "I": "Wyszedł więc Noe z synami, z żoną i swoimi synowymi."
+          }
+        },
+        {
+          "number": "19",
+          "content": {
+            "I": "Wyszły także z arki wszystkie zwierzęta – według gatunków: bydło, ptaki i to, co pełza po ziemi."
+          }
+        },
+        {
+          "number": "20",
+          "content": {
+            "I": "Potem Noe zbudował ołtarz dla Pana i złożył na nim całopalną ofiarę z czystych zwierząt i z istot latających."
+          }
+        },
+        {
+          "number": "21",
+          "content": {
+            "I": "Gdy Pan poczuł miłą woń, postanowił: „Nie będę już więcej złorzeczył ziemi z powodu człowieka, gdyż skłonności człowieka są złe od młodości. Dlatego nie zniszczę więcej wszystkich żywych istot, jak to uczyniłem."
+          }
+        },
+        {
+          "number": "22",
+          "content": {
+            "I": "Jak długo istnieje ziemia,",
+            "II": "nie ustanie siew i żniwo, zimno i upał,",
+            "III": "lato i zima, dzień i noc”."
+          }
+        }
+      ]
+    },
+    {
+      "number": "10",
+      "verses": [
+        {
+          "number": "2",
+          "content": {
+            "I": "Synowie Jafeta: Gomer, Magog, Madaj, Jawan, Tubal, Meszek i Tiras."
+          }
+        },
+        {
+          "number": "5",
+          "content": {
+            "I": "Od nich wywodzą się ludy wyspiarskie. Są to synowie Jafeta, będący w różnych krajach, odpowiednio do ich języków i rodów, pośród swoich ludów."
+          }
+        },
+        {
+          "number": "8",
+          "content": {
+            "I": "Kusz spłodził także Nimroda. Był on pierwszym mocarzem na ziemi"
+          }
+        },
+        {
+          "number": "9",
+          "content": {
+            "I": "i zdolnym myśliwym. Dlatego mówi się: „Myśliwy, uzdolniony przez PANA jak Nimrod”."
+          }
+        },
+        {
+          "number": "10",
+          "content": {
+            "I": "Jego władza rozciągała się początkowo na Babel, Erek, Akkad i Kalne, w kraju Szinear."
+          }
+        },
+        {
+          "number": "11",
+          "content": {
+            "I": "Z tego kraju poszedł on do Assuru. Zbudował tam Niniwę, Rechobot-Ir, Kalach i"
+          }
+        }
+      ]
+    }
+  ]
+}

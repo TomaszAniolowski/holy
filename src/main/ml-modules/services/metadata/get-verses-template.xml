@@ -1,0 +1,11 @@
+<metadata>
+    <title>get-verses</title>
+    <description>
+        <div>
+            This endpoint will allow the user to get verses content from the siglum provided.
+        </div>
+    </description>
+    <method name="GET">
+        <param name="siglum"/>
+    </method>
+</metadata>
