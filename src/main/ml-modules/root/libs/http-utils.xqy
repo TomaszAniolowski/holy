@@ -7,7 +7,7 @@ module namespace http-utils = "http://marklogic.com/holy/ml-modules/http-utils";
 
 declare namespace http = 'xdmp:http';
 
-declare variable $DEFAULT-OPTIONS as element(http:options) :=
+declare private variable $DEFAULT-OPTIONS as element(http:options) :=
     <options xmlns="xdmp:http">
         <authentication method="basic">
             <username>admin</username>
