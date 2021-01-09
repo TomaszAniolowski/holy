@@ -91,12 +91,14 @@ declare function custom:extract-verses
 {
     let $chapter := flow:make-reference-object($fc:CHAPTER-ENTITY, $chapter-id, $fc:CHAPTER-NS-PREFIX, $fc:CHAPTER-NS-URI)
 
+    let $current-cardinal-number := 0
     let $verse-sub-numbers := map:map()
     for $verse in $source-doc/x:body/x:span[@class = 'werset']
     let $number := $verse/preceding-sibling::x:sup[@class = 'werset-number'][1]/xs:string(.) => fn:normalize-space()
     let $number := custom:clear-exceptional-verse-number($tome-siglum, $chapter-num, $number)
     let $sub-number := fn:count(map:get($verse-sub-numbers, $number)) + 1
     let $sub-number := flow:get-roman-numeral-from-int($sub-number)
+    let $_ := if ($sub-number eq 'I') then xdmp:set($current-cardinal-number, ($current-cardinal-number + 1)) else ()
     let $_ := map:put($verse-sub-numbers, $number, (map:get($verse-sub-numbers, $number), $sub-number))
     let $verse-id := fn:concat($testament, $tome-siglum, $chapter-num, $number, $sub-number) => flow:generate-unique-id()
 
@@ -123,6 +125,7 @@ declare function custom:extract-verses
     => map:with($fc:DHF-NS, $fc:VERSE-NS-URI)
     => map:with($fc:DHF-NS-PREFIX, $fc:VERSE-NS-PREFIX)
     => map:with($fc:ID, $verse-id)
+    => map:with($fc:CARD-NUMBER, xs:string($current-cardinal-number))
     => map:with($fc:NUMBER, $number)
     => map:with($fc:SUB-NUMBER, $sub-number)
     => map:with($fc:CHAPTER, $chapter)
