@@ -85,6 +85,7 @@ return (
 
     (: VERSE 4 III TESTS :)
     test:assert-equal($expected-verse-4-III-id, map:get($actual-verse-4-III, $fc:ID), 'Wrong verse id (Iz 10,4[III]).'),
+    test:assert-equal('4', map:get($actual-verse-4-III, $fc:CARD-NUMBER), 'Wrong verse card-number (Iz 10,4[III]).'),
     test:assert-equal('4', map:get($actual-verse-4-III, $fc:NUMBER), 'Wrong verse number (Iz 10,4[III]).'),
     test:assert-equal('III', map:get($actual-verse-4-III, $fc:SUB-NUMBER), 'Wrong verse sub number (Iz 10,4[III]).'),
     test:assert-equal('Mimo to Jego gniew nie ustaje', map:get($actual-verse-4-III, $fc:CONTENT), 'Wrong verse content (Iz 10,4[III])'),
@@ -94,6 +95,7 @@ return (
 
     (: VERSE 8 II TESTS :)
     test:assert-equal($expected-verse-8-II-id, map:get($actual-verse-8-II, $fc:ID), 'Wrong verse id (Iz 10,8[II]).'),
+    test:assert-equal('8', map:get($actual-verse-8-II, $fc:CARD-NUMBER), 'Wrong verse card-number (Iz 10,8[II]).'),
     test:assert-equal('8', map:get($actual-verse-8-II, $fc:NUMBER), 'Wrong verse number (Iz 10,8[II]).'),
     test:assert-equal('II', map:get($actual-verse-8-II, $fc:SUB-NUMBER), 'Wrong verse content (Iz 10,8[II])'),
     test:assert-equal('„Czyż moi wodzowie nie są równi królom?', map:get($actual-verse-8-II, $fc:CONTENT), 'Wrong verse content (Iz 10,8[II])'),
@@ -102,6 +104,7 @@ return (
 
     (: VERSE 9 I TESTS :)
     test:assert-equal($expected-verse-9-I-id, map:get($actual-verse-9-I, $fc:ID), 'Wrong verse id (Iz 10,9[I]).'),
+    test:assert-equal('9', map:get($actual-verse-9-I, $fc:CARD-NUMBER), 'Wrong verse card-number (Iz 10,9[I]).'),
     test:assert-equal('9', map:get($actual-verse-9-I, $fc:NUMBER), 'Wrong verse number (Iz 10,9[I]).'),
     test:assert-equal('I', map:get($actual-verse-9-I, $fc:SUB-NUMBER), 'Wrong verse sub number (Iz 10,9[I]).'),
     test:assert-equal('Czyż Kalno nie jest jak Karkemisz,', map:get($actual-verse-9-I, $fc:CONTENT), 'Wrong verse content (Iz 10,9[I])'),
@@ -112,6 +115,7 @@ return (
 
     (: VERSE 9 III TESTS :)
     test:assert-equal($expected-verse-9-III-id, map:get($actual-verse-9-III, $fc:ID), 'Wrong verse id (Iz 10,9[III]).'),
+    test:assert-equal('9', map:get($actual-verse-9-III, $fc:CARD-NUMBER), 'Wrong verse card-number (Iz 10,9[III]).'),
     test:assert-equal('9', map:get($actual-verse-9-III, $fc:NUMBER), 'Wrong verse number (Iz 10,9[III]).'),
     test:assert-equal('III', map:get($actual-verse-9-III, $fc:SUB-NUMBER), 'Wrong verse sub number (Iz 10,9[III]).'),
     test:assert-equal('a Samaria do Damaszku?', map:get($actual-verse-9-III, $fc:CONTENT), 'Wrong verse content (Iz 10,9[III])'),
