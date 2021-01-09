@@ -5,6 +5,7 @@ module namespace custom = "http://marklogic.com/data-hub/custom";
 import module namespace json = "http://marklogic.com/xdmp/json" at "/MarkLogic/json/json.xqy";
 import module namespace dhf = "http://marklogic.com/dhf" at "/data-hub/4/dhf.xqy";
 import module namespace es = "http://marklogic.com/entity-services" at "/MarkLogic/entity-services/entity-services.xqy";
+import module namespace bc = "http://marklogic.com/holy/ml-modules/bible-constants" at "/constants/bible-constants.xqy";
 import module namespace fc = "http://marklogic.com/holy/ml-modules/flow-constants" at "/constants/flow-constants.xqy";
 import module namespace bib = "http://marklogic.com/holy/ml-modules/bible-utils" at "/libs/bible-utils.xqy";
 import module namespace flow = "http://marklogic.com/holy/ml-modules/flow-utils" at "/libs/flow-utils.xqy";
@@ -90,11 +91,14 @@ declare function custom:extract-verses
 {
     let $chapter := flow:make-reference-object($fc:CHAPTER-ENTITY, $chapter-id, $fc:CHAPTER-NS-PREFIX, $fc:CHAPTER-NS-URI)
 
+    let $current-cardinal-number := 0
     let $verse-sub-numbers := map:map()
     for $verse in $source-doc/x:body/x:span[@class = 'werset']
-    let $number := $verse/preceding-sibling::x:sup[@class = 'werset-number'][1]/xs:string(.)
+    let $number := $verse/preceding-sibling::x:sup[@class = 'werset-number'][1]/xs:string(.) => fn:normalize-space()
+    let $number := custom:clear-exceptional-verse-number($tome-siglum, $chapter-num, $number)
     let $sub-number := fn:count(map:get($verse-sub-numbers, $number)) + 1
     let $sub-number := flow:get-roman-numeral-from-int($sub-number)
+    let $_ := if ($sub-number eq 'I') then xdmp:set($current-cardinal-number, ($current-cardinal-number + 1)) else ()
     let $_ := map:put($verse-sub-numbers, $number, (map:get($verse-sub-numbers, $number), $sub-number))
     let $verse-id := fn:concat($testament, $tome-siglum, $chapter-num, $number, $sub-number) => flow:generate-unique-id()
 
@@ -112,7 +116,7 @@ declare function custom:extract-verses
         for $dictionary-id in $dictionary-origin-ids
         let $dictionary-value := $dictionary-nodes[@id = $dictionary-id][1]/xs:string(.)
         return $dictionary-value => flow:clear-content() => flow:generate-unique-id()
-    let $definitions :=  json:to-array($definition-holy-ids ! flow:make-reference-object($fc:SUPPLEMENT-ENTITY, ., $fc:SUPPLEMENT-NS-PREFIX, $fc:SUPPLEMENT-NS-URI))
+    let $definitions := json:to-array($definition-holy-ids ! flow:make-reference-object($fc:SUPPLEMENT-ENTITY, ., $fc:SUPPLEMENT-NS-PREFIX, $fc:SUPPLEMENT-NS-URI))
     let $dictionary := json:to-array($dictionary-holy-ids ! flow:make-reference-object($fc:SUPPLEMENT-ENTITY, ., $fc:SUPPLEMENT-NS-PREFIX, $fc:SUPPLEMENT-NS-URI))
 
     let $model := json:object()
@@ -121,6 +125,7 @@ declare function custom:extract-verses
     => map:with($fc:DHF-NS, $fc:VERSE-NS-URI)
     => map:with($fc:DHF-NS-PREFIX, $fc:VERSE-NS-PREFIX)
     => map:with($fc:ID, $verse-id)
+    => map:with($fc:CARD-NUMBER, xs:string($current-cardinal-number))
     => map:with($fc:NUMBER, $number)
     => map:with($fc:SUB-NUMBER, $sub-number)
     => map:with($fc:CHAPTER, $chapter)
@@ -129,4 +134,32 @@ declare function custom:extract-verses
     => es:optional($fc:DICTIONARY, $dictionary)
 
     return $model
+};
+
+(:~
+ : Clears exceptional mistakes in source data verse numbers.
+ :
+ : Here is the list of exceptional mistakes:
+ : - 1Sm 17,47I
+ : - Ps 75,11„
+ : - Łk 24,12 (with space at the end)
+ :
+ : @param $tome-siglum   - a tome siglum
+ : @param $chapter-num   - a chapter number
+ : @param $verse-number  - a verse number
+ :
+ : @return a clean verse number
+ :)
+declare private function custom:clear-exceptional-verse-number
+(
+        $tome-siglum as xs:string,
+        $chapter-num as xs:string,
+        $verse-number as xs:string
+)
+{
+    if ($tome-siglum eq $bc:SIGLUM-SM-1 and $chapter-num eq '17' and $verse-number eq '47I')
+    then '47'
+    else if ($tome-siglum = $bc:SIGLUM-PS and $chapter-num eq '75' and $verse-number eq '11„')
+    then '11'
+    else $verse-number
 };

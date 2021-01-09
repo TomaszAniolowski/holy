@@ -64,10 +64,15 @@
           "collation": "http://marklogic.com/collation/",
           "description": "The unique verse identifier being md5 created from a concatenation of a testament reference, a tome reference, a chapter number and a verse number values."
         },
-        "number": {
+        "card-number": {
           "datatype": "string",
           "collation": "http://marklogic.com/collation/",
           "description": "The verse cardinal number in context of a chapter."
+        },
+        "number": {
+          "datatype": "string",
+          "collation": "http://marklogic.com/collation/",
+          "description": "The verse siglum."
         },
         "sub-number": {
           "datatype": "string",

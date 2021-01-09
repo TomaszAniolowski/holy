@@ -74,6 +74,7 @@ declare variable $fc:TYPE as xs:string := 'type';
 declare variable $fc:NAME as xs:string := 'name';
 declare variable $fc:TITLE as xs:string := 'title';
 declare variable $fc:NUMBER as xs:string := 'number';
+declare variable $fc:CARD-NUMBER as xs:string := 'card-number';
 declare variable $fc:SUB-NUMBER as xs:string := 'sub-number';
 declare variable $fc:CONTENT as xs:string := 'content';
 declare variable $fc:DEFINIENDUM as xs:string := 'definiendum';
