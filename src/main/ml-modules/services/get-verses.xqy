@@ -10,6 +10,8 @@ declare namespace es = 'http://marklogic.com/entity-services';
 declare namespace ch = 'http://holy.arch.com/holy-entities/chapter';
 declare namespace v = 'http://holy.arch.com/holy-entities/verse';
 
+declare private variable $VERSE-REF-SEP as xs:string := '-';
+
 declare function verses:get(
         $context as map:map,
         $params as map:map
@@ -47,71 +49,33 @@ declare private function verses:response(
             cts:search(/es:envelope/es:instance/ch:Chapter,
                     cts:and-query((
                         cts:directory-query($fc:CHAPTER-BASE-URI || $tome || '/', 'infinity'),
-                        cts:element-value-query(xs:QName('ch:testament'), $testament),
                         cts:element-value-query(xs:QName('ch:tome'), $tome),
                         cts:element-value-query(xs:QName('ch:number'), $chapter-numbers)
                     )),
                     'score-zero',
                     0.0
             )
-        let $chapter-numbers-found := $chapters/ch:number/xs:string(.)
-        let $chapter-numbers-not-found := if (fn:empty($chapter-numbers-found)) then $chapter-numbers else $chapter-numbers[fn:not(. = $chapter-numbers-found)]
 
-        return if (fn:exists($chapter-numbers-not-found))
-        then verses:chapters-not-found($context, $testament, $tome, $chapter-numbers-not-found)
-        else
-            let $chapters-map := map:new()
-            let $verses-not-found-map := map:new()
+        let $chapters-map := map:new()
+        let $_ :=
+            for $chapter-number in $chapter-numbers
+            let $verse-numbers := map:get($interpretation-chapters, $chapter-number)
+            let $verse-numbers := if ($verse-numbers eq '_all') then fn:distinct-values($chapters[ch:number eq $chapter-number]/ch:verses/v:Verse/v:number) else $verse-numbers
+            let $verses-map := map:new()
             let $_ :=
-                for $chapter-number in $chapter-numbers
-                let $verse-numbers := map:get($interpretation-chapters, $chapter-number)
-                let $verse-numbers := if ($verse-numbers eq '_all') then fn:distinct-values($chapters[ch:number eq $chapter-number]/ch:verses/v:Verse/v:number) else $verse-numbers
-                let $verses-map := map:new()
+                for $verse-number in $verse-numbers
+                let $verse-ref := ()
+                let $sub-verses-map := map:new()
                 let $_ :=
-                    for $verse-number in $verse-numbers
-                    let $sub-verses-map := map:new()
-                    let $sub-verses := $chapters[ch:number eq $chapter-number]/ch:verses/v:Verse[v:number eq $verse-number]
-                    return if (fn:empty($sub-verses))
-                    then map:put($verses-not-found-map, $chapter-number, (map:get($verses-not-found-map, $chapter-number), $verse-number))
-                    else
-                        let $_ :=
-                            for $sub-verse in $sub-verses
-                            let $verse-sub-number := $sub-verse/v:sub-number/xs:string(.)
-                            let $content := $sub-verse/v:content/xs:string(.)
-                            return map:put($sub-verses-map, $verse-sub-number, $content)
-                        return map:put($verses-map, $verse-number, $sub-verses-map)
-                return map:put($chapters-map, $chapter-number, $verses-map)
-            return if (fn:exists(map:keys($verses-not-found-map)))
-            then verses:verses-not-found($context, $testament, $tome, $verses-not-found-map)
-            else verses:complete-response($context, $testament, $tome, $chapters-map)
-};
-
-declare private function verses:chapters-not-found(
-        $context as map:map,
-        $testament as xs:string,
-        $tome as xs:string,
-        $chapters as xs:string*
-) as json:object
-{
-    let $_ := map:put($context, 'output-status', (404, 'Not Found'))
-    let $chapter-objects := $chapters ! verses:chapter-object(., ())
-    return verses:response-object($testament, $tome, $chapter-objects)
-};
-
-declare private function verses:verses-not-found(
-        $context as map:map,
-        $testament as xs:string,
-        $tome as xs:string,
-        $verses-not-found-map as map:map
-) as json:object
-{
-    let $_ := map:put($context, 'output-status', (404, 'Not Found'))
-    let $chapter-objects :=
-        for $chapter-number in map:keys($verses-not-found-map)
-        let $verses := map:get($verses-not-found-map, $chapter-number)
-        let $verse-jsons := $verses ! verses:verse-object(., ())
-        return verses:chapter-object($chapter-number, $verse-jsons)
-    return verses:response-object($testament, $tome, $chapter-objects)
+                    for $sub-verse in $chapters[ch:number eq $chapter-number]/ch:verses/v:Verse[v:number eq $verse-number]
+                    let $card-number := $sub-verse/v:card-number/xs:string(.)
+                    let $_ := if (fn:empty($verse-ref)) then xdmp:set($verse-ref, $card-number || $VERSE-REF-SEP || $verse-number) else ()
+                    let $verse-sub-number := $sub-verse/v:sub-number/xs:string(.)
+                    let $content := $sub-verse/v:content/xs:string(.)
+                    return map:put($sub-verses-map, $verse-sub-number, $content)
+                return map:put($verses-map, $verse-ref, $sub-verses-map)
+            return map:put($chapters-map, $chapter-number, $verses-map)
+        return verses:complete-response($context, $testament, $tome, $chapters-map)
 };
 
 declare private function verses:complete-response(
@@ -127,10 +91,11 @@ declare private function verses:complete-response(
         for $chapter-number in map:keys($chapters-map)
         let $verse-refs := map:get($chapters-map, $chapter-number)
         let $verses :=
-            for $verse-number in map:keys($verse-refs)
-            let $sub-verse-map := map:get($verse-refs, $verse-number)
-            let $verse-order := if (fn:matches($verse-number, '\D')) then xs:int(bib:pull-verse-digit-part($verse-number)) else xs:int($verse-number)
-            order by $verse-order, $verse-number
+            for $verse-ref in map:keys($verse-refs)
+            let $sub-verse-map := map:get($verse-refs, $verse-ref)
+            let $verse-card-num := fn:substring-before($verse-ref, $VERSE-REF-SEP) => xs:int()
+            let $verse-number := fn:substring-after($verse-ref, $VERSE-REF-SEP)
+            order by $verse-card-num
             return verses:verse-object($verse-number, $sub-verse-map)
         let $chapter-card-num := if ($chapter-number eq 'Prolog') then 0 else xs:int($chapter-number)
         order by $chapter-card-num
@@ -156,13 +121,9 @@ declare private function verses:chapter-object(
         $verses as json:object*
 ) as json:object
 {
-    let $verses :=
-        if (fn:empty($verses))
-        then 'Not Found'
-        else json:to-array($verses)
-    return json:object()
+    json:object()
     => map:with('number', $chapter-number)
-    => map:with('verses', $verses)
+    => map:with('verses', json:to-array($verses))
 };
 
 declare private function verses:verse-object(
@@ -171,16 +132,13 @@ declare private function verses:verse-object(
 ) as json:object
 {
     let $content :=
-        if (fn:empty($sub-verse-map))
-        then 'Not Found'
-        else
-            let $verse-content := json:object()
-            let $_ :=
-                for $i in (1 to fn:count(map:keys($sub-verse-map)))
-                let $sub-num := flow:get-roman-numeral-from-int($i)
-                let $content := map:get($sub-verse-map, $sub-num)
-                return map:put($verse-content, $sub-num, $content)
-            return $verse-content
+        let $verse-content := json:object()
+        let $_ :=
+            for $i in (1 to fn:count(map:keys($sub-verse-map)))
+            let $sub-num := flow:get-roman-numeral-from-int($i)
+            let $content := map:get($sub-verse-map, $sub-num)
+            return map:put($verse-content, $sub-num, $content)
+        return $verse-content
     return json:object()
     => map:with('number', $verse-number)
     => map:with('content', $content)
@@ -214,7 +172,10 @@ declare private function verses:invalid-siglum(
         $details as xs:string?
 ) as json:object
 {
-    let $_ := map:put($context, 'output-status', (400, 'Bad Request'))
+    let $_ :=
+        if (fn:contains($details, 'not found'))
+        then map:put($context, 'output-status', (404, 'Not Found'))
+        else map:put($context, 'output-status', (400, 'Bad Request'))
     let $siglum := if (fn:empty($siglum)) then '' else $siglum
     let $message := if (fn:empty($details)) then 'Invalid siglum' else 'Invalid siglum (' || $details || ')'
     return json:object()
