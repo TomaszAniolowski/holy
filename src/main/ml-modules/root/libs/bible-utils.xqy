@@ -9,11 +9,15 @@ xquery version "1.0-ml";
 module namespace bib = "http://marklogic.com/holy/ml-modules/bible-utils";
 
 import module namespace bc = "http://marklogic.com/holy/ml-modules/bible-constants" at "/constants/bible-constants.xqy";
+import module namespace fc = "http://marklogic.com/holy/ml-modules/flow-constants" at "/constants/flow-constants.xqy";
 import module namespace flow = "http://marklogic.com/holy/ml-modules/flow-utils" at "/libs/flow-utils.xqy";
 import module namespace xqy3 = 'http://marklogic.com/holy/ml-modules/xqy-3-utils' at '/libs/xqy-3-utils.xqy';
 
 declare namespace error = "http://marklogic.com/xdmp/error";
 declare namespace bs = "http://marklogic.com/holy/ml-modules/bible-structure";
+declare namespace es = 'http://marklogic.com/entity-services';
+declare namespace ch = 'http://holy.arch.com/holy-entities/chapter';
+declare namespace v = 'http://holy.arch.com/holy-entities/verse';
 
 (:~
  : Retrives name of the testament containing the tome provided.
@@ -123,10 +127,16 @@ declare function bib:interpret-siglum(
         let $chapter-refs :=
             for $chapter-ref in ($siglum-refs ! flow:substring-before-if-contains(., ','))
             return if (fn:contains($chapter-ref, '-') => fn:not())
-            then $chapter-ref
+            then
+                let $_VALIDATE_CH_NUMBER := if (fn:not(bib:check-chapter($tome, $chapter-ref))) then fn:error((), 'Chapter not found [' || $tome || ' ' || $chapter-ref || ']') else ()
+                return $chapter-ref
             else
-                let $from := fn:substring-before($chapter-ref, '-') => xs:int()
-                let $to := fn:substring-after($chapter-ref, '-') => xs:int()
+                let $from := fn:substring-before($chapter-ref, '-')
+                let $to := fn:substring-after($chapter-ref, '-')
+                let $_VALIDATE_CH_NUMBER := if (fn:not(bib:check-chapter($tome, $from))) then fn:error((), 'Chapter not found [' || $tome || ' ' || $from || ']') else ()
+                let $_VALIDATE_CH_NUMBER := if (fn:not(bib:check-chapter($tome, $to))) then fn:error((), 'Chapter not found [' || $tome || ' ' || $to || ']') else ()
+                let $from := if ($from eq 'Prolog') then 0 else xs:int($from)
+                let $to := xs:int($to)
                 let $_VALIDATE_CH_RANGE := if ($from eq $to or $to lt $from) then fn:error((), 'Invalid chapter range') else ()
                 return ($from to $to) ! xs:string(.)
 
@@ -137,9 +147,12 @@ declare function bib:interpret-siglum(
             return if (fn:not(fn:contains($siglum-ref, '-')))
             then map:put($chapters, $siglum-ref, '_all')
             else
-                let $from := fn:substring-before($siglum-ref, '-') => xs:int()
+                let $from := fn:substring-before($siglum-ref, '-')
+                let $from := if ($from eq 'Prolog') then 0 else xs:int($from)
                 let $to := fn:substring-after($siglum-ref, '-') => xs:int()
-                return ($from to $to) ! map:put($chapters, xs:string(.), '_all')
+                return if ($from ne 0)
+                then ($from to $to) ! map:put($chapters, xs:string(.), '_all')
+                else ('Prolog', 1 to $to) ! map:put($chapters, xs:string(.), '_all')
 
         let $_CH_SPECIFIC_VERSES :=
             for $siglum-ref in $siglum-refs[fn:contains(., ',')]
@@ -147,22 +160,49 @@ declare function bib:interpret-siglum(
             let $verse-refs := fn:substring-after($siglum-ref, $chapter || ',') => fn:tokenize('. ')
             for $verse-ref in $verse-refs
             return
-                if (fn:contains($verse-ref, 'n'))
+                if (fn:not(fn:contains($verse-ref, '-')) and fn:contains($verse-ref, 'n'))
                 then
-                    let $from := fn:substring-before($verse-ref, 'n') => xs:int()
-                    let $to := if (fn:contains($verse-ref, 'nn')) then $from + 2 else $from + 1
-                    let $previous-refs := map:get($chapters, $chapter)
-                    let $new-refs := ($from to $to) ! xs:string(.)
-                    return map:put($chapters, $chapter, ($previous-refs, $new-refs))
+                    if ($tome eq $bc:SIGLUM-EST and
+                            ($chapter eq '1' and fn:starts-with($verse-ref, '1n')) or
+                            ($chapter eq '4' and fn:starts-with($verse-ref, '17n')) or
+                            ($chapter eq '8' and fn:starts-with($verse-ref, '12n')))
+                    then
+                        let $num-part := fn:substring-before($verse-ref, 'n')
+                        return if (fn:contains($verse-ref, 'nnn'))
+                        then map:put($chapters, $chapter, (map:get($chapters, $chapter), $num-part || 'n', $num-part || 'o', $num-part || 'p'))
+                        else if (fn:contains($verse-ref, 'nn'))
+                        then map:put($chapters, $chapter, (map:get($chapters, $chapter), $num-part || 'n', $num-part || 'o'))
+                        else map:put($chapters, $chapter, (map:get($chapters, $chapter), $num-part || 'n'))
+                    else
+                        let $from-verse-num := fn:substring-before($verse-ref, 'n')
+                        let $from-verse := bib:find-verse($tome, $chapter, $from-verse-num)
+                        let $_VALIDATE_V_NUMBER := if (fn:empty($from-verse)) then fn:error((), 'Verse not found [' || bib:construct-verse-siglum($tome, $chapter, $from-verse-num) || ']') else ()
+                        let $from-verse-card-num := $from-verse/v:card-number/xs:int(.)
+                        let $to-verse-card-num := if (fn:contains($verse-ref, 'nn')) then $from-verse-card-num + 2 else $from-verse-card-num + 1
+                        let $to-verse := bib:find-verse-by-card-num($tome, $chapter, $to-verse-card-num)
+                        let $_VALIDATE_V_NUMBER := if (fn:empty($to-verse)) then fn:error((), 'Verse not found [' || bib:construct-verse-siglum($tome, $chapter, $verse-ref) || ']') else ()
+                        let $previous-refs := map:get($chapters, $chapter)
+                        let $new-refs := ($from-verse-card-num to $to-verse-card-num) ! bib:find-verse-by-card-num($tome, $chapter, .)/v:number/xs:string(.)
+                        return map:put($chapters, $chapter, ($previous-refs, $new-refs))
                 else if (fn:contains($verse-ref, '-'))
                 then
-                    let $from := fn:substring-before($verse-ref, '-') => xs:int()
-                    let $to := fn:substring-after($verse-ref, '-') => xs:int()
-                    let $_VALIDATE_V_RANGE := if ($from eq $to or $to lt $from) then fn:error((), 'Invalid verse range') else ()
+                    let $from-verse-num := fn:substring-before($verse-ref, '-')
+                    let $to-verse-num := fn:substring-after($verse-ref, '-')
+                    let $_VALIDATE_V_RANGE := if ($from-verse-num eq $to-verse-num) then fn:error((), 'Invalid verse range') else ()
+                    let $from-verse := bib:find-verse($tome, $chapter, $from-verse-num)
+                    let $_VALIDATE_V_NUMBER := if (fn:empty($from-verse)) then fn:error((), 'Verse not found [' || bib:construct-verse-siglum($tome, $chapter, $from-verse-num) || ']') else ()
+                    let $from-verse-card-num := $from-verse/v:card-number/xs:int(.)
+                    let $to-verse := bib:find-verse($tome, $chapter, $to-verse-num)
+                    let $_VALIDATE_V_NUMBER := if (fn:empty($to-verse)) then fn:error((), 'Verse not found [' || bib:construct-verse-siglum($tome, $chapter, $to-verse-num) || ']') else ()
+                    let $to-verse-card-num := $to-verse/v:card-number/xs:int(.)
+                    let $_VALIDATE_V_RANGE := if ($to-verse-card-num lt $from-verse-card-num) then fn:error((), 'Invalid verse range') else ()
                     let $previous-refs := map:get($chapters, $chapter)
-                    let $new-refs := ($from to $to) ! xs:string(.)
+                    let $new-refs := ($from-verse-card-num to $to-verse-card-num) ! bib:find-verse-by-card-num($tome, $chapter, .)/v:number/xs:string(.)
                     return map:put($chapters, $chapter, ($previous-refs, $new-refs))
-                else map:put($chapters, $chapter, (map:get($chapters, $chapter), $verse-ref))
+                else
+                    let $verse := bib:find-verse($tome, $chapter, $verse-ref)
+                    let $_VALIDATE_V_NUMBER := if (fn:empty($verse)) then fn:error((), 'Verse not found [' || bib:construct-verse-siglum($tome, $chapter, $verse-ref) || ']') else ()
+                    return map:put($chapters, $chapter, (map:get($chapters, $chapter), $verse-ref))
 
         let $_VALIDATE_V_OVERLAPPING :=
             for $chapter in map:keys($chapters)
@@ -183,4 +223,94 @@ declare function bib:interpret-siglum(
     } catch ($ex) {
         map:new(map:entry($siglum, $ex/error:message/xs:string(.)))
     }
+};
+
+(:~
+ : Verifies if a chapter exists basis on the tome siglum and chapter number provided.
+ :
+ : @param $tome    - the tome siglum (e.g. 'Jdt')
+ : @param $chapter - the chapter number
+ :
+ : @return the xs:boolean value representing a chapter verification
+ :)
+declare private function bib:check-chapter
+(
+    $tome as xs:string,
+    $chapter as xs:string
+) as xs:boolean
+{
+    fn:doc-available($fc:CHAPTER-BASE-URI || $tome || $fc:URI-SEP || $chapter || '.xml')
+};
+
+(:~
+ : Constructs the verse siglum from parameters provided.
+ :
+ : @param $tome    - the tome siglum (e.g. 'Jdt')
+ : @param $chapter - the chapter number
+ : @param $verse   - the verse number
+ :
+ : @return the verse siglum
+ :)
+declare private function bib:construct-verse-siglum
+(
+        $tome as xs:string,
+        $chapter as xs:string,
+        $verse as xs:string
+) as xs:string
+{
+    $tome || ' ' || $chapter || ','  || $verse
+};
+
+(:~
+ : Finds verse basis on the tome siglum, chapter number and verse number.
+ :
+ : @param $tome    - the tome siglum (e.g. 'Jdt')
+ : @param $chapter - the chapter number
+ : @param $verse   - the verse number
+ :
+ : @return the v:Verse entity if it exists, empty sequence otherwise
+ :)
+declare private function bib:find-verse
+(
+        $tome as xs:string,
+        $chapter as xs:string,
+        $verse as xs:string
+) as element(v:Verse)?
+{
+    cts:search(/es:envelope/es:instance/ch:Chapter/ch:verses/v:Verse,
+            cts:and-query((
+                cts:document-query($fc:CHAPTER-BASE-URI || $tome || '/' || $chapter || '.xml'),
+                cts:element-value-query(xs:QName('v:number'), $verse),
+                cts:element-value-query(xs:QName('v:sub-number'), 'I')
+            )),
+            'score-zero',
+            0.0
+    )
+};
+
+(:~
+ : Finds verse basis on the tome siglum, chapter number and verse cardinal number.
+ :
+ : @param $tome    - the tome siglum (e.g. 'Jdt')
+ : @param $chapter - the chapter number
+ : @param $verse   - the verse cardinal number
+ :
+ : @return the v:Verse entity if it exists, empty sequence otherwise
+ :)
+declare private function bib:find-verse-by-card-num
+(
+        $tome as xs:string,
+        $chapter as xs:string,
+        $verse-card-num as xs:int
+) as element(v:Verse)?
+{
+    cts:search(/es:envelope/es:instance/ch:Chapter/ch:verses/v:Verse,
+            cts:and-query((
+                cts:document-query($fc:CHAPTER-BASE-URI || $tome || '/' || $chapter || '.xml'),
+                cts:element-value-query(xs:QName('v:card-number'), xs:string($verse-card-num)),
+                cts:element-value-query(xs:QName('v:sub-number'), 'I')
+            )),
+            'score-zero',
+            0.0
+    )
 };
