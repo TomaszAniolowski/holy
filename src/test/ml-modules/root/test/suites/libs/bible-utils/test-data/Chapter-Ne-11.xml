@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<envelope xmlns="http://marklogic.com/entity-services">
+    <headers>
+        <headers xmlns:es="http://marklogic.com/entity-services">
+            <createdOn>2021-01-09T15:45:21.450856Z</createdOn>
+            <sourceUris>
+                <sourceUri>/tome/Ne/chapter/11/v1.xml</sourceUri>
+            </sourceUris>
+        </headers>
+    </headers>
+    <triples/>
+    <instance>
+        <info>
+            <title>Chapter</title>
+            <version>1.0.0</version>
+        </info>
+        <ch:Chapter xmlns:ch="http://holy.arch.com/holy-entities/chapter">
+            <ch:id>6ba6ad04ecaf590e626ca4abc7dfdf4f</ch:id>
+            <ch:testament>Old Testament</ch:testament>
+            <ch:tome>Ne</ch:tome>
+            <ch:number>11</ch:number>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>d7c5068bbf8cc40fb7ff4a6e59414b10</v:id>
+                    <v:card-number>1</v:card-number>
+                    <v:number>1</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6ba6ad04ecaf590e626ca4abc7dfdf4f</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Naczelnicy ludu zamieszkali w Jerozolimie. Natomiast reszta ludności ciągnęła losy, aby
+                        co dziesiąty osiedlał się w świętym mieście Jerozolimie. Pozostałych dziewięciu przeznaczano do
+                        innych miast.
+                    </v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            5cc3c4e70565a0707972a5b527cf6241
+                        </supp:Supplement>
+                    </v:definitions>
+                    <v:dictionary datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            7c64b0b336edd71184215656337859da
+                        </supp:Supplement>
+                    </v:dictionary>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>9b7a245a73849e6b43a5c81efd9c503f</v:id>
+                    <v:card-number>2</v:card-number>
+                    <v:number>2</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6ba6ad04ecaf590e626ca4abc7dfdf4f</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Lud błogosławił tych wszystkich, którzy zgłaszali się na ochotnika, żeby zamieszkać w
+                        Jerozolimie.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>e53aa1d71d569602df7d246be22c03ef</v:id>
+                    <v:card-number>3</v:card-number>
+                    <v:number>3b</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6ba6ad04ecaf590e626ca4abc7dfdf4f</ch:Chapter>
+                    </v:chapter>
+                    <v:content>W miastach judzkich osiedlili się Izraelici: kapłani, lewici, słudzy świątyni i
+                        potomkowie sług Salomona, wszyscy w swoich miastach, każdy w swojej posiadłości.
+                    </v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            5889c04f60d5c4e8e4b637c67850566d
+                        </supp:Supplement>
+                    </v:definitions>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            d23cce23c0c98cfb0d9a387424c68738
+                        </supp:Supplement>
+                    </v:definitions>
+                    <v:dictionary datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            d48b70803cff487accbde9b082960d26
+                        </supp:Supplement>
+                    </v:dictionary>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>cbf6b0f00dc0bcc2ef09953694e46cce</v:id>
+                    <v:card-number>4</v:card-number>
+                    <v:number>4a</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6ba6ad04ecaf590e626ca4abc7dfdf4f</ch:Chapter>
+                    </v:chapter>
+                    <v:content>W Jerozolimie zaś zamieszkali potomkowie Judy i Beniamina.</v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            a3219e183ca39c68e021756acf91d4a7
+                        </supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>f18a0decdb3fba0b660fe346123c8ffa</v:id>
+                    <v:card-number>5</v:card-number>
+                    <v:number>3a</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6ba6ad04ecaf590e626ca4abc7dfdf4f</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Oto naczelnicy prowincji, którzy zamieszkali w Jerozolimie:</v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            c8db523d6c1f37dc9c16f3fb05ff81ed
+                        </supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>0d3c3f1c449280ecf2b935d6966a819f</v:id>
+                    <v:card-number>6</v:card-number>
+                    <v:number>4b</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6ba6ad04ecaf590e626ca4abc7dfdf4f</ch:Chapter>
+                    </v:chapter>
+                    <v:content>z potomków Judy: Atajasz, syn Ozjasza, syna Zachariasza, syna Amariasza, syna
+                        Szefatiasza, syna Machalalela.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>b632f3da8cef8816a593351d7bd0a4dd</v:id>
+                    <v:card-number>6</v:card-number>
+                    <v:number>4b</v:number>
+                    <v:sub-number>II</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6ba6ad04ecaf590e626ca4abc7dfdf4f</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Z potomków Peresa:</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>40159e443d752890375553f05707d1fe</v:id>
+                    <v:card-number>7</v:card-number>
+                    <v:number>5</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6ba6ad04ecaf590e626ca4abc7dfdf4f</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Maasejasz, syn Barucha, syna Kol-Chozego, syna Chazajasza, syna Adajasza, syna Jojariba,
+                        syna Zachariasza Szelanity.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>61931cd441598e433c9d74771785b6ca</v:id>
+                    <v:card-number>8</v:card-number>
+                    <v:number>6</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6ba6ad04ecaf590e626ca4abc7dfdf4f</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Wszystkich potomków Peresa zamieszkałych w Jerozolimie było czterystu sześćdziesięciu
+                        ośmiu mężczyzn zdolnych do walki.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>d06ef632260f2e06706ee30826c8b4f4</v:id>
+                    <v:card-number>9</v:card-number>
+                    <v:number>7</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6ba6ad04ecaf590e626ca4abc7dfdf4f</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Z potomków Beniamina: Sallu, syn Meszullama, syna Joeda, syna Pedajasza, syna Kolajasza,
+                        syna Maasejasza, syna Itiela, syna Izajasza,
+                    </v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            4bee79a36b8cb6fdb957fb26b0135cc8
+                        </supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>8385677fce2ded555f4913289591aae5</v:id>
+                    <v:card-number>10</v:card-number>
+                    <v:number>8</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6ba6ad04ecaf590e626ca4abc7dfdf4f</ch:Chapter>
+                    </v:chapter>
+                    <v:content>oraz bracia jego Gabbaj i Sallaj – razem dziewięciuset dwudziestu ośmiu.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>c708d353c2ec10474b6796af296a72be</v:id>
+                    <v:card-number>11</v:card-number>
+                    <v:number>9</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6ba6ad04ecaf590e626ca4abc7dfdf4f</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Joel, syn Zikriego, był ich zwierzchnikiem, a Juda, syn Hassenui, był drugim
+                        zwierzchnikiem nad miastem.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>c99998911a1851aab7193748d9109cc5</v:id>
+                    <v:card-number>12</v:card-number>
+                    <v:number>10</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6ba6ad04ecaf590e626ca4abc7dfdf4f</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Spośród kapłanów: Jedajasz, Jojarib, Jakin,</v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            c22f051fc222697cfce6fe37c1463e80
+                        </supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>92bae0feb40144e3701cd2072778a82c</v:id>
+                    <v:card-number>13</v:card-number>
+                    <v:number>11</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6ba6ad04ecaf590e626ca4abc7dfdf4f</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Serajasz, syn Chilkiasza, syna Meszullama, syna Sadoka, syna Merajota, syna Achituba,
+                        przełożonego domu Bożego,
+                    </v:content>
+                    <v:dictionary datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            4e00fc66727d4f66b50157f0fdd996c2
+                        </supp:Supplement>
+                    </v:dictionary>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>f9d0dd1df0f551144452b644fc0ad1e5</v:id>
+                    <v:card-number>14</v:card-number>
+                    <v:number>12</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6ba6ad04ecaf590e626ca4abc7dfdf4f</ch:Chapter>
+                    </v:chapter>
+                    <v:content>i ich bracia pełniący służbę w świątyni w liczbie ośmiuset dwudziestu dwóch. Następnie
+                        Adajasz, syn Jerochama, syna Pelaliasza, syna Amsiego, syna Zachariasza, syna Paszchura, syna
+                        Malkiasza,
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>0f387e9f9fcb33aed7ac88405c43d93a</v:id>
+                    <v:card-number>15</v:card-number>
+                    <v:number>13</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6ba6ad04ecaf590e626ca4abc7dfdf4f</ch:Chapter>
+                    </v:chapter>
+                    <v:content>i bracia jego, zwierzchnicy rodów – dwieście czterdzieści dwie osoby. Dalej Amasaj, syn
+                        Azarela, syna Achzaja, syna Meszillemota, syna Immera,
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>2626e81883ebaf24ccb9598dccffd347</v:id>
+                    <v:card-number>16</v:card-number>
+                    <v:number>14</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6ba6ad04ecaf590e626ca4abc7dfdf4f</ch:Chapter>
+                    </v:chapter>
+                    <v:content>i jego bracia dzielni wojownicy – sto dwadzieścia osiem osób. Zwierzchnikiem nad nimi był
+                        Zabdiel, syn Haggadola.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>7e2ace28401c974f572bf78131b98dca</v:id>
+                    <v:card-number>17</v:card-number>
+                    <v:number>15</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6ba6ad04ecaf590e626ca4abc7dfdf4f</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Spośród lewitów: Szemajasz, syn Chaszuba, syna Azrikama, syna Chaszabiasza, syna
+                        Bunniego,
+                    </v:content>
+                    <v:dictionary datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            d48b70803cff487accbde9b082960d26
+                        </supp:Supplement>
+                    </v:dictionary>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>5378d44a132af83d534d6a7ba12c387b</v:id>
+                    <v:card-number>18</v:card-number>
+                    <v:number>16</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6ba6ad04ecaf590e626ca4abc7dfdf4f</ch:Chapter>
+                    </v:chapter>
+                    <v:content>i Szabbetaj i Jozabad – przywódcy lewitów odpowiedzialni za służbę na zewnątrz
+                        świątyni.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>1627da079d3af76e8b077c41d8a51221</v:id>
+                    <v:card-number>19</v:card-number>
+                    <v:number>17</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6ba6ad04ecaf590e626ca4abc7dfdf4f</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Dalej Mattaniasz, syn Miki, syna Zabdiego, syna Asafa, który przewodził śpiewom i
+                        intonował pieśni uwielbienia podczas modlitwy, Bakbukiasz, drugi w gronie swych braci, i Abda,
+                        syn Szammuy, syna Galala, syna Jedutuna.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>4c935cf040e9b49dc4e4c83a5464d2a1</v:id>
+                    <v:card-number>20</v:card-number>
+                    <v:number>18</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6ba6ad04ecaf590e626ca4abc7dfdf4f</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Wszystkich lewitów mieszkających w świętym mieście było dwustu osiemdziesięciu
+                        czterech.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>ebe053bf8f3a66b5704f42a7b62a28a3</v:id>
+                    <v:card-number>21</v:card-number>
+                    <v:number>19</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6ba6ad04ecaf590e626ca4abc7dfdf4f</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Odźwierni: Akkub, Talmon i ich bracia trzymający straż w bramach, w liczbie stu
+                        siedemdziesięciu dwóch.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>512b56d6f665e17ae4f86c2a21bf2014</v:id>
+                    <v:card-number>22</v:card-number>
+                    <v:number>20</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6ba6ad04ecaf590e626ca4abc7dfdf4f</ch:Chapter>
+                    </v:chapter>
+                    <v:content>W miastach Judy zamieszkała pozostała ludność Izraela, kapłani i lewici, każdy w swojej
+                        posiadłości.
+                    </v:content>
+                    <v:dictionary datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            dfc9ee351c3843b4cb1d6aaf7ac8d947
+                        </supp:Supplement>
+                    </v:dictionary>
+                    <v:dictionary datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            31883fbde67362aedc7a974074a80f13
+                        </supp:Supplement>
+                    </v:dictionary>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>3923b4e395c85aa78b76a2103155f6c1</v:id>
+                    <v:card-number>23</v:card-number>
+                    <v:number>21</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6ba6ad04ecaf590e626ca4abc7dfdf4f</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Słudzy świątyni mieszkali na Ofelu, a ich przełożonymi byli Sicha i Giszpa.</v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            650bb9fd9ec2873d085ff25a07db6c70
+                        </supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>b04405ae6efbe8880c7aa9d5c2f874ff</v:id>
+                    <v:card-number>24</v:card-number>
+                    <v:number>22</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6ba6ad04ecaf590e626ca4abc7dfdf4f</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Zwierzchnikiem nad lewitami był Uzzi, syn Baniego, syna Chaszabiasza, syna Mattaniasza,
+                        syna Miki, z potomków Asafa odpowiedzialnych za śpiew podczas służby w domu Bożym.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>50e3ae50429f75f14a3ba2436b5fb5e0</v:id>
+                    <v:card-number>25</v:card-number>
+                    <v:number>23</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6ba6ad04ecaf590e626ca4abc7dfdf4f</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Istniało bowiem co do nich rozporządzenie królewskie wyznaczające kolejność śpiewaków na
+                        poszczególne dni.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>4e2b2e231188e19768d66875595539dc</v:id>
+                    <v:card-number>26</v:card-number>
+                    <v:number>24</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6ba6ad04ecaf590e626ca4abc7dfdf4f</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Petachiasz, syn Meszezabela, z potomków Zeracha, syna Judy, był przy boku króla do
+                        rozstrzygania wszystkich spraw dotyczących mieszkańców
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>9f5ac1b7563781ef8dbf797c8d34350b</v:id>
+                    <v:card-number>27</v:card-number>
+                    <v:number>25</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6ba6ad04ecaf590e626ca4abc7dfdf4f</ch:Chapter>
+                    </v:chapter>
+                    <v:content>osad z przyległymi terenami.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>5ae5cfbdc7fc5d21fe1b11531936207d</v:id>
+                    <v:card-number>27</v:card-number>
+                    <v:number>25</v:number>
+                    <v:sub-number>II</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6ba6ad04ecaf590e626ca4abc7dfdf4f</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Potomkowie Judy mieszkali: w Kiriat-Arba i jego osadach; w Dibon i jego osadach; w
+                        Jekkabseel i przyległych terenach;
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>c754fc461b863483170f6a78b8128f92</v:id>
+                    <v:card-number>28</v:card-number>
+                    <v:number>26</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6ba6ad04ecaf590e626ca4abc7dfdf4f</ch:Chapter>
+                    </v:chapter>
+                    <v:content>w Jeszua, Moladzie, Bet-Pelet;</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>a499b9e684bfb2d0869be882138a56db</v:id>
+                    <v:card-number>29</v:card-number>
+                    <v:number>27</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6ba6ad04ecaf590e626ca4abc7dfdf4f</ch:Chapter>
+                    </v:chapter>
+                    <v:content>w Chasar-Szual, w Beer-Szebie i jej osadach;</v:content>
+                    <v:dictionary datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            7c0fb44796433c6d7de7faa0ae489974
+                        </supp:Supplement>
+                    </v:dictionary>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>246708bac8cc05c3aa2462c621040423</v:id>
+                    <v:card-number>30</v:card-number>
+                    <v:number>28</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6ba6ad04ecaf590e626ca4abc7dfdf4f</ch:Chapter>
+                    </v:chapter>
+                    <v:content>w Siklag, w Mekonie i jej osadach;</v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            9fe8561d5847f8b4f0a8caa00c4203a1
+                        </supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>1ce4ccba09eb1ee48cfe534da193b181</v:id>
+                    <v:card-number>31</v:card-number>
+                    <v:number>29</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6ba6ad04ecaf590e626ca4abc7dfdf4f</ch:Chapter>
+                    </v:chapter>
+                    <v:content>w En-Rimmon, Sorea, Jarmut,</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>c0d038bb0c76a628309b1fb6ea758911</v:id>
+                    <v:card-number>32</v:card-number>
+                    <v:number>30</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6ba6ad04ecaf590e626ca4abc7dfdf4f</ch:Chapter>
+                    </v:chapter>
+                    <v:content>w Zanoach, w Adullam i jego osadach; w Lakisz i przyległych mu terenach; w Azece i jej
+                        osadach. Zajmowali więc obszar od Beer-Szeby do Ge-Hinnom.
+                    </v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            72fbf02523221405de0001d986bd1aa8
+                        </supp:Supplement>
+                    </v:definitions>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            e499726d10f812e085cf99c6289a84fa
+                        </supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>4462a53b5ec76a0ae9a5152f678d005e</v:id>
+                    <v:card-number>33</v:card-number>
+                    <v:number>31</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6ba6ad04ecaf590e626ca4abc7dfdf4f</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Potomkowie Beniamina mieszkali: w Geba, Mikmas, Ajja; w Betel i jego osadach;</v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            48dddd218af74c95cb5c31ad7f7faa9a
+                        </supp:Supplement>
+                    </v:definitions>
+                    <v:dictionary datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            897d542a584294f94796f47b6a1a22f0
+                        </supp:Supplement>
+                    </v:dictionary>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>ea1bdbbea9538dd955c00391c1e721a5</v:id>
+                    <v:card-number>34</v:card-number>
+                    <v:number>32</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6ba6ad04ecaf590e626ca4abc7dfdf4f</ch:Chapter>
+                    </v:chapter>
+                    <v:content>w Anatot, Nob, Anania,</v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            3ce90028aed97875db8ffbe77393468b
+                        </supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>3396589994e117326c0bc2fd703c2eea</v:id>
+                    <v:card-number>35</v:card-number>
+                    <v:number>33</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6ba6ad04ecaf590e626ca4abc7dfdf4f</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Chasor, Rama, Gittaim,</v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            f21aa5e66bc68c97a73a274bd907f9cc
+                        </supp:Supplement>
+                    </v:definitions>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            86d144f6c18dd6ae2e9deafa0d1a66b5
+                        </supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>96be45002f6f2c99e02cb64dee22c830</v:id>
+                    <v:card-number>36</v:card-number>
+                    <v:number>34</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6ba6ad04ecaf590e626ca4abc7dfdf4f</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Chadid, Seboim, Neballat,</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>a9993fe97b0f0bc85cbcae76cbc08795</v:id>
+                    <v:card-number>37</v:card-number>
+                    <v:number>35</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6ba6ad04ecaf590e626ca4abc7dfdf4f</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Lod, Ono i w Dolinie Cieśli.</v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            fafa9a8308a1ee48e15a5e64d90c7f67
+                        </supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>8bccd756f9494dfe853ff85cb315e331</v:id>
+                    <v:card-number>38</v:card-number>
+                    <v:number>36</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6ba6ad04ecaf590e626ca4abc7dfdf4f</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Część lewitów mieszkała z potomkami Judy i Beniamina.</v:content>
+                </v:Verse>
+            </ch:verses>
+        </ch:Chapter>
+    </instance>
+    <attachments/>
+</envelope>

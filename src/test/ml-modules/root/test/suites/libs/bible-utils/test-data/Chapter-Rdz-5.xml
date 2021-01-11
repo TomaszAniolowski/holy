@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<envelope xmlns="http://marklogic.com/entity-services">
+    <headers>
+        <headers xmlns:es="http://marklogic.com/entity-services">
+            <createdOn>2021-01-09T15:45:25.732703Z</createdOn>
+            <sourceUris>
+                <sourceUri>/tome/Rdz/chapter/5/v1.xml</sourceUri>
+            </sourceUris>
+        </headers>
+    </headers>
+    <triples/>
+    <instance>
+        <info>
+            <title>Chapter</title>
+            <version>1.0.0</version>
+        </info>
+        <ch:Chapter xmlns:ch="http://holy.arch.com/holy-entities/chapter">
+            <ch:id>b860e53a67b76410316c651946b637bd</ch:id>
+            <ch:testament>Old Testament</ch:testament>
+            <ch:tome>Rdz</ch:tome>
+            <ch:number>5</ch:number>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>889e673f8680b59254d71349a1f74e38</v:id>
+                    <v:card-number>1</v:card-number>
+                    <v:number>1</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>b860e53a67b76410316c651946b637bd</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Oto dzieje potomków Adama. W dniu, w którym Bóg stworzył ludzi, uczynił ich podobnymi do
+                        siebie.
+                    </v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            aa6f7fb11b7eabde9054556a88a0fa28
+                        </supp:Supplement>
+                    </v:definitions>
+                    <v:dictionary datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            066991672f4c25555b979d04a03c11cb
+                        </supp:Supplement>
+                    </v:dictionary>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>360767401c72d10dfa686c9281a2f060</v:id>
+                    <v:card-number>2</v:card-number>
+                    <v:number>2</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>b860e53a67b76410316c651946b637bd</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Stworzył ich jako mężczyznę i kobietę. A gdy ich stworzył, pobłogosławił ich i nazwał
+                        ludźmi.
+                    </v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            5481d3e3e55df9fd81af2293df6c7b76
+                        </supp:Supplement>
+                    </v:definitions>
+                    <v:dictionary datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            38b6de0276dc9065ca47415a85a202af
+                        </supp:Supplement>
+                    </v:dictionary>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>df512131df786a1e1f31d746f3db2dca</v:id>
+                    <v:card-number>3</v:card-number>
+                    <v:number>3</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>b860e53a67b76410316c651946b637bd</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Adam miał sto trzydzieści lat, gdy spłodził syna podobnego do niego jak jego obraz.
+                        Nazwał go Set.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>5dcb173ecf0fae0393ec446c2889bccb</v:id>
+                    <v:card-number>4</v:card-number>
+                    <v:number>4</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>b860e53a67b76410316c651946b637bd</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Po urodzeniu się Seta Adam żył jeszcze osiemset lat i miał synów i córki.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>74402b72d7dc673cb3eb5e3c82d7bccd</v:id>
+                    <v:card-number>5</v:card-number>
+                    <v:number>5</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>b860e53a67b76410316c651946b637bd</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Przeżył więc Adam dziewięćset trzydzieści lat i wtedy umarł.</v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            1b30da747d07bcfba550fbc035a34994
+                        </supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>4340c25bdd55787fe2c02fb9821a61df</v:id>
+                    <v:card-number>6</v:card-number>
+                    <v:number>6</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>b860e53a67b76410316c651946b637bd</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Set miał sto pięć lat, gdy spłodził Enosza.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>7c7cdb328da788f361bc3aff3c766d4d</v:id>
+                    <v:card-number>7</v:card-number>
+                    <v:number>7</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>b860e53a67b76410316c651946b637bd</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Po urodzeniu się Enosza Set żył jeszcze osiemset siedem lat i miał synów i córki.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>1ec119d9391c57a76c1e6a95292c2103</v:id>
+                    <v:card-number>8</v:card-number>
+                    <v:number>8</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>b860e53a67b76410316c651946b637bd</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Przeżył więc Set dziewięćset dwanaście lat i wtedy umarł.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>38fd8abf04b013b37796b2fa0c4e92a4</v:id>
+                    <v:card-number>9</v:card-number>
+                    <v:number>9</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>b860e53a67b76410316c651946b637bd</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Gdy Enosz miał dziewięćdziesiąt lat, spłodził Kenana.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>661ccbd8c3c562381e93695c394b18ba</v:id>
+                    <v:card-number>10</v:card-number>
+                    <v:number>10</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>b860e53a67b76410316c651946b637bd</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Po urodzeniu się Kenana Enosz żył jeszcze osiemset piętnaście lat i miał synów i córki.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>e91c38307c0e6f1d3e44f30443d6ea29</v:id>
+                    <v:card-number>11</v:card-number>
+                    <v:number>11</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>b860e53a67b76410316c651946b637bd</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Przeżył więc Enosz dziewięćset pięć lat i wtedy umarł.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>8cb6e92d769534893a2baf664bb0c645</v:id>
+                    <v:card-number>12</v:card-number>
+                    <v:number>12</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>b860e53a67b76410316c651946b637bd</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Kenan miał siedemdziesiąt lat, gdy spłodził Mahalaleela.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>be603acaf32a69365f3a665d42cf0fd4</v:id>
+                    <v:card-number>13</v:card-number>
+                    <v:number>13</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>b860e53a67b76410316c651946b637bd</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Po urodzeniu się Mahalaleela Kenan żył jeszcze osiemset czterdzieści lat i miał synów i
+                        córki.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>c9abed47c792942d56d24b0ef81f3365</v:id>
+                    <v:card-number>14</v:card-number>
+                    <v:number>14</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>b860e53a67b76410316c651946b637bd</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Przeżył więc Kenan dziewięćset dziesięć lat i wtedy umarł.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>5ba4c9f9ba1b50c157457be20d50988e</v:id>
+                    <v:card-number>15</v:card-number>
+                    <v:number>15</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>b860e53a67b76410316c651946b637bd</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Gdy Mahalaleel miał sześćdziesiąt pięć lat, spłodził Jereda.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>5c4eec265e716be8aab9b53212fc87fd</v:id>
+                    <v:card-number>16</v:card-number>
+                    <v:number>16</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>b860e53a67b76410316c651946b637bd</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Po urodzeniu się Jereda Mahalaleel żył jeszcze osiemset trzydzieści lat i miał synów i
+                        córki.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>db4feba6f042219e4f40b7056aad1766</v:id>
+                    <v:card-number>17</v:card-number>
+                    <v:number>17</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>b860e53a67b76410316c651946b637bd</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Przeżył więc Mahalaleel osiemset dziewięćdziesiąt pięć lat i wtedy umarł.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>7fd92b6cb14a0bbd517ca8776ae2450e</v:id>
+                    <v:card-number>18</v:card-number>
+                    <v:number>18</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>b860e53a67b76410316c651946b637bd</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Gdy Jered miał sto sześćdziesiąt dwa lata, spłodził Henocha.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>97624dca054c7d3c3029dc7be9b36f20</v:id>
+                    <v:card-number>19</v:card-number>
+                    <v:number>19</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>b860e53a67b76410316c651946b637bd</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Po urodzeniu się Henocha Jered żył jeszcze osiemset lat, mając synów i córki.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>7c074b7dbeb50a64b5e12bede876a167</v:id>
+                    <v:card-number>20</v:card-number>
+                    <v:number>20</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>b860e53a67b76410316c651946b637bd</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Przeżył więc Jered dziewięćset sześćdziesiąt dwa lata i wtedy umarł.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>40513e7f3190d9d18423a7776335eac1</v:id>
+                    <v:card-number>21</v:card-number>
+                    <v:number>21</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>b860e53a67b76410316c651946b637bd</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Gdy Henoch miał sześćdziesiąt pięć lat, spłodził Metuszelacha.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>e2d76fa3dab1ec1dd46dbb3bbdc951d4</v:id>
+                    <v:card-number>22</v:card-number>
+                    <v:number>22</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>b860e53a67b76410316c651946b637bd</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Henoch żył w zażyłości z Bogiem. Po urodzeniu się Metuszelacha Henoch żył jeszcze trzysta
+                        lat.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>c03ba1e1b0431c8af12b997840e638a3</v:id>
+                    <v:card-number>23</v:card-number>
+                    <v:number>23</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>b860e53a67b76410316c651946b637bd</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Przeżył więc trzysta sześćdziesiąt pięć lat.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>28bcd60ac68662d27c2f0cdb73725457</v:id>
+                    <v:card-number>24</v:card-number>
+                    <v:number>24</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>b860e53a67b76410316c651946b637bd</ch:Chapter>
+                    </v:chapter>
+                    <v:content>I żył Henoch w zażyłości z Bogiem. Potem zniknął, bo Bóg go zabrał.</v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            33b1b5beb2efd7575b289f9238852fca
+                        </supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>65b5ac13576be9854d49303875deab45</v:id>
+                    <v:card-number>25</v:card-number>
+                    <v:number>25</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>b860e53a67b76410316c651946b637bd</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Gdy Metuszelach miał sto osiemdziesiąt siedem lat, spłodził Lameka.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>111ac1c1354b60fbc833c85b6273b137</v:id>
+                    <v:card-number>26</v:card-number>
+                    <v:number>26</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>b860e53a67b76410316c651946b637bd</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Po urodzeniu się Lameka Metuszelach żył jeszcze siedemset osiemdziesiąt dwa lata, płodząc
+                        synów i córki.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>620a41fd271968911b1f81dbd006f9d3</v:id>
+                    <v:card-number>27</v:card-number>
+                    <v:number>27</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>b860e53a67b76410316c651946b637bd</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Przeżył więc Metuszelach dziewięćset sześćdziesiąt dziewięć lat i wtedy umarł.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>1be4cc71959fd40f61b66fd520ac95d2</v:id>
+                    <v:card-number>28</v:card-number>
+                    <v:number>28</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>b860e53a67b76410316c651946b637bd</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Gdy Lamek miał sto osiemdziesiąt dwa lata, spłodził syna.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>3a62b7f673ffc9af1e1d6e5d920c73ec</v:id>
+                    <v:card-number>29</v:card-number>
+                    <v:number>29</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>b860e53a67b76410316c651946b637bd</ch:Chapter>
+                    </v:chapter>
+                    <v:content>I dał mu imię Noe, bo mówił: „Ten pozwoli nam odetchnąć od naszej pracy i od trudów rąk
+                        naszych na ziemi przeklętej przez Pana”.
+                    </v:content>
+                    <v:dictionary datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            05aece6b6fd41c7414a49e07d0072e35
+                        </supp:Supplement>
+                    </v:dictionary>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>d0ee213da1fd3ccae73517a822264405</v:id>
+                    <v:card-number>30</v:card-number>
+                    <v:number>30</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>b860e53a67b76410316c651946b637bd</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Po urodzeniu się Noego Lamek żył jeszcze pięćset dziewięćdziesiąt pięć lat, mając synów i
+                        córki.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>25214b92b1411878faf2179e9c580ff8</v:id>
+                    <v:card-number>31</v:card-number>
+                    <v:number>31</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>b860e53a67b76410316c651946b637bd</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Przeżył więc Lamek siedemset siedemdziesiąt siedem lat i wtedy umarł.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>e8c3608e7439655e255f886c2f2b8ff3</v:id>
+                    <v:card-number>32</v:card-number>
+                    <v:number>32</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>b860e53a67b76410316c651946b637bd</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Gdy Noe miał pięćset lat, spłodził Sema, Chama i Jafeta.</v:content>
+                </v:Verse>
+            </ch:verses>
+        </ch:Chapter>
+    </instance>
+    <attachments/>
+</envelope>

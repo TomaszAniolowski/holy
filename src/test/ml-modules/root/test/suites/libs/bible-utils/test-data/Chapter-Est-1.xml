@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<envelope xmlns="http://marklogic.com/entity-services">
+    <headers>
+        <headers xmlns:es="http://marklogic.com/entity-services">
+            <createdOn>2021-01-09T15:45:10.973716Z</createdOn>
+            <sourceUris>
+                <sourceUri>/tome/Est/chapter/1/v1.xml</sourceUri>
+            </sourceUris>
+        </headers>
+    </headers>
+    <triples/>
+    <instance>
+        <info>
+            <title>Chapter</title>
+            <version>1.0.0</version>
+        </info>
+        <ch:Chapter xmlns:ch="http://holy.arch.com/holy-entities/chapter">
+            <ch:id>34e528c75481e7ccaa3caa0b6a40de15</ch:id>
+            <ch:testament>Old Testament</ch:testament>
+            <ch:tome>Est</ch:tome>
+            <ch:number>1</ch:number>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>629d22f05531a1cf7804692e6b04fffb</v:id>
+                    <v:card-number>1</v:card-number>
+                    <v:number>1a</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>34e528c75481e7ccaa3caa0b6a40de15</ch:Chapter>
+                    </v:chapter>
+                    <v:content>W drugim roku panowania wielkiego króla Artakserksesa, w pierwszym dniu miesiąca Nisan,
+                        Mardocheusz, syn Jaira, syna Szimeiego, syna Kisza, z plemienia Beniamina, miał sen.
+                    </v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            d00918139823b7531bd39b0dc59b5350
+                        </supp:Supplement>
+                    </v:definitions>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            4a108e581f8f2f14bae1d82308874ced
+                        </supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>145646f9e3ff1b30e0d079262feaa1f4</v:id>
+                    <v:card-number>2</v:card-number>
+                    <v:number>1b</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>34e528c75481e7ccaa3caa0b6a40de15</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Był on Żydem mieszkającym w mieście Suza, dostojnikiem służącym na dworze królewskim.
+                    </v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            b452ca1faa7d96453e5ae7b9d573b910
+                        </supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>67f34d134a0d78338122bdb64ab88692</v:id>
+                    <v:card-number>3</v:card-number>
+                    <v:number>1c</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>34e528c75481e7ccaa3caa0b6a40de15</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Należał do wygnańców, których król babiloński Nabuchodonozor uprowadził z Jerozolimy wraz
+                        z królem Jechoniaszem.
+                    </v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            73f8f384a87110074fa810a4a742093e
+                        </supp:Supplement>
+                    </v:definitions>
+                    <v:dictionary datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            7c64b0b336edd71184215656337859da
+                        </supp:Supplement>
+                    </v:dictionary>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>f12ffda2177ca69b7cee86b9c92d6142</v:id>
+                    <v:card-number>4</v:card-number>
+                    <v:number>1d</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>34e528c75481e7ccaa3caa0b6a40de15</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Taki był jego sen: Krzyki i zgiełk, grzmoty i trzęsienie, trwoga na ziemi.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>57ccee78c2e552d9ec6e2ee3b97d8156</v:id>
+                    <v:card-number>5</v:card-number>
+                    <v:number>1e</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>34e528c75481e7ccaa3caa0b6a40de15</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Oto nadeszły dwa ogromne smoki gotowe do walki i zaryczały przeraźliwie,</v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            c9aa556b08abd4cb17bbb348b3e8caec
+                        </supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>7bfa19d1a9dd3acf32012a42f9ae7120</v:id>
+                    <v:card-number>6</v:card-number>
+                    <v:number>1f</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>34e528c75481e7ccaa3caa0b6a40de15</ch:Chapter>
+                    </v:chapter>
+                    <v:content>a na odgłos ich ryku wszystkie narody szykowały się do wojny, aby walczyć z narodem
+                        sprawiedliwych.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>a575ab95333abfb14b205665796f45b4</v:id>
+                    <v:card-number>7</v:card-number>
+                    <v:number>1g</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>34e528c75481e7ccaa3caa0b6a40de15</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Oto dzień ciemności i mroku, ucisk i prześladowanie, nieszczęście i wielka trwoga na
+                        ziemi.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>462cb944de05aeb9909958084f4effc7</v:id>
+                    <v:card-number>8</v:card-number>
+                    <v:number>1h</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>34e528c75481e7ccaa3caa0b6a40de15</ch:Chapter>
+                    </v:chapter>
+                    <v:content>A naród sprawiedliwych zatrwożył się, gdyż bał się nadchodzącego nieszczęścia i był
+                        przygotowany na zagładę. I wołali do Boga.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>6b864edc7be3fc3dff618b3faebe1838</v:id>
+                    <v:card-number>9</v:card-number>
+                    <v:number>1i</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>34e528c75481e7ccaa3caa0b6a40de15</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Na głos ich wołania wytrysnęła z małego źródła jakby ogromna rzeka, mnóstwo wody.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>a0d995e9f6c394dbc73ee5642800a2b3</v:id>
+                    <v:card-number>10</v:card-number>
+                    <v:number>1k</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>34e528c75481e7ccaa3caa0b6a40de15</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Światłość i słońce zajaśniały, a poniżeni zostali wywyższeni i pochłonęli mocnych.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>9e5391a82f45e2dfde135e2f220ba743</v:id>
+                    <v:card-number>11</v:card-number>
+                    <v:number>1l</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>34e528c75481e7ccaa3caa0b6a40de15</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Jak tylko Mardocheusz przebudził się, mając w pamięci swój sen, aż do wieczora
+                        zastanawiał się nad jego znaczeniem i na wszelkie sposoby próbował odgadnąć, co Bóg zamierza
+                        uczynić.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>2300d4e01f318ceac3632d3ffba4d04f</v:id>
+                    <v:card-number>12</v:card-number>
+                    <v:number>1m</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>34e528c75481e7ccaa3caa0b6a40de15</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Gdy Mardocheusz wypoczywał na dziedzińcu w towarzystwie Gabaty i Tarry, dwóch eunuchów
+                        królewskich, którzy strzegli dziedzińca,
+                    </v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            ab4816e670e2afaa977fbfdf858f5c99
+                        </supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>048927e75d93c38d184b3b35f96880ac</v:id>
+                    <v:card-number>13</v:card-number>
+                    <v:number>1n</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>34e528c75481e7ccaa3caa0b6a40de15</ch:Chapter>
+                    </v:chapter>
+                    <v:content>słyszał ich rozmowy i poznał ich plany. Zrozumiał, że przygotowują bunt przeciwko królowi
+                        Artakserksesowi. Wtedy doniósł o tym królowi.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>f1c4a594c61f94e53635cb1c65132dd4</v:id>
+                    <v:card-number>14</v:card-number>
+                    <v:number>1o</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>34e528c75481e7ccaa3caa0b6a40de15</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Król przesłuchał obu eunuchów, a gdy przyznali się do winy, kazał ich stracić.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>11b81af01f451c4af20567d5feb4a922</v:id>
+                    <v:card-number>15</v:card-number>
+                    <v:number>1p</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>34e528c75481e7ccaa3caa0b6a40de15</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Król opisał te wydarzenia, aby je upamiętnić. Również Mardocheusz je opisał.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>c42ddec3807750641841ad47757957c7</v:id>
+                    <v:card-number>16</v:card-number>
+                    <v:number>1q</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>34e528c75481e7ccaa3caa0b6a40de15</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Później król powierzył Mardocheuszowi służbę na dziedzińcu i za wszystko wynagrodził go
+                        darami.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>51eb78762fad3023e2dc1df5360c1fc3</v:id>
+                    <v:card-number>17</v:card-number>
+                    <v:number>1r</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>34e528c75481e7ccaa3caa0b6a40de15</ch:Chapter>
+                    </v:chapter>
+                    <v:content>A względami króla cieszył się też Haman Pyszałek, syn Hammedaty. To on usiłował
+                        zaszkodzić Mardocheuszowi i jego ludowi z powodu tamtych dwóch eunuchów króla.
+                    </v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            025384cf4d2fa29cfeb60087a6850c6d
+                        </supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>63c342e44e67c7f104b98955b633b179</v:id>
+                    <v:card-number>18</v:card-number>
+                    <v:number>1</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>34e528c75481e7ccaa3caa0b6a40de15</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Zdarzyło się to za czasów Artakserksesa, który od Indii aż do Etiopii miał w swoim
+                        władaniu łącznie sto dwadzieścia siedem państw.
+                    </v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            d00918139823b7531bd39b0dc59b5350
+                        </supp:Supplement>
+                    </v:definitions>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            b424913eacce81c25dc8def3a77d95bf
+                        </supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>b5c132b1bc649073410e2fa060adb6f3</v:id>
+                    <v:card-number>19</v:card-number>
+                    <v:number>2</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>34e528c75481e7ccaa3caa0b6a40de15</ch:Chapter>
+                    </v:chapter>
+                    <v:content>W czasie, gdy zasiadał na tronie w mieście Suza,</v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            b452ca1faa7d96453e5ae7b9d573b910
+                        </supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>657a2468ff1b1a25e00e6597cf2c831a</v:id>
+                    <v:card-number>20</v:card-number>
+                    <v:number>3</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>34e528c75481e7ccaa3caa0b6a40de15</ch:Chapter>
+                    </v:chapter>
+                    <v:content>w trzecim roku swego panowania wydał on przyjęcie dla przyjaciół i dla pozostałych
+                        dworzan, dla dostojnych Persów i Medów, a także dla rządców prowincji.
+                    </v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            c7ce9007f63987905b2e1995f5310f11
+                        </supp:Supplement>
+                    </v:definitions>
+                    <v:dictionary datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            6c88271e647d11ad1a329b34a4aae4a9
+                        </supp:Supplement>
+                    </v:dictionary>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>6868ac520237372aa4c8f8d90314996e</v:id>
+                    <v:card-number>21</v:card-number>
+                    <v:number>4</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>34e528c75481e7ccaa3caa0b6a40de15</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Ucztowali przez sto osiemdziesiąt dni, w czasie których król pokazał im przepych swego
+                        królestwa oraz blask swojej świetności.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>0534524c33c12d8e6144d7d6f8be168f</v:id>
+                    <v:card-number>22</v:card-number>
+                    <v:number>5</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>34e528c75481e7ccaa3caa0b6a40de15</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Kiedy minęły dni uroczystości, król urządził na dziedzińcu pałacu królewskiego
+                        sześciodniową ucztę dla wszystkich ludów przebywających w mieście.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>28f54ac7575b78ebb5f531a6baa411c0</v:id>
+                    <v:card-number>23</v:card-number>
+                    <v:number>6</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>34e528c75481e7ccaa3caa0b6a40de15</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Nad dziedzińcem rozpięto delikatne tkaniny z bisioru i lnu, które sznurami z bisioru i
+                        szkarłatu przymocowano do srebrnych i złotych pierścieni, a te do kolumn z białego marmuru.
+                        Złote i srebrne sofy ustawiono na posadzce z kamieni w kolorze szmaragdu, masy perłowej i
+                        białego marmuru, a przezroczyste, misternie tkane pokrycia ozdobiono wpiętymi dokoła kwiatami
+                        róży.
+                    </v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            edad12c90d62249a5311d64f64c71a2f
+                        </supp:Supplement>
+                    </v:definitions>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            da66d80871b5725a6da57cba0e251cc2
+                        </supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>f774f66982a067cb89f141acf650c848</v:id>
+                    <v:card-number>24</v:card-number>
+                    <v:number>7</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>34e528c75481e7ccaa3caa0b6a40de15</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Kielichy były ze złota i srebra, a sam tylko rubinowy puchar szacowano na trzydzieści
+                        tysięcy talentów. Wina było pod dostatkiem i to takiego, jakie pił sam król.
+                    </v:content>
+                    <v:dictionary datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            dc0f7e24b4394dd52cbcacac8fd42ee8
+                        </supp:Supplement>
+                    </v:dictionary>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>0db9b89a0ede10671233a80ea03f83ae</v:id>
+                    <v:card-number>25</v:card-number>
+                    <v:number>8</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>34e528c75481e7ccaa3caa0b6a40de15</ch:Chapter>
+                    </v:chapter>
+                    <v:content>W czasie uczty nie przestrzegano zasad biesiadowania, gdyż tak życzył sobie król, który
+                        rozkazał obsługującym spełniać wolę obecnych.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>2c17297c7709c53392d8c49fbf5d570d</v:id>
+                    <v:card-number>26</v:card-number>
+                    <v:number>9</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>34e528c75481e7ccaa3caa0b6a40de15</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Również królowa Waszti wydała ucztę dla kobiet w pokojach królewskich, należących do
+                        króla Artakserksesa.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>911093b62e17ace1699e1b03058f7824</v:id>
+                    <v:card-number>27</v:card-number>
+                    <v:number>10</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>34e528c75481e7ccaa3caa0b6a40de15</ch:Chapter>
+                    </v:chapter>
+                    <v:content>W siódmym dniu rozradowany król rzekł do Hamana, Bazana, Tarry, Borazego, Zatolty,
+                        Abatazy i Taraby, siedmiu eunuchów, służących króla Artakserksesa,
+                    </v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            ab4816e670e2afaa977fbfdf858f5c99
+                        </supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>413700b3f4de9961b447ad9c3bccc9d1</v:id>
+                    <v:card-number>28</v:card-number>
+                    <v:number>11</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>34e528c75481e7ccaa3caa0b6a40de15</ch:Chapter>
+                    </v:chapter>
+                    <v:content>by przyprowadzili królową w koronie królewskiej. Chciał wszystkim książętom i ludom
+                        pokazać jej urodę, gdyż była naprawdę piękna.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>d28540e31e7ce3ab0991ef99662a4749</v:id>
+                    <v:card-number>29</v:card-number>
+                    <v:number>12</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>34e528c75481e7ccaa3caa0b6a40de15</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Ale królowa Waszti nie posłuchała rozkazu i nie przyszła z eunuchami. Wtedy urażony król
+                        zapłonął gniewem
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>5923dad028336562ab752eceaee84b80</v:id>
+                    <v:card-number>30</v:card-number>
+                    <v:number>13</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>34e528c75481e7ccaa3caa0b6a40de15</ch:Chapter>
+                    </v:chapter>
+                    <v:content>i rzekł do swoich przyjaciół: „Tak oto odpowiedziała Waszti! Osądźcie to i wydajcie
+                        wyrok!”.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>fea1c6355a2fb198d6f94e398934ef92</v:id>
+                    <v:card-number>31</v:card-number>
+                    <v:number>14</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>34e528c75481e7ccaa3caa0b6a40de15</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Wtedy podeszli do niego Arkesajos, Sarsatajos i Malesear, książęta perscy i medyjscy,
+                        bliscy współpracownicy króla, zasiadający na pierwszych miejscach przy królu,
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>aa6d842dce3278f80ef934c3fc253086</v:id>
+                    <v:card-number>32</v:card-number>
+                    <v:number>15</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>34e528c75481e7ccaa3caa0b6a40de15</ch:Chapter>
+                    </v:chapter>
+                    <v:content>i powiedzieli mu, jak według prawa należałoby postąpić z królową Waszti, która nie
+                        spełniła królewskiego polecenia przekazanego jej przez eunuchów.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>8fbfd1d9dc6ad3dbc58bce13711455a3</v:id>
+                    <v:card-number>33</v:card-number>
+                    <v:number>16</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>34e528c75481e7ccaa3caa0b6a40de15</ch:Chapter>
+                    </v:chapter>
+                    <v:content>A Muchajos rzekł do króla i książąt: „Królowa Waszti zawiniła nie tylko wobec króla, ale
+                        także wobec wszystkich książąt i dostojników królestwa.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>2b843c4c40295dac2147b66c665c4cff</v:id>
+                    <v:card-number>34</v:card-number>
+                    <v:number>17</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>34e528c75481e7ccaa3caa0b6a40de15</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Jeżeli bowiem rozejdzie się wieść o takim zachowaniu królowej, a przecież sprzeciwiła się
+                        samemu królowi Artakserksesowi,
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>82e2eadd76a83d1a55694908de872046</v:id>
+                    <v:card-number>35</v:card-number>
+                    <v:number>18</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>34e528c75481e7ccaa3caa0b6a40de15</ch:Chapter>
+                    </v:chapter>
+                    <v:content>to małżonki książąt perskich i medyjskich, jak tylko dowiedzą się, co Waszti
+                        odpowiedziała królowi, jeszcze dzisiaj odważą się w podobny sposób wzgardzić swoimi mężami.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>c1fa2ce8c81dd47a7a7f1d34d5073439</v:id>
+                    <v:card-number>36</v:card-number>
+                    <v:number>19</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>34e528c75481e7ccaa3caa0b6a40de15</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Jeśli więc król uzna to za słuszne, niech wyda dekret królewski, który zostanie wpisany
+                        do praw Medów i Persów, i niech w nim postanowi nieodwołalnie, że królowa nie stanie już nigdy
+                        przed królem, a jej godność królewska będzie oddana kobiecie od niej szlachetniejszej!
+                    </v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            e5d7e690809e00beaafd70c50583d2dc
+                        </supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>65820251e5184c8853c5afa0d0933cf8</v:id>
+                    <v:card-number>37</v:card-number>
+                    <v:number>20</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>34e528c75481e7ccaa3caa0b6a40de15</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Jeżeli król ustanowi takie prawo królewskie, to niech zostanie ono ogłoszone w
+                        królestwie, gdyż tym sposobem wszystkie kobiety będą okazywać szacunek swoim mężom, tak ubogim,
+                        jak i bogatym”.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>5207a53828a905a72cf2d932d50739ff</v:id>
+                    <v:card-number>38</v:card-number>
+                    <v:number>21</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>34e528c75481e7ccaa3caa0b6a40de15</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Mowa ta spodobała się królowi i książętom i król postąpił według słów Muchajosa.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>4bbadad9e7c4083a7fbba880b93c4deb</v:id>
+                    <v:card-number>39</v:card-number>
+                    <v:number>22</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>34e528c75481e7ccaa3caa0b6a40de15</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Po całym królestwie został rozesłany dekret, do każdego okręgu w jego własnym języku, by
+                        mężowie byli panami w swoich domach.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+        </ch:Chapter>
+    </instance>
+    <attachments/>
+</envelope>

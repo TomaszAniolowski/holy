@@ -7,11 +7,12 @@ declare variable $SIGLUM-INVALID as xs:string := 'Rdz 1-3,2';
 declare variable $SIGLUM-TOME as xs:string := 'Rdz';
 
 declare variable $SIGLUM-SINGLE-CHAPTER as xs:string := 'Rdz 1';
-declare variable $SIGLUM-CHAPTER-RANGE-CORRECT as xs:string := 'Rdz 1-3';
+declare variable $SIGLUM-CHAPTER-RANGE-CORRECT-1 as xs:string := 'Rdz 1-3';
+declare variable $SIGLUM-CHAPTER-RANGE-CORRECT-2 as xs:string := 'Syr Prolog-3';
 declare variable $SIGLUM-CHAPTER-RANGE-INCORRECT-1 as xs:string := 'Rdz 1-1';
 declare variable $SIGLUM-CHAPTER-RANGE-INCORRECT-2 as xs:string := 'Rdz 3-1';
 declare variable $SIGLUM-CHAPTER-RANGE-OVERLAPPING as xs:string := 'Rdz 1-3; 2-5';
-declare variable $SIGLUM-CHAPTER-RANGE-OVERLAPPING-2 as xs:string := 'Iz 2; 1-6';
+declare variable $SIGLUM-CHAPTER-RANGE-OVERLAPPING-2 as xs:string := 'Rdz 2; 1-5';
 declare variable $SIGLUM-CHAPTER-SEQUENCE as xs:string := 'Rdz 1; 3';
 declare variable $SIGLUM-CHAPTER-SEQUENCE-OVERLAPPING as xs:string := 'Rdz 1; 1';
 declare variable $SIGLUM-CHAPTER-RANGE-SEQUENCE-OVERLAPPING as xs:string := 'Rdz 1-3; 2';
@@ -29,6 +30,11 @@ declare variable $SIGLUM-VERSE-SEQUENCE-OVERLAPPING-1 as xs:string := 'Rdz 1,1. 
 declare variable $SIGLUM-VERSE-SEQUENCE-OVERLAPPING-2 as xs:string := 'Rdz 1,1n. 2';
 declare variable $SIGLUM-VERSE-SEQUENCE-OVERLAPPING-3 as xs:string := 'Rdz 1,1. 2n. 3';
 declare variable $SIGLUM-VERSE-RANGE-SEQUENCE-OVERLAPPING as xs:string := 'Rdz 1,1-3. 2';
+declare variable $SIGLUM-VERSE-NOT-FOUND-1 as xs:string := 'Rdz 1,32';
+declare variable $SIGLUM-VERSE-NOT-FOUND-2 as xs:string := 'Rdz 1,30-32';
+declare variable $SIGLUM-VERSE-NOT-FOUND-3 as xs:string := 'Rdz 1,32-35';
+declare variable $SIGLUM-VERSE-NOT-FOUND-4 as xs:string := 'Rdz 1,31n';
+declare variable $SIGLUM-VERSE-NOT-FOUND-5 as xs:string := 'Rdz 1,30nn';
 
 declare variable $SIGLUM-VERSE-WITH-LETTER-PART-1 as xs:string := 'Est 1,1a';
 declare variable $SIGLUM-VERSE-WITH-LETTER-PART-2 as xs:string := 'Est 1,1n';
@@ -92,11 +98,21 @@ let $expected-single-chapter :=
     map:map()
     => map:with('tome', 'Rdz')
     => map:with('chapters', map:entry('1', '_all'))
-let $expected-chapter-range-correct :=
+let $expected-chapter-range-correct-1 :=
     map:map()
     => map:with('tome', 'Rdz')
     => map:with('chapters',
             map:map()
+            => map:with('1', '_all')
+            => map:with('2', '_all')
+            => map:with('3', '_all')
+    )
+let $expected-chapter-range-correct-2 :=
+    map:map()
+    => map:with('tome', 'Syr')
+    => map:with('chapters',
+            map:map()
+            => map:with('Prolog', '_all')
             => map:with('1', '_all')
             => map:with('2', '_all')
             => map:with('3', '_all')
@@ -191,6 +207,21 @@ let $expected-verse-sequence-overlapping-3 :=
 let $expected-verse-range-sequence-overlapping :=
     map:map()
     => map:with($SIGLUM-VERSE-RANGE-SEQUENCE-OVERLAPPING, 'Verses overlap')
+let $expected-verse-not-found-1 :=
+    map:map()
+    => map:with($SIGLUM-VERSE-NOT-FOUND-1, 'Verse not found [' || $SIGLUM-VERSE-NOT-FOUND-1 || ']')
+let $expected-verse-not-found-2 :=
+    map:map()
+    => map:with($SIGLUM-VERSE-NOT-FOUND-2, 'Verse not found [Rdz 1,32]')
+let $expected-verse-not-found-3 :=
+    map:map()
+    => map:with($SIGLUM-VERSE-NOT-FOUND-3, 'Verse not found [Rdz 1,32]')
+let $expected-verse-not-found-4 :=
+    map:map()
+    => map:with($SIGLUM-VERSE-NOT-FOUND-4, 'Verse not found [' || $SIGLUM-VERSE-NOT-FOUND-4 || ']')
+let $expected-verse-not-found-5 :=
+    map:map()
+    => map:with($SIGLUM-VERSE-NOT-FOUND-5, 'Verse not found [' || $SIGLUM-VERSE-NOT-FOUND-5 || ']')
 
 let $expected-verse-with-letter-part-1 :=
     map:map()
@@ -429,7 +460,8 @@ let $expected-siglum-variety-4 :=
 let $actual-siglum-invalid := bib:interpret-siglum($SIGLUM-INVALID)
 let $actual-siglum-tome := bib:interpret-siglum($SIGLUM-TOME)
 let $actual-single-chapter := bib:interpret-siglum($SIGLUM-SINGLE-CHAPTER)
-let $actual-chapter-range-correct := bib:interpret-siglum($SIGLUM-CHAPTER-RANGE-CORRECT)
+let $actual-chapter-range-correct-1 := bib:interpret-siglum($SIGLUM-CHAPTER-RANGE-CORRECT-1)
+let $actual-chapter-range-correct-2 := bib:interpret-siglum($SIGLUM-CHAPTER-RANGE-CORRECT-2)
 let $actual-chapter-range-incorrect-1 := bib:interpret-siglum($SIGLUM-CHAPTER-RANGE-INCORRECT-1)
 let $actual-chapter-range-incorrect-2 := bib:interpret-siglum($SIGLUM-CHAPTER-RANGE-INCORRECT-2)
 let $actual-chapter-range-overlapping := bib:interpret-siglum($SIGLUM-CHAPTER-RANGE-OVERLAPPING)
@@ -450,6 +482,11 @@ let $actual-verse-sequence-overlapping-1 := bib:interpret-siglum($SIGLUM-VERSE-S
 let $actual-verse-sequence-overlapping-2 := bib:interpret-siglum($SIGLUM-VERSE-SEQUENCE-OVERLAPPING-2)
 let $actual-verse-sequence-overlapping-3 := bib:interpret-siglum($SIGLUM-VERSE-SEQUENCE-OVERLAPPING-3)
 let $actual-verse-range-sequence-overlapping := bib:interpret-siglum($SIGLUM-VERSE-RANGE-SEQUENCE-OVERLAPPING)
+let $actual-verse-not-found-1 := bib:interpret-siglum($SIGLUM-VERSE-NOT-FOUND-1)
+let $actual-verse-not-found-2 := bib:interpret-siglum($SIGLUM-VERSE-NOT-FOUND-2)
+let $actual-verse-not-found-3 := bib:interpret-siglum($SIGLUM-VERSE-NOT-FOUND-3)
+let $actual-verse-not-found-4 := bib:interpret-siglum($SIGLUM-VERSE-NOT-FOUND-4)
+let $actual-verse-not-found-5 := bib:interpret-siglum($SIGLUM-VERSE-NOT-FOUND-5)
 let $actual-verse-with-letter-part-1 := bib:interpret-siglum($SIGLUM-VERSE-WITH-LETTER-PART-1)
 let $actual-verse-with-letter-part-2 := bib:interpret-siglum($SIGLUM-VERSE-WITH-LETTER-PART-2)
 let $actual-verse-with-letter-part-3 := bib:interpret-siglum($SIGLUM-VERSE-WITH-LETTER-PART-3)
@@ -500,11 +537,12 @@ return (
     test:assert-equal-json($expected-siglum-invalid, $actual-siglum-invalid, 'Incorrect interpretation for siglum: ' || $SIGLUM-INVALID),
     test:assert-equal-json($expected-siglum-tome, $actual-siglum-tome, 'Incorrect interpretation for siglum: ' || $SIGLUM-TOME),
     test:assert-equal-json($expected-single-chapter, $actual-single-chapter, 'Incorrect interpretation for siglum: ' || $SIGLUM-SINGLE-CHAPTER),
-    test:assert-equal-json($expected-chapter-range-correct, $actual-chapter-range-correct, 'Incorrect interpretation for siglum: ' || $SIGLUM-CHAPTER-RANGE-CORRECT),
+    test:assert-equal-json($expected-chapter-range-correct-1, $actual-chapter-range-correct-1, 'Incorrect interpretation for siglum: ' || $SIGLUM-CHAPTER-RANGE-CORRECT-1),
+    test:assert-equal-json($expected-chapter-range-correct-2, $actual-chapter-range-correct-2, 'Incorrect interpretation for siglum: ' || $SIGLUM-CHAPTER-RANGE-CORRECT-2),
     test:assert-equal-json($expected-chapter-range-incorrect-1, $actual-chapter-range-incorrect-1, 'Incorrect interpretation for siglum: ' || $SIGLUM-CHAPTER-RANGE-INCORRECT-1),
     test:assert-equal-json($expected-chapter-range-incorrect-2, $actual-chapter-range-incorrect-2, 'Incorrect interpretation for siglum: ' || $SIGLUM-CHAPTER-RANGE-INCORRECT-2),
     test:assert-equal-json($expected-chapter-range-overlapping, $actual-chapter-range-overlapping, 'Incorrect interpretation for siglum: ' || $SIGLUM-CHAPTER-RANGE-OVERLAPPING),
-    test:assert-equal-json($expected-chapter-range-overlapping-2, $actual-chapter-range-overlapping-2, 'Incorrect interpretation for siglum: ' || $SIGLUM-CHAPTER-RANGE-OVERLAPPING),
+    test:assert-equal-json($expected-chapter-range-overlapping-2, $actual-chapter-range-overlapping-2, 'Incorrect interpretation for siglum: ' || $SIGLUM-CHAPTER-RANGE-OVERLAPPING-2),
     test:assert-equal-json($expected-chapter-sequence, $actual-chapter-sequence, 'Incorrect interpretation for siglum: ' || $SIGLUM-CHAPTER-SEQUENCE),
     test:assert-equal-json($expected-chapter-sequence-overlapping, $actual-chapter-sequence-overlapping, 'Incorrect interpretation for siglum: ' || $SIGLUM-CHAPTER-SEQUENCE-OVERLAPPING),
     test:assert-equal-json($expected-chapter-range-sequence-overlapping, $actual-chapter-range-sequence-overlapping, 'Incorrect interpretation for siglum: ' || $SIGLUM-CHAPTER-RANGE-SEQUENCE-OVERLAPPING),
@@ -521,6 +559,11 @@ return (
     test:assert-equal-json($expected-verse-sequence-overlapping-2, $actual-verse-sequence-overlapping-2, 'Incorrect interpretation for siglum: ' || $SIGLUM-VERSE-SEQUENCE-OVERLAPPING-2),
     test:assert-equal-json($expected-verse-sequence-overlapping-3, $actual-verse-sequence-overlapping-3, 'Incorrect interpretation for siglum: ' || $SIGLUM-VERSE-SEQUENCE-OVERLAPPING-3),
     test:assert-equal-json($expected-verse-range-sequence-overlapping, $actual-verse-range-sequence-overlapping, 'Incorrect interpretation for siglum: ' || $SIGLUM-VERSE-RANGE-SEQUENCE-OVERLAPPING),
+    test:assert-equal-json($expected-verse-not-found-1, $actual-verse-not-found-1, 'Incorrect interpretation for siglum: ' || $SIGLUM-VERSE-NOT-FOUND-1),
+    test:assert-equal-json($expected-verse-not-found-2, $actual-verse-not-found-2, 'Incorrect interpretation for siglum: ' || $SIGLUM-VERSE-NOT-FOUND-2),
+    test:assert-equal-json($expected-verse-not-found-3, $actual-verse-not-found-3, 'Incorrect interpretation for siglum: ' || $SIGLUM-VERSE-NOT-FOUND-3),
+    test:assert-equal-json($expected-verse-not-found-4, $actual-verse-not-found-4, 'Incorrect interpretation for siglum: ' || $SIGLUM-VERSE-NOT-FOUND-4),
+    test:assert-equal-json($expected-verse-not-found-5, $actual-verse-not-found-5, 'Incorrect interpretation for siglum: ' || $SIGLUM-VERSE-NOT-FOUND-5),
     test:assert-equal-json($expected-verse-with-letter-part-1, $actual-verse-with-letter-part-1, 'Incorrect interpretation for siglum: ' || $SIGLUM-VERSE-WITH-LETTER-PART-1),
     test:assert-equal-json($expected-verse-with-letter-part-2, $actual-verse-with-letter-part-2, 'Incorrect interpretation for siglum: ' || $SIGLUM-VERSE-WITH-LETTER-PART-2),
     test:assert-equal-json($expected-verse-with-letter-part-3, $actual-verse-with-letter-part-3, 'Incorrect interpretation for siglum: ' || $SIGLUM-VERSE-WITH-LETTER-PART-3),
