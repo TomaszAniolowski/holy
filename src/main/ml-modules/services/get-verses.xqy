@@ -49,7 +49,6 @@ declare private function verses:response(
             cts:search(/es:envelope/es:instance/ch:Chapter,
                     cts:and-query((
                         cts:directory-query($fc:CHAPTER-BASE-URI || $tome || '/', 'infinity'),
-                        cts:element-value-query(xs:QName('ch:tome'), $tome),
                         cts:element-value-query(xs:QName('ch:number'), $chapter-numbers)
                     )),
                     'score-zero',
@@ -131,14 +130,12 @@ declare private function verses:verse-object(
         $sub-verse-map as map:map?
 ) as json:object
 {
-    let $content :=
-        let $verse-content := json:object()
-        let $_ :=
-            for $i in (1 to fn:count(map:keys($sub-verse-map)))
-            let $sub-num := flow:get-roman-numeral-from-int($i)
-            let $content := map:get($sub-verse-map, $sub-num)
-            return map:put($verse-content, $sub-num, $content)
-        return $verse-content
+    let $content := map:new((
+        for $i in (1 to fn:count(map:keys($sub-verse-map)))
+        let $sub-num := flow:get-roman-numeral-from-int($i)
+        let $content := map:get($sub-verse-map, $sub-num)
+        return map:entry($sub-num, $content)
+    ))
     return json:object()
     => map:with('number', $verse-number)
     => map:with('content', $content)
@@ -172,10 +169,8 @@ declare private function verses:invalid-siglum(
         $details as xs:string?
 ) as json:object
 {
-    let $_ :=
-        if (fn:contains($details, 'not found'))
-        then map:put($context, 'output-status', (404, 'Not Found'))
-        else map:put($context, 'output-status', (400, 'Bad Request'))
+    let $output-status := if (fn:contains($details, 'not found')) then (404, 'Not Found') else (400, 'Bad Request')
+    let $_ := map:put($context, 'output-status', $output-status)
     let $siglum := if (fn:empty($siglum)) then '' else $siglum
     let $message := if (fn:empty($details)) then 'Invalid siglum' else 'Invalid siglum (' || $details || ')'
     return json:object()
