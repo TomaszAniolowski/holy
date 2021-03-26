@@ -130,12 +130,14 @@ declare private function verses:verse-object(
         $sub-verse-map as map:map?
 ) as json:object
 {
-    let $content := map:new((
-        for $i in (1 to fn:count(map:keys($sub-verse-map)))
-        let $sub-num := flow:get-roman-numeral-from-int($i)
-        let $content := map:get($sub-verse-map, $sub-num)
-        return map:entry($sub-num, $content)
-    ))
+    let $content :=
+        let $verse-content := json:object()
+        let $_ :=
+            for $i in (1 to fn:count(map:keys($sub-verse-map)))
+            let $sub-num := flow:get-roman-numeral-from-int($i)
+            let $content := map:get($sub-verse-map, $sub-num)
+            return map:put($verse-content, $sub-num, $content)
+        return $verse-content
     return json:object()
     => map:with('number', $verse-number)
     => map:with('content', $content)
