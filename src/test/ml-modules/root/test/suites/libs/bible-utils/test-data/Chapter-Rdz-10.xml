@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<envelope xmlns="http://marklogic.com/entity-services">
+    <headers>
+        <headers xmlns:es="http://marklogic.com/entity-services">
+            <createdOn>2021-01-09T15:45:25.094469Z</createdOn>
+            <sourceUris>
+                <sourceUri>/tome/Rdz/chapter/10/v1.xml</sourceUri>
+            </sourceUris>
+        </headers>
+    </headers>
+    <triples/>
+    <instance>
+        <info>
+            <title>Chapter</title>
+            <version>1.0.0</version>
+        </info>
+        <ch:Chapter xmlns:ch="http://holy.arch.com/holy-entities/chapter">
+            <ch:id>4e34e9f35877df9caa7fba86d267e238</ch:id>
+            <ch:testament>Old Testament</ch:testament>
+            <ch:tome>Rdz</ch:tome>
+            <ch:number>10</ch:number>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>f2c70a665b6904e5f16f0c716cdd9744</v:id>
+                    <v:card-number>1</v:card-number>
+                    <v:number>1</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>4e34e9f35877df9caa7fba86d267e238</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Oto dzieje synów Noego: Sema, Chama i Jafeta. Po potopie urodzili się im synowie.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>efb0b68717dd7db49c27315a009def64</v:id>
+                    <v:card-number>2</v:card-number>
+                    <v:number>2</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>4e34e9f35877df9caa7fba86d267e238</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Synowie Jafeta: Gomer, Magog, Madaj, Jawan, Tubal, Meszek i Tiras.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>95ad977ec39b14957676e7585be9ac63</v:id>
+                    <v:card-number>3</v:card-number>
+                    <v:number>3</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>4e34e9f35877df9caa7fba86d267e238</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Synowie Gomera: Aszkenaz, Rifat i Togarma.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>c1f820e9c9da421066269bb3a290f96b</v:id>
+                    <v:card-number>4</v:card-number>
+                    <v:number>4</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>4e34e9f35877df9caa7fba86d267e238</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Synowie Jawana: Elisza, Tarszisz, Kittim i Dodanim.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>dc67c1816caadaefa72eb19c6029736c</v:id>
+                    <v:card-number>5</v:card-number>
+                    <v:number>5</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>4e34e9f35877df9caa7fba86d267e238</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Od nich wywodzą się ludy wyspiarskie. Są to synowie Jafeta, będący w różnych krajach,
+                        odpowiednio do ich języków i rodów, pośród swoich ludów.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>63ac38b639c1d46391afe16ee7c6f9fc</v:id>
+                    <v:card-number>6</v:card-number>
+                    <v:number>6</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>4e34e9f35877df9caa7fba86d267e238</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Synowie Chama: Kusz, Misraim, Put i Kanaan.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>5b42c107a21271157e40ac1d00bb5db5</v:id>
+                    <v:card-number>7</v:card-number>
+                    <v:number>7</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>4e34e9f35877df9caa7fba86d267e238</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Synowie Kusza: Seba, Chawila, Sabta, Rama i Sabteka. Synowie Ramy: Saba i Dedan.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>3625a8e6f72c5803ef4ed6b06e77d1a2</v:id>
+                    <v:card-number>8</v:card-number>
+                    <v:number>8</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>4e34e9f35877df9caa7fba86d267e238</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Kusz spłodził także Nimroda. Był on pierwszym mocarzem na ziemi</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>c487080ef8d8b51969c7a2d09b778476</v:id>
+                    <v:card-number>9</v:card-number>
+                    <v:number>9</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>4e34e9f35877df9caa7fba86d267e238</ch:Chapter>
+                    </v:chapter>
+                    <v:content>i zdolnym myśliwym. Dlatego mówi się: „Myśliwy, uzdolniony przez PANA jak Nimrod”.
+                    </v:content>
+                    <v:dictionary datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            05aece6b6fd41c7414a49e07d0072e35
+                        </supp:Supplement>
+                    </v:dictionary>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>8abc66021603b0929811ab6f8e561a9f</v:id>
+                    <v:card-number>10</v:card-number>
+                    <v:number>10</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>4e34e9f35877df9caa7fba86d267e238</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Jego władza rozciągała się początkowo na Babel, Erek, Akkad i Kalne, w kraju Szinear.
+                    </v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            2adba854ba5f0a6e56c41088dfcb8b56
+                        </supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>00bbc88ef3034c01581a9bc63f5feafc</v:id>
+                    <v:card-number>11</v:card-number>
+                    <v:number>11</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>4e34e9f35877df9caa7fba86d267e238</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Z tego kraju poszedł on do Assuru. Zbudował tam Niniwę, Rechobot-Ir, Kalach i</v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            5c82c27ee8dccf10655ffb0a8bd627d3
+                        </supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>d243f613c341695ec6794b24e179ee64</v:id>
+                    <v:card-number>12</v:card-number>
+                    <v:number>12</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>4e34e9f35877df9caa7fba86d267e238</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Resan, które jest wielkim miastem między Niniwą i Kalach.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>d96f6d3bcf907cff77f72bfb3c314872</v:id>
+                    <v:card-number>13</v:card-number>
+                    <v:number>13</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>4e34e9f35877df9caa7fba86d267e238</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Misraim był przodkiem Ludytów, Anamitów, Lehabitów, Naftuchitów,</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>e69cbe17179fe52cfb2116c5a596542d</v:id>
+                    <v:card-number>14</v:card-number>
+                    <v:number>14</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>4e34e9f35877df9caa7fba86d267e238</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Patrusytów, Kasluchitów, od których pochodzą Filistyni i Kaftoryci.</v:content>
+                    <v:dictionary datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            8a10db9f29769f4c6cb3fc219cf58a51
+                        </supp:Supplement>
+                    </v:dictionary>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>7b7592d5f8f37c1f20bb708bc50ada9b</v:id>
+                    <v:card-number>15</v:card-number>
+                    <v:number>15</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>4e34e9f35877df9caa7fba86d267e238</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Kanaan natomiast był ojcem pierworodnego Sydona, Cheta,</v:content>
+                    <v:dictionary datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            9edfe0eca37652e40fee0cc52071a1c9
+                        </supp:Supplement>
+                    </v:dictionary>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>d8e632c35b5f1772317a543fc716e06c</v:id>
+                    <v:card-number>16</v:card-number>
+                    <v:number>16</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>4e34e9f35877df9caa7fba86d267e238</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Jebusytów, Amorytów, Girgaszytów,</v:content>
+                    <v:dictionary datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            ef451ac49dc9047b6e5bae4169c7d9d3
+                        </supp:Supplement>
+                    </v:dictionary>
+                    <v:dictionary datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            a6dbf4dc8fc27b1f08da9d5ffb423c8c
+                        </supp:Supplement>
+                    </v:dictionary>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>5777119aed7f573f0fd2f3356073f374</v:id>
+                    <v:card-number>17</v:card-number>
+                    <v:number>17</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>4e34e9f35877df9caa7fba86d267e238</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Chiwwitów, Arkitów, Sinitów,</v:content>
+                    <v:dictionary datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            18324cb1f8d31ebe74b374599c5a0dda
+                        </supp:Supplement>
+                    </v:dictionary>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>71d3a9c779106f5bf235a06fd0bc3eaa</v:id>
+                    <v:card-number>18</v:card-number>
+                    <v:number>18</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>4e34e9f35877df9caa7fba86d267e238</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Arwadytów, Semarytów, Chamatytów. Potem rozproszyły się rody Kananejczyków.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>bf1e8375596e4729504ac6dbd61552ac</v:id>
+                    <v:card-number>19</v:card-number>
+                    <v:number>19</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>4e34e9f35877df9caa7fba86d267e238</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Granica Kananejczyków biegła od Sydonu w kierunku Geraru, do Gazy. W kierunku Sodomy,
+                        Gomory, Admy i Seboim aż do Leszy.
+                    </v:content>
+                    <v:dictionary datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            521e70c29c510e1bfcd55116580d6620
+                        </supp:Supplement>
+                    </v:dictionary>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>0258230324a6e830ddc57eb3c903b1c3</v:id>
+                    <v:card-number>20</v:card-number>
+                    <v:number>20</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>4e34e9f35877df9caa7fba86d267e238</ch:Chapter>
+                    </v:chapter>
+                    <v:content>To są potomkowie Chama – według ich rodów i języków, w ich ziemiach i ludach.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>ed74d05d8074a0a51b7a0c7b82ae12b4</v:id>
+                    <v:card-number>21</v:card-number>
+                    <v:number>21</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>4e34e9f35877df9caa7fba86d267e238</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Również Semowi, praojcu wszystkich synów Hebera, starszemu bratu Jafeta, urodzili się
+                        synowie.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>639cdc83ed91021b195dde58fe13acc1</v:id>
+                    <v:card-number>22</v:card-number>
+                    <v:number>22</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>4e34e9f35877df9caa7fba86d267e238</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Synowie Sema: Elam, Assur, Arpachszad, Lud i Aram.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>2a030a7d415abfa47f0ac6567edbbed5</v:id>
+                    <v:card-number>23</v:card-number>
+                    <v:number>23</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>4e34e9f35877df9caa7fba86d267e238</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Synowie Arama: Us, Chul, Geter i Masz.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>c06e2fbe2362ac9732707a237a3594c7</v:id>
+                    <v:card-number>24</v:card-number>
+                    <v:number>24</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>4e34e9f35877df9caa7fba86d267e238</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Arpachszad był ojcem Szelacha, a Szelach spłodził Ebera.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>8f2ab760a1c97316397f11e0e75ea067</v:id>
+                    <v:card-number>25</v:card-number>
+                    <v:number>25</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>4e34e9f35877df9caa7fba86d267e238</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Eberowi urodzili się dwaj synowie: pierwszy miał na imię Peleg, ponieważ za jego dni kraj
+                        był podzielony. Jego bratem był Joktan.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>f6950b0f3b9163ed8bc6e60a0aed77a4</v:id>
+                    <v:card-number>26</v:card-number>
+                    <v:number>26</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>4e34e9f35877df9caa7fba86d267e238</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Joktan zaś był ojcem Almodada, Szelefa, Chasarmaweta i Jeracha,</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>a94b7d3d2d23b1490849b131f04e0d4e</v:id>
+                    <v:card-number>27</v:card-number>
+                    <v:number>27</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>4e34e9f35877df9caa7fba86d267e238</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Hadorama, Uzala i Dikli,</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>893cf8a26c4e4969f8d4f5052e9d32f2</v:id>
+                    <v:card-number>28</v:card-number>
+                    <v:number>28</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>4e34e9f35877df9caa7fba86d267e238</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Obala, Abimaela, Saby,</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>43d4b06875b8682a8a0ec030f314e2d2</v:id>
+                    <v:card-number>29</v:card-number>
+                    <v:number>29</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>4e34e9f35877df9caa7fba86d267e238</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Ofira, Chawili i Jobaba. Wszyscy oni byli synami Joktana.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>50160833ae89ae5c95b3282469c06d2d</v:id>
+                    <v:card-number>30</v:card-number>
+                    <v:number>30</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>4e34e9f35877df9caa7fba86d267e238</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Ich siedziby rozciągały się od Meszy aż do Sefar ku górom wschodnim.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>ca6f7a7cd58cc94410b54f3c2bcc773e</v:id>
+                    <v:card-number>31</v:card-number>
+                    <v:number>31</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>4e34e9f35877df9caa7fba86d267e238</ch:Chapter>
+                    </v:chapter>
+                    <v:content>To są synowie Sema – według ich rodów i języków, w swoich ziemiach i ludach.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>0b4f3083d95945afb841fb6d927ae841</v:id>
+                    <v:card-number>32</v:card-number>
+                    <v:number>32</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>4e34e9f35877df9caa7fba86d267e238</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Takie są rody synów Noego – według ich rodowodów, według ich ludów. Od nich wywodzą się
+                        ludy na ziemi po potopie.
+                    </v:content>
+                    <v:dictionary datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            0073b2455f84fffb50a5daeade9da224
+                        </supp:Supplement>
+                    </v:dictionary>
+                </v:Verse>
+            </ch:verses>
+        </ch:Chapter>
+    </instance>
+    <attachments/>
+</envelope>

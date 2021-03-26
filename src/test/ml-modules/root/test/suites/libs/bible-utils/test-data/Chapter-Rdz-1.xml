@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<envelope xmlns="http://marklogic.com/entity-services">
+    <headers>
+        <headers xmlns:es="http://marklogic.com/entity-services">
+            <createdOn>2021-01-09T15:45:25.094469Z</createdOn>
+            <sourceUris>
+                <sourceUri>/tome/Rdz/chapter/1/v1.xml</sourceUri>
+            </sourceUris>
+        </headers>
+    </headers>
+    <triples/>
+    <instance>
+        <info>
+            <title>Chapter</title>
+            <version>1.0.0</version>
+        </info>
+        <ch:Chapter xmlns:ch="http://holy.arch.com/holy-entities/chapter">
+            <ch:id>2fbcbbe712c8f324bc2ac56283236c66</ch:id>
+            <ch:testament>Old Testament</ch:testament>
+            <ch:tome>Rdz</ch:tome>
+            <ch:number>1</ch:number>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>1f8f31076026a74fc7091a6f431e1bea</v:id>
+                    <v:card-number>1</v:card-number>
+                    <v:number>1</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>2fbcbbe712c8f324bc2ac56283236c66</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Na początku Bóg stworzył niebo i ziemię.</v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            1729f9e6112fdf4e08a581dcf4fd743d
+                        </supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>9acff9ccbbd7441e0ff29630c8583360</v:id>
+                    <v:card-number>2</v:card-number>
+                    <v:number>2</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>2fbcbbe712c8f324bc2ac56283236c66</ch:Chapter>
+                    </v:chapter>
+                    <v:content>A ziemia była bezładną pustką. Ciemność zalegała nad bezmiarem wód, a duch Boży unosił
+                        się nad wodami.
+                    </v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            f785bbefee67b7091d95ea650caf0df5
+                        </supp:Supplement>
+                    </v:definitions>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            a1bd47cf5e58c3dfdc03479d5ba5c5b5
+                        </supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>56747f0c2e2b41a9d742ca6f0d7f5939</v:id>
+                    <v:card-number>3</v:card-number>
+                    <v:number>3</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>2fbcbbe712c8f324bc2ac56283236c66</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Bóg rzekł: „Niech się stanie światłość”. I stała się światłość.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>dfa7204efb3621f6d3ff2324650d658d</v:id>
+                    <v:card-number>4</v:card-number>
+                    <v:number>4</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>2fbcbbe712c8f324bc2ac56283236c66</ch:Chapter>
+                    </v:chapter>
+                    <v:content>I widział Bóg, że światłość jest dobra. Oddzielił więc światłość od ciemności.
+                    </v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            31e2375a4ffdb76401aefb8d88c18e7b
+                        </supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>8b7b47fc6cbfbc894f11f834c9d24df2</v:id>
+                    <v:card-number>5</v:card-number>
+                    <v:number>5</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>2fbcbbe712c8f324bc2ac56283236c66</ch:Chapter>
+                    </v:chapter>
+                    <v:content>I nazwał Bóg światłość dniem, a ciemność – nocą. Zapadł wieczór i zaświtał poranek dnia
+                        pierwszego.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>30774c7921dd3c270f2c6c71d91c3a98</v:id>
+                    <v:card-number>6</v:card-number>
+                    <v:number>6</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>2fbcbbe712c8f324bc2ac56283236c66</ch:Chapter>
+                    </v:chapter>
+                    <v:content>I rzekł Bóg: „Niech się stanie sklepienie wśród wód i niech oddzieli jedne wody od
+                        drugich”.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>2faf0968ec7dc486591702f60c0674f7</v:id>
+                    <v:card-number>7</v:card-number>
+                    <v:number>7</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>2fbcbbe712c8f324bc2ac56283236c66</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Uczynił więc Bóg to sklepienie i oddzielił wody pod sklepieniem od wód, które były nad
+                        nim. I tak się stało.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>db67a84699cc8c122076fa4683b6bbe1</v:id>
+                    <v:card-number>8</v:card-number>
+                    <v:number>8</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>2fbcbbe712c8f324bc2ac56283236c66</ch:Chapter>
+                    </v:chapter>
+                    <v:content>I nazwał Bóg sklepienie niebem. Zapadł wieczór i zaświtał poranek dnia drugiego.
+                    </v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            3ef22b026fc577ab09b55d7a338436a4
+                        </supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>89fd21d527d93b5ede63b517f7d66293</v:id>
+                    <v:card-number>9</v:card-number>
+                    <v:number>9</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>2fbcbbe712c8f324bc2ac56283236c66</ch:Chapter>
+                    </v:chapter>
+                    <v:content>I rzekł Bóg: „Niech się zbierze woda pod sklepieniem na jedno miejsce i niech się odsłoni
+                        sucha powierzchnia”. I tak się stało.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>9aab73c5a6c8ed64f0e12f45de2453f9</v:id>
+                    <v:card-number>10</v:card-number>
+                    <v:number>10</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>2fbcbbe712c8f324bc2ac56283236c66</ch:Chapter>
+                    </v:chapter>
+                    <v:content>I nazwał Bóg suchą powierzchnię lądem, a zbiorowisko wody – morzem. I widział Bóg, że
+                        było to dobre.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>355a039d20c81a628c9f5fb4e140ec92</v:id>
+                    <v:card-number>11</v:card-number>
+                    <v:number>11</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>2fbcbbe712c8f324bc2ac56283236c66</ch:Chapter>
+                    </v:chapter>
+                    <v:content>I rzekł Bóg: „Niech ziemia napełni się zielonymi roślinami rozsiewającymi nasiona oraz
+                        różnymi gatunkami drzew, które rodzą owoce pełne nasion”. I tak się stało.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>d0bb37942f27aded10d3afd140bbba03</v:id>
+                    <v:card-number>12</v:card-number>
+                    <v:number>12</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>2fbcbbe712c8f324bc2ac56283236c66</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Ziemia wydała różne rodzaje zielonych roślin rozsiewających nasiona oraz różne gatunki
+                        drzew, które rodzą owoce pełne nasion. I widział Bóg, że było to dobre.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>a9b65007d92088fbebc77a4d4f9b6cf6</v:id>
+                    <v:card-number>13</v:card-number>
+                    <v:number>13</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>2fbcbbe712c8f324bc2ac56283236c66</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Zapadł wieczór i zaświtał poranek dnia trzeciego.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>0b442efd0f8a7b92afd96b48cbd97bac</v:id>
+                    <v:card-number>14</v:card-number>
+                    <v:number>14</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>2fbcbbe712c8f324bc2ac56283236c66</ch:Chapter>
+                    </v:chapter>
+                    <v:content>I rzekł Bóg: „Niech się staną światła na sklepieniu niebieskim, by oddzielały dzień od
+                        nocy i wyznaczały święta, dni i lata.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>046f1a0dedf98ebadc9f5fb33f5f946e</v:id>
+                    <v:card-number>15</v:card-number>
+                    <v:number>15</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>2fbcbbe712c8f324bc2ac56283236c66</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Niech jaśnieją na sklepieniu niebieskim i świecą nad ziemią”. I tak się stało.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>9af731bc6619dd94ff916fef29def5d2</v:id>
+                    <v:card-number>16</v:card-number>
+                    <v:number>16</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>2fbcbbe712c8f324bc2ac56283236c66</ch:Chapter>
+                    </v:chapter>
+                    <v:content>I uczynił Bóg dwa wielkie światła: światło większe, aby rządziło dniem, i światło
+                        mniejsze, aby rządziło nocą, oraz gwiazdy.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>6ac9f7da686bdce109e9352a48b6e648</v:id>
+                    <v:card-number>17</v:card-number>
+                    <v:number>17</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>2fbcbbe712c8f324bc2ac56283236c66</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Umieścił je Bóg na sklepieniu niebieskim, by świeciły nad ziemią,</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>a51a50a80bd5b64856dd7b744ba98a3f</v:id>
+                    <v:card-number>18</v:card-number>
+                    <v:number>18</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>2fbcbbe712c8f324bc2ac56283236c66</ch:Chapter>
+                    </v:chapter>
+                    <v:content>by rządziły dniem i nocą i oddzielały światło od ciemności. I widział Bóg, że było to
+                        dobre.
+                    </v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            b840d76c3ec3d290bd7572689a6a1019
+                        </supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>c6fe6193f32ff38cce705b6768f63fb0</v:id>
+                    <v:card-number>19</v:card-number>
+                    <v:number>19</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>2fbcbbe712c8f324bc2ac56283236c66</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Zapadł wieczór i zaświtał poranek dnia czwartego.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>18727a522c5aba96e001fb9f35f7abbc</v:id>
+                    <v:card-number>20</v:card-number>
+                    <v:number>20</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>2fbcbbe712c8f324bc2ac56283236c66</ch:Chapter>
+                    </v:chapter>
+                    <v:content>I rzekł Bóg: „Niech się zaroją wody od istot żyjących, a ptactwo niech lata nad ziemią,
+                        pod sklepieniem niebieskim”.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>634ae3803ef9bb6e7da5923281054526</v:id>
+                    <v:card-number>21</v:card-number>
+                    <v:number>21</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>2fbcbbe712c8f324bc2ac56283236c66</ch:Chapter>
+                    </v:chapter>
+                    <v:content>I stworzył Bóg wielkie potwory morskie i wszelkie pływające istoty żywe, których pełno
+                        było w wodach, i wszelkie latające ptactwo różnego rodzaju.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>75496b73ff70d8a5e080a4301a07f7e2</v:id>
+                    <v:card-number>22</v:card-number>
+                    <v:number>22</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>2fbcbbe712c8f324bc2ac56283236c66</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Pobłogosławił je Bóg tymi słowami: „Bądźcie płodne, mnóżcie się i zapełniajcie wody
+                        morskie. Ptactwo zaś niech się mnoży na ziemi”.
+                    </v:content>
+                    <v:dictionary datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            38b6de0276dc9065ca47415a85a202af
+                        </supp:Supplement>
+                    </v:dictionary>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>941a07a720a89f0821315c246f955345</v:id>
+                    <v:card-number>23</v:card-number>
+                    <v:number>23</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>2fbcbbe712c8f324bc2ac56283236c66</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Zapadł wieczór i zaświtał poranek dnia piątego.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>f5a67bb41a575555b002972fbf80f697</v:id>
+                    <v:card-number>24</v:card-number>
+                    <v:number>24</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>2fbcbbe712c8f324bc2ac56283236c66</ch:Chapter>
+                    </v:chapter>
+                    <v:content>I rzekł Bóg: „Niech ziemia zrodzi różne żywe istoty: bydło, zwierzęta pełzające i polne”.
+                        I tak się stało.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>ff2935a92d5f4afb37c14a394c05d291</v:id>
+                    <v:card-number>25</v:card-number>
+                    <v:number>25</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>2fbcbbe712c8f324bc2ac56283236c66</ch:Chapter>
+                    </v:chapter>
+                    <v:content>I Bóg uczynił różne polne zwierzęta, wszelkie bydło i zwierzęta pełzające. I widział Bóg,
+                        że było to dobre.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>7b87e1f68e16ace601fcd2294af42900</v:id>
+                    <v:card-number>26</v:card-number>
+                    <v:number>26</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>2fbcbbe712c8f324bc2ac56283236c66</ch:Chapter>
+                    </v:chapter>
+                    <v:content>I rzekł Bóg: „Uczyńmy ludzi na Nasz obraz, podobnych do Nas. Niech panują nad rybami
+                        morskimi, nad ptactwem powietrznym, nad bydłem, nad całą ziemią i nad wszelkimi zwierzętami
+                        pełzającymi po ziemi”.
+                    </v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            1ed2d7e74e087dc96ace4d5c6b5dcac3
+                        </supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>d9d6297fe8f69dadc3fb635ed2b3adaa</v:id>
+                    <v:card-number>27</v:card-number>
+                    <v:number>27</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>2fbcbbe712c8f324bc2ac56283236c66</ch:Chapter>
+                    </v:chapter>
+                    <v:content>I stworzył Bóg ludzi na swój obraz: na obraz Boży ich stworzył. Stworzył ich jako
+                        mężczyznę i kobietę.
+                    </v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            99c6fb9e88157b729fd89f01fa96e8c8
+                        </supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>ab49040ba8514a910473ca2f67717924</v:id>
+                    <v:card-number>28</v:card-number>
+                    <v:number>28</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>2fbcbbe712c8f324bc2ac56283236c66</ch:Chapter>
+                    </v:chapter>
+                    <v:content>I błogosławił im, mówiąc: „Bądźcie płodni, mnóżcie się i zaludniajcie ziemię oraz czyńcie
+                        ją sobie poddaną. Panujcie nad rybami morskimi, nad ptactwem powietrznym i nad wszelką istotą
+                        poruszającą się po ziemi”.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>f2966a791e467bad163d07b081dd39e5</v:id>
+                    <v:card-number>29</v:card-number>
+                    <v:number>29</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>2fbcbbe712c8f324bc2ac56283236c66</ch:Chapter>
+                    </v:chapter>
+                    <v:content>I rzekł Bóg: „Oto dałem wam wszelkie rośliny na całej ziemi, wydające nasienie, i
+                        wszelkie drzewa owocowe, zawierające nasienie. Będą one dla was pokarmem.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>958f80b5d84a7aad6a7ff2b0d583619d</v:id>
+                    <v:card-number>30</v:card-number>
+                    <v:number>30</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>2fbcbbe712c8f324bc2ac56283236c66</ch:Chapter>
+                    </v:chapter>
+                    <v:content>A dla wszelkiego zwierzęcia polnego i wszelkiego ptactwa powietrznego, i dla wszystkiego,
+                        co się porusza po ziemi i ma w sobie życie, daję na pokarm wszelkie rośliny zielone”. I tak się
+                        stało.
+                    </v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            2310f1918038850d0cd0b2849115f49c
+                        </supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>d2381638f8b65d70c7981f366e47eb89</v:id>
+                    <v:card-number>31</v:card-number>
+                    <v:number>31</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>2fbcbbe712c8f324bc2ac56283236c66</ch:Chapter>
+                    </v:chapter>
+                    <v:content>I widział Bóg, że wszystko, co stworzył, było bardzo dobre. Zapadł wieczór i zaświtał
+                        poranek dnia szóstego.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+        </ch:Chapter>
+    </instance>
+    <attachments/>
+</envelope>

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<envelope xmlns="http://marklogic.com/entity-services">
+    <headers>
+        <headers xmlns:es="http://marklogic.com/entity-services">
+            <createdOn>2021-01-09T15:45:10.973716Z</createdOn>
+            <sourceUris>
+                <sourceUri>/tome/Est/chapter/10/v1.xml</sourceUri>
+            </sourceUris>
+        </headers>
+    </headers>
+    <triples/>
+    <instance>
+        <info>
+            <title>Chapter</title>
+            <version>1.0.0</version>
+        </info>
+        <ch:Chapter xmlns:ch="http://holy.arch.com/holy-entities/chapter">
+            <ch:id>cfa192fa4dfbba90d3207bfaf3630af3</ch:id>
+            <ch:testament>Old Testament</ch:testament>
+            <ch:tome>Est</ch:tome>
+            <ch:number>10</ch:number>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>256e692ab618d7b9e98871a5daf5dd81</v:id>
+                    <v:card-number>1</v:card-number>
+                    <v:number>1</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>cfa192fa4dfbba90d3207bfaf3630af3</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Król nałożył podatki na ziemię królestwa i wyspy na morzu.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>c24c1fa00bad0b51a34fd80420377598</v:id>
+                    <v:card-number>2</v:card-number>
+                    <v:number>2</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>cfa192fa4dfbba90d3207bfaf3630af3</ch:Chapter>
+                    </v:chapter>
+                    <v:content>W księdze królów perskich i medyjskich opisał też na pamiątkę swoją potęgę i waleczność,
+                        a także bogactwo i świetność swego królestwa.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>ed7cf7bc469d8fa44e9ae0a087bcb7c2</v:id>
+                    <v:card-number>3</v:card-number>
+                    <v:number>3</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>cfa192fa4dfbba90d3207bfaf3630af3</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Mardocheusz był drugi po królu Artakserksesie. Był wielki w królestwie, a czczony i
+                        miłowany przez Żydów, opowiadał całemu narodowi, co się wydarzyło.
+                    </v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            4a108e581f8f2f14bae1d82308874ced
+                        </supp:Supplement>
+                    </v:definitions>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            d00918139823b7531bd39b0dc59b5350
+                        </supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>20c536f16255635a46e437acd76a33df</v:id>
+                    <v:card-number>4</v:card-number>
+                    <v:number>3a</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>cfa192fa4dfbba90d3207bfaf3630af3</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Mardocheusz mówił: „Wszystko stało się za przyczyną Boga.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>96e40c448514b53bb6aedcfab35a9429</v:id>
+                    <v:card-number>5</v:card-number>
+                    <v:number>3b</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>cfa192fa4dfbba90d3207bfaf3630af3</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Przypomniałem sobie bowiem sen, jaki miałem w związku z tymi wydarzeniami i każde z nich
+                        się wypełniło.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>229c1fce5a9578c27c1b706b6dc260ab</v:id>
+                    <v:card-number>6</v:card-number>
+                    <v:number>3c</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>cfa192fa4dfbba90d3207bfaf3630af3</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Małe źródło stało się rzeką, pojawiło się światło i słońce, i mnóstwo wody. Rzeką jest
+                        Estera, którą król poślubił i uczynił królową.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>f2dcb22c85c79429ac6f65fa9411cfbd</v:id>
+                    <v:card-number>7</v:card-number>
+                    <v:number>3d</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>cfa192fa4dfbba90d3207bfaf3630af3</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Dwa smoki – to ja i Haman.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>48a0fa8669d52f573cec123160503711</v:id>
+                    <v:card-number>8</v:card-number>
+                    <v:number>3e</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>cfa192fa4dfbba90d3207bfaf3630af3</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Narodami są ci, którzy się zeszli, aby wymazać imię Żydów.</v:content>
+                    <v:dictionary datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            d57bb99622909916e0ea1f72d3e6ace5
+                        </supp:Supplement>
+                    </v:dictionary>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>b68a81aea3f81276db6a6fde042798a5</v:id>
+                    <v:card-number>9</v:card-number>
+                    <v:number>3f</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>cfa192fa4dfbba90d3207bfaf3630af3</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Moim narodem jest Izrael, który wołał do Boga i został ocalony. Pan ocalił swój lud i Pan
+                        wybawił nas ze wszystkich tych nieszczęść. Bóg uczynił wielkie znaki i cuda, jakie nie zdarzyły
+                        się wśród pogan,
+                    </v:content>
+                    <v:dictionary datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            31883fbde67362aedc7a974074a80f13
+                        </supp:Supplement>
+                    </v:dictionary>
+                    <v:dictionary datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            05aece6b6fd41c7414a49e07d0072e35
+                        </supp:Supplement>
+                    </v:dictionary>
+                    <v:dictionary datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            aefb6903194dfcccf36ecab24bb51811
+                        </supp:Supplement>
+                    </v:dictionary>
+                    <v:dictionary datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            d96edb3a83c16dd6b9b7e794afdf4449
+                        </supp:Supplement>
+                    </v:dictionary>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>5667813d0d83230263c7a2d9d8ba1a22</v:id>
+                    <v:card-number>10</v:card-number>
+                    <v:number>3g</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>cfa192fa4dfbba90d3207bfaf3630af3</ch:Chapter>
+                    </v:chapter>
+                    <v:content>dlatego wyznaczył dwa losy: jeden dla ludu Bożego, a drugi dla wszystkich narodów.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>2a376d479feb778b09c189e0d2762257</v:id>
+                    <v:card-number>11</v:card-number>
+                    <v:number>3h</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>cfa192fa4dfbba90d3207bfaf3630af3</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Te dwa losy spełniły się o godzinie i czasie, w dniu sądu przed Bogiem i wobec wszystkich
+                        narodów pogańskich.
+                    </v:content>
+                    <v:dictionary datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            b7df14ff0497be9c473d36eb2a663bef
+                        </supp:Supplement>
+                    </v:dictionary>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>2d592c53a52021451de2a46e380ce6ff</v:id>
+                    <v:card-number>12</v:card-number>
+                    <v:number>3i</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>cfa192fa4dfbba90d3207bfaf3630af3</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Wtedy to Bóg wspomniał swój lud i oddał sprawiedliwość swojemu dziedzictwu.</v:content>
+                    <v:dictionary datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            aefb6903194dfcccf36ecab24bb51811
+                        </supp:Supplement>
+                    </v:dictionary>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>940465297eb1c3183590277672d7be81</v:id>
+                    <v:card-number>13</v:card-number>
+                    <v:number>3k</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>cfa192fa4dfbba90d3207bfaf3630af3</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Te więc dni miesiąca Adar, czternasty i piętnasty dzień tego miesiąca, będą dla Jego ludu
+                        Izraela dniami spotkań, radości i wesela przed Bogiem przez pokolenia na wieki”.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>f0778376b9444f65d5ebab4931c132ff</v:id>
+                    <v:card-number>14</v:card-number>
+                    <v:number>3l</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>cfa192fa4dfbba90d3207bfaf3630af3</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Dozyteusz, który mówił, że jest kapłanem i lewitą, oraz Ptolemeusz, jego syn, przywieźli
+                        powyższy list dotyczący Purim w czwartym roku panowania Ptolemeusza i Kleopatry. Mówili, że jest
+                        wiarygodny i że został przetłumaczony w Jeruzalem przez Lizymacha, syna Ptolemeusza.
+                    </v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            81f41a612f3d585c81d8d1871b51309b
+                        </supp:Supplement>
+                    </v:definitions>
+                    <v:dictionary datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            d48b70803cff487accbde9b082960d26
+                        </supp:Supplement>
+                    </v:dictionary>
+                    <v:dictionary datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            7c64b0b336edd71184215656337859da
+                        </supp:Supplement>
+                    </v:dictionary>
+                </v:Verse>
+            </ch:verses>
+        </ch:Chapter>
+    </instance>
+    <attachments/>
+</envelope>

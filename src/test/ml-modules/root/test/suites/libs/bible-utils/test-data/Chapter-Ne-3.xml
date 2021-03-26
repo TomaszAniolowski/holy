@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<envelope xmlns="http://marklogic.com/entity-services">
+    <headers>
+        <headers xmlns:es="http://marklogic.com/entity-services">
+            <createdOn>2021-01-09T15:45:21.504867Z</createdOn>
+            <sourceUris>
+                <sourceUri>/tome/Ne/chapter/3/v1.xml</sourceUri>
+            </sourceUris>
+        </headers>
+    </headers>
+    <triples/>
+    <instance>
+        <info>
+            <title>Chapter</title>
+            <version>1.0.0</version>
+        </info>
+        <ch:Chapter xmlns:ch="http://holy.arch.com/holy-entities/chapter">
+            <ch:id>9e40901e708e00001940b0066df18f1a</ch:id>
+            <ch:testament>Old Testament</ch:testament>
+            <ch:tome>Ne</ch:tome>
+            <ch:number>3</ch:number>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>edff9f2be8fb734179faa1f8adb21a8e</v:id>
+                    <v:card-number>1</v:card-number>
+                    <v:number>1</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>9e40901e708e00001940b0066df18f1a</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Najwyższy kapłan Eliaszib oraz jego bracia kapłani podjęli się odbudowy Bramy Owczej;
+                        poświęcili ją i wstawili wrota. Dokonali również napraw od Wieży Stu do wieży Chananeela.
+                    </v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            5f70aa7a1ec751a0664dc71ba5db3d59
+                        </supp:Supplement>
+                    </v:definitions>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            61c92ca581ba306305297c7d33403c04
+                        </supp:Supplement>
+                    </v:definitions>
+                    <v:dictionary datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            4bc5c0b2590d36a7c10e750b034aeceb
+                        </supp:Supplement>
+                    </v:dictionary>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>62b46529fef1a7332f814e8c20ac68d9</v:id>
+                    <v:card-number>2</v:card-number>
+                    <v:number>2</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>9e40901e708e00001940b0066df18f1a</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Obok nich pracowali przy budowie ludzie z Jerycha a za nimi pracował Zakkur, syn
+                        Imriego.
+                    </v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            0a3a1541c16e577c31ca8640b868d444
+                        </supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>eb14d74e6017243836953450ce2b6dde</v:id>
+                    <v:card-number>3</v:card-number>
+                    <v:number>3</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>9e40901e708e00001940b0066df18f1a</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Bramę Rybną odbudowywali ludzie z rodu Senaja: wymurowali jej odrzwia, wstawili w nie
+                        wrota i sporządzili zamki i zasuwy.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>1cf608989c454777e6e4340048948ef4</v:id>
+                    <v:card-number>4</v:card-number>
+                    <v:number>4</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>9e40901e708e00001940b0066df18f1a</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Obok nich odbudowywał Meremot, syn Uriasza, syna Hakkosa, a obok niego Meszullam, syn
+                        Berekiasza, syna Meszezabela; z drugiej strony naprawiał Sadok, syn Baany.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>7784ed4782a014036dd79b87cc49a215</v:id>
+                    <v:card-number>5</v:card-number>
+                    <v:number>5</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>9e40901e708e00001940b0066df18f1a</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Dalej za nimi pracowali mieszkańcy Tekoa, chociaż przedniejsi z nich nie ugięli karku,
+                        żeby służyć swemu panu.
+                    </v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            49e1dff413b2c853a21e50483bb77ea6
+                        </supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>3ffe8bb4420ce6ed12739a35ce4f273d</v:id>
+                    <v:card-number>6</v:card-number>
+                    <v:number>6</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>9e40901e708e00001940b0066df18f1a</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Bramę Starą naprawiali Jojada, syn Paseacha, i Meszullam, syn Besodiasza: wymurowali jej
+                        odrzwia, wstawili w nie wrota i sporządzili zamki i zasuwy.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>38aaea43d3e546621c459ae03b966b61</v:id>
+                    <v:card-number>7</v:card-number>
+                    <v:number>7</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>9e40901e708e00001940b0066df18f1a</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Obok nich naprawiali Melatiasz Gabaonita i Jadon Meronotyta oraz mieszkańcy Gabaonu i
+                        Mispy podlegli namiestnikowi Transeufratei.
+                    </v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            991a7eaa283386c80aa556326112a1f0
+                        </supp:Supplement>
+                    </v:definitions>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            9eb7bfad53d5c1d84fad5cc484101170
+                        </supp:Supplement>
+                    </v:definitions>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            efd1d151625caa72c027618182bb8627
+                        </supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>e94acd6bddf816a949441262bd0acb15</v:id>
+                    <v:card-number>8</v:card-number>
+                    <v:number>8</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>9e40901e708e00001940b0066df18f1a</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Obok nich naprawiał Uzzjel, syn Charhajasza, z bractwa złotników, i dalej Chananiasz,
+                        syn…, z bractwa producentów olejków. Odbudowali Jerozolimę aż do Muru Szerokiego.
+                    </v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            6d98399204d0582b54b985bcb248627d
+                        </supp:Supplement>
+                    </v:definitions>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            452ba081e9f5ebda7fd284f1d63ab2cd
+                        </supp:Supplement>
+                    </v:definitions>
+                    <v:dictionary datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            7c64b0b336edd71184215656337859da
+                        </supp:Supplement>
+                    </v:dictionary>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>3cff97ac2d4363e4fd0763862a5cecdf</v:id>
+                    <v:card-number>9</v:card-number>
+                    <v:number>9</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>9e40901e708e00001940b0066df18f1a</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Obok nich naprawiał Refajasz, syn Chura, zwierzchnik nad połową okręgu jerozolimskiego.
+                    </v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            0d5c4488e303dbeb00eaec6ef50cf4b0
+                        </supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>d6d0a07f2b2541ebb0b1de403b4cb27d</v:id>
+                    <v:card-number>10</v:card-number>
+                    <v:number>10</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>9e40901e708e00001940b0066df18f1a</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Dalej pracował Jedajasz, syn Charumafa, naprzeciw swego domu; obok niego naprawiał
+                        Chatusz, syn Chaszabnejasza.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>a6371857a976b446151225b590cd336d</v:id>
+                    <v:card-number>11</v:card-number>
+                    <v:number>11</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>9e40901e708e00001940b0066df18f1a</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Malkiasz, syn Charima i Chaszub, syn Pachat-Moaba, odbudowywali dalszy odcinek z Wieżą
+                        Pieców.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>5da4b5b13f024c110e102d347b093c7f</v:id>
+                    <v:card-number>12</v:card-number>
+                    <v:number>12</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>9e40901e708e00001940b0066df18f1a</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Obok nich pracował Szallum, syn Hallochesza, zwierzchnik nad drugą połową okręgu
+                        jerozolimskiego, wraz ze swymi córkami.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>c077f882d9752cd6bea009e9cad7ffef</v:id>
+                    <v:card-number>13</v:card-number>
+                    <v:number>13</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>9e40901e708e00001940b0066df18f1a</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Bramę nad Doliną budował Chanun z mieszkańcami Zanoach: wybudowali ją, wstawili jej
+                        wrota, sporządzili zamki i zasuwy, wznieśli tysiąc łokci muru aż do Bramy Śmietniska.
+                    </v:content>
+                    <v:dictionary datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            a50993cfa6c188f9ae6b9a2b3dd2d47b
+                        </supp:Supplement>
+                    </v:dictionary>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>62f776362824f62bff3453edd022d508</v:id>
+                    <v:card-number>14</v:card-number>
+                    <v:number>14</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>9e40901e708e00001940b0066df18f1a</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Bramę Śmietniska naprawiał Malkiasz, syn Rekaba, zwierzchnik okręgu Bet-Hakkerem; on ją
+                        odbudował, wstawił jej wrota i sporządził zamki i zasuwy.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>7832f0570052e3295daa5510e45d211f</v:id>
+                    <v:card-number>15</v:card-number>
+                    <v:number>15</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>9e40901e708e00001940b0066df18f1a</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Bramę Źródlaną naprawiał Szallun, syn Kol-Chozego, zwierzchnik okręgu Mispy. Wzniósł on
+                        bramę, pokrył ją dachem, wstawił jej wrota, sporządził zamki i zasuwy oraz naprawił mur Sadzawki
+                        Siloe przy ogrodach królewskich aż do schodów prowadzących do Miasta Dawida.
+                    </v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            57f7c62089bdfba8534f31df0c11c825
+                        </supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>ef142c90e9e14cb51eec34af25234695</v:id>
+                    <v:card-number>16</v:card-number>
+                    <v:number>16</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>9e40901e708e00001940b0066df18f1a</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Dalej za nim naprawiał Nehemiasz – syn Azbuka, zwierzchnik połowy okręgu Bet-Sur – aż do
+                        miejsca naprzeciw grobów Dawida, to znaczy do Sadzawki Sztucznej i do garnizonu gwardii.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>e2132ebfeb6de1b7a53b535113dcc771</v:id>
+                    <v:card-number>17</v:card-number>
+                    <v:number>17</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>9e40901e708e00001940b0066df18f1a</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Jeszcze dalej naprawiali Lewici: Rechum, syn Baniego, i Chaszabiasz, zwierzchnik połowy
+                        okręgu Keila, który pracował obok niego za swój okręg.
+                    </v:content>
+                    <v:dictionary datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            d48b70803cff487accbde9b082960d26
+                        </supp:Supplement>
+                    </v:dictionary>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>dcf985565556b5e94ad7998dded16bf1</v:id>
+                    <v:card-number>18</v:card-number>
+                    <v:number>18</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>9e40901e708e00001940b0066df18f1a</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Za nimi naprawiali ich bracia, Binnuj, syn Chenadada, zwierzchnik drugiej połowy okręgu
+                        Keila,
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>700b8fbdbe404c65a51422231967e257</v:id>
+                    <v:card-number>19</v:card-number>
+                    <v:number>19</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>9e40901e708e00001940b0066df18f1a</ch:Chapter>
+                    </v:chapter>
+                    <v:content>przy nim Ezer, syn Jozuego, zwierzchnik Mispy, który naprawiał drugi odcinek, to jest od
+                        miejsca naprzeciw schodów zbrojowni w kierunku narożnika,
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>8865841134a1ffd8c363ff7671b8da5a</v:id>
+                    <v:card-number>20</v:card-number>
+                    <v:number>20</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>9e40901e708e00001940b0066df18f1a</ch:Chapter>
+                    </v:chapter>
+                    <v:content>i obok niego Baruch, syn Zabbaja, który naprawiał odcinek od narożnika do bramy pałacu
+                        najwyższego kapłana Eliasziba.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>ff7f8983abecfff225a023dee8da5f8e</v:id>
+                    <v:card-number>21</v:card-number>
+                    <v:number>21</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>9e40901e708e00001940b0066df18f1a</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Następny odcinek, od bramy pałacu Eliasziba aż do jego krańca, naprawiał Meremot, syn
+                        Uriasza, syn Hakkosa.
+                    </v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            2ec697039cb44556b084217d83434a28
+                        </supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>739d782804cd10534a7df6f62ec6d7de</v:id>
+                    <v:card-number>22</v:card-number>
+                    <v:number>22</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>9e40901e708e00001940b0066df18f1a</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Dalej pracowali kapłani, mieszkańcy Kikkaru.</v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            7e0fd88e3693f96be6045041c1f732fd
+                        </supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>5143a7b4f0bd38361561cb6672bcf477</v:id>
+                    <v:card-number>23</v:card-number>
+                    <v:number>23</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>9e40901e708e00001940b0066df18f1a</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Za nimi naprawiali Beniamin i Chaszub, naprzeciwko swoich domów, oraz Azariasz, syn
+                        Maasejasza, syna Ananiasza, obok swego domu.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>44a5e85204911197d9f0051d50c8986f</v:id>
+                    <v:card-number>24</v:card-number>
+                    <v:number>24</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>9e40901e708e00001940b0066df18f1a</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Dalszy odcinek, od domu Azariasza aż do narożnika i do zakrętu, naprawiał Binnuj, syn
+                        Chenadada.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>9d6c8bde810945e5471eef1fc358c493</v:id>
+                    <v:card-number>25</v:card-number>
+                    <v:number>25</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>9e40901e708e00001940b0066df18f1a</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Naprzeciw narożnika pracował Palal, syn Uzaja, także przy wysokiej wieży wystającej z
+                        pałacu królewskiego, tuż obok dziedzińca straży, a za nim Pedajasz, syn Parosza,
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>456e2e0046384a5e0c41830d55db61fc</v:id>
+                    <v:card-number>26</v:card-number>
+                    <v:number>26b</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>9e40901e708e00001940b0066df18f1a</ch:Chapter>
+                    </v:chapter>
+                    <v:content>który naprawiał mur do baszty przed Bramą Wodną i wschodnią część wystającej baszty.
+                    </v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            d25c4cb729940fa0158f0dc553089052
+                        </supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>67827907693cf0afb667c36335e16ed8</v:id>
+                    <v:card-number>27</v:card-number>
+                    <v:number>27</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>9e40901e708e00001940b0066df18f1a</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Dalej pracowali mieszkańcy Tekoa, na odcinku od przedniej części wysoko wystającej wieży
+                        aż do muru Ofelu;
+                    </v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            650bb9fd9ec2873d085ff25a07db6c70
+                        </supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>76baddd50164661c5acc31e87c4afdb3</v:id>
+                    <v:card-number>28</v:card-number>
+                    <v:number>26a</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>9e40901e708e00001940b0066df18f1a</ch:Chapter>
+                    </v:chapter>
+                    <v:content>na Ofelu mieszkali słudzy świątyni.</v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            5889c04f60d5c4e8e4b637c67850566d
+                        </supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>bc648a96722979dc389278abca89cb3c</v:id>
+                    <v:card-number>29</v:card-number>
+                    <v:number>28</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>9e40901e708e00001940b0066df18f1a</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Powyżej Bramy Końskiej naprawiali kapłani, każdy naprzeciwko swojego domu.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>6c1183b4eb304cfb87dd89bcc78cbdfe</v:id>
+                    <v:card-number>30</v:card-number>
+                    <v:number>29</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>9e40901e708e00001940b0066df18f1a</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Za nimi pracowali: Sadok, syn Immera, obok swojego domu, dalej Szemajasz, syn
+                        Szekaniasza, strażnik Bramy Wschodniej;
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>047f4f299b6ff0f1d08b503f4d3651e7</v:id>
+                    <v:card-number>31</v:card-number>
+                    <v:number>30</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>9e40901e708e00001940b0066df18f1a</ch:Chapter>
+                    </v:chapter>
+                    <v:content>na następnym odcinku Chananiasz, syn Szelemiasza, Chanun, szósty syn Salafa, naprzeciw
+                        swego mieszkania, i Meszullam, syn Berekiasza.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>9f4e7814b560d39d34f58e44b133aa20</v:id>
+                    <v:card-number>32</v:card-number>
+                    <v:number>31</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>9e40901e708e00001940b0066df18f1a</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Za nim, na odcinku aż do domu sług świątyni i kupców, pracował Malkiasz, członek bractwa
+                        złotników, który naprawiał przednią część Bramy Defilad do górnej sali w rogu.
+                    </v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            8bcbbb4655eac5150494e4d46d926efa
+                        </supp:Supplement>
+                    </v:definitions>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            ba695e92bad5dcad4a8bb0cbeb31d971
+                        </supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>4565b8c7be35036efc04aed4874f4cba</v:id>
+                    <v:card-number>33</v:card-number>
+                    <v:number>32</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>9e40901e708e00001940b0066df18f1a</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Natomiast między górną salą w rogu i Bramą Owczą pracowali złotnicy i kupcy.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>3d91c9d2cad786c8f781c39a6af16a65</v:id>
+                    <v:card-number>34</v:card-number>
+                    <v:number>33</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>9e40901e708e00001940b0066df18f1a</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Gdy Sanballat dowiedział się, że odbudowujemy mury, wpadł w straszną złość. Drwił z
+                        Judejczyków
+                    </v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            5b0ef2b98c17ea7ceffd59bf9e8035c7
+                        </supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>0c34c966f4c392a5a85fd4b362ae0466</v:id>
+                    <v:card-number>35</v:card-number>
+                    <v:number>34</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>9e40901e708e00001940b0066df18f1a</ch:Chapter>
+                    </v:chapter>
+                    <v:content>w obecności swoich rodaków i żołnierzy samarytańskich i tak mówił: „Cóż ci niedołężni
+                        Żydzi wyrabiają? Chcą wznieść mury i zaraz składać ofiary? Myślą, że w jednym dniu zakończą
+                        pracę, a z popalonych kamieni i ze zwalonych rumowisk postawią żywy mur?”.
+                    </v:content>
+                    <v:dictionary datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            7c5c79c8badd62a8ad4c13b957c763aa
+                        </supp:Supplement>
+                    </v:dictionary>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>42fc2e62f57b82bbacd05930f13490db</v:id>
+                    <v:card-number>36</v:card-number>
+                    <v:number>35</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>9e40901e708e00001940b0066df18f1a</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Stojący obok Tobiasz Ammonita tak mu wtórował: „A niech budują! Wystarczy, że skoczy na
+                        to szakal i zawali się mur z ich kamieni”.
+                    </v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            20fe1dab67a39886b01629c02b22f3e9
+                        </supp:Supplement>
+                    </v:definitions>
+                    <v:dictionary datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            bcc7bc94b4ed9335ef8ed05cdb419fb9
+                        </supp:Supplement>
+                    </v:dictionary>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>953abdd02674fbab88d40d2fbb1cff21</v:id>
+                    <v:card-number>37</v:card-number>
+                    <v:number>36</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>9e40901e708e00001940b0066df18f1a</ch:Chapter>
+                    </v:chapter>
+                    <v:content>„Boże nasz, słuchaj, jak nami pogardzają! Spraw, aby ich urąganie obróciło się przeciwko
+                        nim samym i wydaj ich na łup w ziemi niewoli.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>657968361bd016923b6b8be4b8300b6a</v:id>
+                    <v:card-number>38</v:card-number>
+                    <v:number>37</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>9e40901e708e00001940b0066df18f1a</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Nie przebaczaj im win, a grzech ich niech nie będzie wymazany przed Tobą. Przecież
+                        znieważali budujących!”.
+                    </v:content>
+                    <v:dictionary datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            b50fd41e46785d78079dd524de054545
+                        </supp:Supplement>
+                    </v:dictionary>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>16d09374363f94f81a742f3b4db9cf87</v:id>
+                    <v:card-number>39</v:card-number>
+                    <v:number>38</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>9e40901e708e00001940b0066df18f1a</ch:Chapter>
+                    </v:chapter>
+                    <v:content>My tymczasem wznosiliśmy mur, który został umocniony do połowy na całej długości, bo
+                        wszyscy ludzie mieli zapał do pracy.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+        </ch:Chapter>
+    </instance>
+    <attachments/>
+</envelope>

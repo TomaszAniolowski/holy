@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<envelope xmlns="http://marklogic.com/entity-services">
+    <headers>
+        <headers xmlns:es="http://marklogic.com/entity-services">
+            <createdOn>2021-01-09T15:45:25.991696Z</createdOn>
+            <sourceUris>
+                <sourceUri>/tome/Rdz/chapter/8/v1.xml</sourceUri>
+            </sourceUris>
+        </headers>
+    </headers>
+    <triples/>
+    <instance>
+        <info>
+            <title>Chapter</title>
+            <version>1.0.0</version>
+        </info>
+        <ch:Chapter xmlns:ch="http://holy.arch.com/holy-entities/chapter">
+            <ch:id>3603ad7316dd36b82e4b9b566fbd9226</ch:id>
+            <ch:testament>Old Testament</ch:testament>
+            <ch:tome>Rdz</ch:tome>
+            <ch:number>8</ch:number>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>4e1b8b2662fd8df7ca4517bb37672d5d</v:id>
+                    <v:card-number>1</v:card-number>
+                    <v:number>1</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>3603ad7316dd36b82e4b9b566fbd9226</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Pamiętał jednak Bóg o Noem i o wszystkich żywych istotach, o wszelkim bydle, które było z
+                        nim w arce. Posłał więc Bóg wiatr na ziemię i wody zaczęły opadać.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>54be4cee7c2b0739f6abcc56efcf2a74</v:id>
+                    <v:card-number>2</v:card-number>
+                    <v:number>2</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>3603ad7316dd36b82e4b9b566fbd9226</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Źródła otchłani i zawory nieba zamknęły się, a deszcz z nieba przestał padać.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>6daab8f326e0383e329e4896e2847254</v:id>
+                    <v:card-number>3</v:card-number>
+                    <v:number>3</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>3603ad7316dd36b82e4b9b566fbd9226</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Woda stopniowo ustępowała z ziemi, a po stu pięćdziesięciu dniach ustąpiła zupełnie.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>c99c443f8e36fd5e4c24ae8087a5cadf</v:id>
+                    <v:card-number>4</v:card-number>
+                    <v:number>4</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>3603ad7316dd36b82e4b9b566fbd9226</ch:Chapter>
+                    </v:chapter>
+                    <v:content>W siedemnastym dniu siódmego miesiąca arka spoczęła na górze Ararat.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>ce0b02b206390628030dc7a90a159485</v:id>
+                    <v:card-number>5</v:card-number>
+                    <v:number>5</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>3603ad7316dd36b82e4b9b566fbd9226</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Woda obniżała się coraz bardziej aż do dziesiątego miesiąca. W pierwszym dniu dziesiątego
+                        miesiąca ukazały się szczyty gór.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>a4831db1d8c3f367744c72b3fd7b4e44</v:id>
+                    <v:card-number>6</v:card-number>
+                    <v:number>6</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>3603ad7316dd36b82e4b9b566fbd9226</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Po czterdziestu dniach Noe otworzył w arce okno, które zrobił,</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>3ab3513fc0843280ddbc1c52dcf00b0b</v:id>
+                    <v:card-number>7</v:card-number>
+                    <v:number>7</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>3603ad7316dd36b82e4b9b566fbd9226</ch:Chapter>
+                    </v:chapter>
+                    <v:content>i wypuścił kruka. Wylatywał on i wracał, aż wyschła woda na ziemi.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>f4c574382f4beef2496e064c48ecb7d7</v:id>
+                    <v:card-number>8</v:card-number>
+                    <v:number>8</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>3603ad7316dd36b82e4b9b566fbd9226</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Potem wypuścił gołębicę, aby zobaczyć, czy woda ustąpiła z powierzchni ziemi.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>2ae2ab206c1c0cb819e61a17c65f4af6</v:id>
+                    <v:card-number>9</v:card-number>
+                    <v:number>9</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>3603ad7316dd36b82e4b9b566fbd9226</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Gołębica nie znalazła miejsca, gdzie mogłaby spocząć, gdyż woda była jeszcze na całej
+                        ziemi. Wyciągnął więc Noe rękę, chwycił gołębicę i wziął do siebie do arki.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>d9fd598ab96e0d57521d98ea397c9d03</v:id>
+                    <v:card-number>10</v:card-number>
+                    <v:number>10</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>3603ad7316dd36b82e4b9b566fbd9226</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Odczekał jeszcze siedem dni i ponownie ją wypuścił.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>61f08ecec53513b9632f52d6e2f12ed3</v:id>
+                    <v:card-number>11</v:card-number>
+                    <v:number>11</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>3603ad7316dd36b82e4b9b566fbd9226</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Gołębica powróciła do niego pod wieczór, mając w dziobie świeżą gałązkę oliwną. Poznał
+                        więc Noe, że woda odpłynęła z ziemi.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>77699879b002b7f1c6e8de74c89426b7</v:id>
+                    <v:card-number>12</v:card-number>
+                    <v:number>12</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>3603ad7316dd36b82e4b9b566fbd9226</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Odczekał znów siedem dni i posłał gołębicę, ale już do niego nie powróciła.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>5bb1ad6d87a1db25677f1d005e09b000</v:id>
+                    <v:card-number>13</v:card-number>
+                    <v:number>13</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>3603ad7316dd36b82e4b9b566fbd9226</ch:Chapter>
+                    </v:chapter>
+                    <v:content>W sześćset pierwszym roku, w pierwszym dniu pierwszego miesiąca wyschła woda na ziemi.
+                        Wtedy podniósł Noe dach arki i zobaczył, że ziemia już obeschła.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>da452ad1ea4c464ebdef511d1812a82f</v:id>
+                    <v:card-number>14</v:card-number>
+                    <v:number>14</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>3603ad7316dd36b82e4b9b566fbd9226</ch:Chapter>
+                    </v:chapter>
+                    <v:content>W siedemnastym dniu drugiego miesiąca ziemia była zupełnie sucha.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>ebdc44e798aacf21114f98a770764265</v:id>
+                    <v:card-number>15</v:card-number>
+                    <v:number>15</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>3603ad7316dd36b82e4b9b566fbd9226</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Przemówił wtedy Bóg do Noego:</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>236c8adebf05de0fb1776155de1e61c6</v:id>
+                    <v:card-number>16</v:card-number>
+                    <v:number>16</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>3603ad7316dd36b82e4b9b566fbd9226</ch:Chapter>
+                    </v:chapter>
+                    <v:content>„Wyjdź z arki wraz z żoną, z twoimi synami i synowymi.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>9e484b9b287f370aea40a472395ee3ca</v:id>
+                    <v:card-number>17</v:card-number>
+                    <v:number>17</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>3603ad7316dd36b82e4b9b566fbd9226</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Wyprowadź z sobą wszelkie zwierzęta, wszystkie istoty żyjące: ptaki, bydło i wszystko, co
+                        pełza po ziemi. Niech się zaroją na ziemi, niech będą płodne i niech się rozmnażają”.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>1c72a75f82c68a7f072c1668d3108d35</v:id>
+                    <v:card-number>18</v:card-number>
+                    <v:number>18</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>3603ad7316dd36b82e4b9b566fbd9226</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Wyszedł więc Noe z synami, z żoną i swoimi synowymi.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>b3cf9177d08e64c94667061082ecd9a0</v:id>
+                    <v:card-number>19</v:card-number>
+                    <v:number>19</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>3603ad7316dd36b82e4b9b566fbd9226</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Wyszły także z arki wszystkie zwierzęta – według gatunków: bydło, ptaki i to, co pełza po
+                        ziemi.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>efb2ea5d6009b5ad3f1b1361d68fb3c1</v:id>
+                    <v:card-number>20</v:card-number>
+                    <v:number>20</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>3603ad7316dd36b82e4b9b566fbd9226</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Potem Noe zbudował ołtarz dla Pana i złożył na nim całopalną ofiarę z czystych zwierząt i
+                        z istot latających.
+                    </v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            ed0c4dc3736c1247e22c02d991c8ffd2
+                        </supp:Supplement>
+                    </v:definitions>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            86c63e6e226725d7a18e03ce39124370
+                        </supp:Supplement>
+                    </v:definitions>
+                    <v:dictionary datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            05aece6b6fd41c7414a49e07d0072e35
+                        </supp:Supplement>
+                    </v:dictionary>
+                    <v:dictionary datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            e9c1a8fb41364c64f319e218a1e98194
+                        </supp:Supplement>
+                    </v:dictionary>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>e49558d03f302fca5b416d4efa0bb373</v:id>
+                    <v:card-number>21</v:card-number>
+                    <v:number>21</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>3603ad7316dd36b82e4b9b566fbd9226</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Gdy Pan poczuł miłą woń, postanowił: „Nie będę już więcej złorzeczył ziemi z powodu
+                        człowieka, gdyż skłonności człowieka są złe od młodości. Dlatego nie zniszczę więcej wszystkich
+                        żywych istot, jak to uczyniłem.
+                    </v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            3f29f8d76d4b810d906e7e2900cc3447
+                        </supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>0ba84f1c59d64cd35979fb09f5f512a2</v:id>
+                    <v:card-number>22</v:card-number>
+                    <v:number>22</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>3603ad7316dd36b82e4b9b566fbd9226</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Jak długo istnieje ziemia,</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>c0cea2385f25346552a352c9581e8219</v:id>
+                    <v:card-number>22</v:card-number>
+                    <v:number>22</v:number>
+                    <v:sub-number>II</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>3603ad7316dd36b82e4b9b566fbd9226</ch:Chapter>
+                    </v:chapter>
+                    <v:content>nie ustanie siew i żniwo, zimno i upał,</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>2891ecce0ca342f2157ce3205353e7c6</v:id>
+                    <v:card-number>22</v:card-number>
+                    <v:number>22</v:number>
+                    <v:sub-number>III</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>3603ad7316dd36b82e4b9b566fbd9226</ch:Chapter>
+                    </v:chapter>
+                    <v:content>lato i zima, dzień i noc”.</v:content>
+                </v:Verse>
+            </ch:verses>
+        </ch:Chapter>
+    </instance>
+    <attachments/>
+</envelope>

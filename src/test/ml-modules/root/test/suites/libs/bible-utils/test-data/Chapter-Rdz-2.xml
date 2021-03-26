@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<envelope xmlns="http://marklogic.com/entity-services">
+    <headers>
+        <headers xmlns:es="http://marklogic.com/entity-services">
+            <createdOn>2021-01-09T15:45:25.325896Z</createdOn>
+            <sourceUris>
+                <sourceUri>/tome/Rdz/chapter/2/v1.xml</sourceUri>
+            </sourceUris>
+        </headers>
+    </headers>
+    <triples/>
+    <instance>
+        <info>
+            <title>Chapter</title>
+            <version>1.0.0</version>
+        </info>
+        <ch:Chapter xmlns:ch="http://holy.arch.com/holy-entities/chapter">
+            <ch:id>6d553492885133f1e8f3289501382eed</ch:id>
+            <ch:testament>Old Testament</ch:testament>
+            <ch:tome>Rdz</ch:tome>
+            <ch:number>2</ch:number>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>ea5f2f3ad64039c1c57ea18168a675d7</v:id>
+                    <v:card-number>1</v:card-number>
+                    <v:number>1</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6d553492885133f1e8f3289501382eed</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Tak Bóg dopełnił stworzenia nieba i ziemi wraz z tym, co na nich było.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>f80963388804b765fd02b9bd76e2212c</v:id>
+                    <v:card-number>2</v:card-number>
+                    <v:number>2</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6d553492885133f1e8f3289501382eed</ch:Chapter>
+                    </v:chapter>
+                    <v:content>W siódmym dniu dopełnił Bóg dzieła, nad którym pracował. Siódmego dnia przestał pracować
+                        po całym dziele, które uczynił.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>60dd1a364f7bb03c198874a29de375e6</v:id>
+                    <v:card-number>3</v:card-number>
+                    <v:number>3</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6d553492885133f1e8f3289501382eed</ch:Chapter>
+                    </v:chapter>
+                    <v:content>I pobłogosławił Bóg ten siódmy dzień, i ustanowił go świętym, bo tego dnia przestał
+                        pracować po tym, jak dokonał dzieła stworzenia.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>6bb37c0dada1705de382d82284a16fa6</v:id>
+                    <v:card-number>4</v:card-number>
+                    <v:number>4</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6d553492885133f1e8f3289501382eed</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Takie są dzieje stworzenia nieba i ziemi.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>85ae674d17a6b3150b426a75de1b7ecc</v:id>
+                    <v:card-number>4</v:card-number>
+                    <v:number>4</v:number>
+                    <v:sub-number>II</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6d553492885133f1e8f3289501382eed</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Gdy Pan Bóg uczynił ziemię i niebo,</v:content>
+                    <v:dictionary datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            05aece6b6fd41c7414a49e07d0072e35
+                        </supp:Supplement>
+                    </v:dictionary>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>05a4322d58e37e5f909dac988b3f6991</v:id>
+                    <v:card-number>5</v:card-number>
+                    <v:number>5</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6d553492885133f1e8f3289501382eed</ch:Chapter>
+                    </v:chapter>
+                    <v:content>nie było jeszcze na ziemi żadnego krzewu polnego i żadna trawa jeszcze nie wzeszła. Pan
+                        Bóg nie spuszczał bowiem deszczu na ziemię i nie było człowieka, który by pracował na roli
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>3f65e9779a1e1e1778deee8e9bf12317</v:id>
+                    <v:card-number>6</v:card-number>
+                    <v:number>6</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6d553492885133f1e8f3289501382eed</ch:Chapter>
+                    </v:chapter>
+                    <v:content>i kopał w ziemi studnię, aby nawodnić glebę.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>c8c636f95e23c2f3388b9f60ef4f3e53</v:id>
+                    <v:card-number>7</v:card-number>
+                    <v:number>7</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6d553492885133f1e8f3289501382eed</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Pan Bóg ulepił człowieka z prochu ziemi i tchnął w jego nozdrza tchnienie życia. Odtąd
+                        człowiek stał się istotą żyjącą.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>9ccbeab5ea8ac68386c95f4dccd71ef6</v:id>
+                    <v:card-number>8</v:card-number>
+                    <v:number>8</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6d553492885133f1e8f3289501382eed</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Pan Bóg zasadził ogród w Edenie, na Wschodzie, i umieścił tam człowieka, którego
+                        ulepił.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>3797d913e28e9bf591b0b7cb567c2898</v:id>
+                    <v:card-number>9</v:card-number>
+                    <v:number>9</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6d553492885133f1e8f3289501382eed</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Pan Bóg sprawił, że wyrosły z gleby wszelkie drzewa o pięknym wyglądzie, których owoce
+                        nadawały się do jedzenia. W środku ogrodu natomiast rosło drzewo życia oraz drzewo poznania
+                        dobra i zła.
+                    </v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            92f851024fc9554f1c18f2f5eed1bc6c
+                        </supp:Supplement>
+                    </v:definitions>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            c8ed4ff3ac3c2264328be1cf78196e00
+                        </supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>67627aa0192e92d458b3ec64938ddd47</v:id>
+                    <v:card-number>10</v:card-number>
+                    <v:number>10</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6d553492885133f1e8f3289501382eed</ch:Chapter>
+                    </v:chapter>
+                    <v:content>A z Edenu wypływała rzeka, która miała nawadniać ogród. Tam rozdzielała się na cztery
+                        rzeki.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>7332f6376b60fb6644a32dd477432119</v:id>
+                    <v:card-number>11</v:card-number>
+                    <v:number>11</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6d553492885133f1e8f3289501382eed</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Pierwsza to Piszon, która opływa całą krainę Chawila, gdzie znajduje się złoto.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>8ab2e36bd14a1a3d6bfa8287733067dc</v:id>
+                    <v:card-number>12</v:card-number>
+                    <v:number>12</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6d553492885133f1e8f3289501382eed</ch:Chapter>
+                    </v:chapter>
+                    <v:content>A złoto tej krainy jest cenne. Jest tam również pachnąca żywica i czerwony kamień.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>e772834ff64a90e03d631e659b835f37</v:id>
+                    <v:card-number>13</v:card-number>
+                    <v:number>13</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6d553492885133f1e8f3289501382eed</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Druga rzeka to Gichon. Opływa ona całą krainę Kusz.</v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>3c1dcc5da450dbb3417f30f0fbe3c67e</v:id>
+                    <v:card-number>14</v:card-number>
+                    <v:number>14</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6d553492885133f1e8f3289501382eed</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Trzecia rzeka zwie się Tygrys i płynie na Wschód od Asyrii. Czwarta rzeka to Eufrat.
+                    </v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            2a6f1683529cfa22071424287d66def0
+                        </supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>866aecb4546914b0e6509fcf5107947c</v:id>
+                    <v:card-number>15</v:card-number>
+                    <v:number>15</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6d553492885133f1e8f3289501382eed</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Wziął więc Pan Bóg człowieka i dał mu odpocząć w ogrodzie Eden, aby go uprawiał i
+                        strzegł.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>4dfda2e01520c953b4d981d33468a29c</v:id>
+                    <v:card-number>16</v:card-number>
+                    <v:number>16</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6d553492885133f1e8f3289501382eed</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Przykazał też Pan Bóg człowiekowi: „Możesz jeść owoce ze wszystkich drzew tego ogrodu.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>1178837541193b32aa00de0364eeec3b</v:id>
+                    <v:card-number>17</v:card-number>
+                    <v:number>17</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6d553492885133f1e8f3289501382eed</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Nie wolno ci jednak jeść z drzewa poznania dobra i zła, bo gdy zjesz z niego, na pewno
+                        umrzesz”.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>bf66a878cd2905bda5f1b65a8f153d97</v:id>
+                    <v:card-number>18</v:card-number>
+                    <v:number>18</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6d553492885133f1e8f3289501382eed</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Potem rzekł Pan Bóg: „Nie jest dobrze, by człowiek był sam. Uczynię mu pomoc podobną do
+                        niego”.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>5acb7d168d683b2484a91226960a7a56</v:id>
+                    <v:card-number>19</v:card-number>
+                    <v:number>19</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6d553492885133f1e8f3289501382eed</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Ulepił więc Pan Bóg z ziemi wszelkie dzikie zwierzęta i wszelkie ptactwo powietrzne.
+                        Przyprowadził je do człowieka, aby dowiedzieć się, jak on je nazwie. I wszystkie żyjące istoty
+                        miały się tak nazywać, jak on je nazwał.
+                    </v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            63fe4e27b969b023867bf7f7f53581da
+                        </supp:Supplement>
+                    </v:definitions>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            e77a18059117b51e1773a96fdd32a685
+                        </supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>93baddd86a7675712a61221d973f82e0</v:id>
+                    <v:card-number>20</v:card-number>
+                    <v:number>20</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6d553492885133f1e8f3289501382eed</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Człowiek nadał nazwę wszelkiemu bydłu, wszelkim ptakom powietrznym i dzikim zwierzętom.
+                        Nie znalazł jednak pomocy odpowiedniej dla siebie.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>17b0e11630d869259152120ee0c968ff</v:id>
+                    <v:card-number>21</v:card-number>
+                    <v:number>21</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6d553492885133f1e8f3289501382eed</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Zesłał więc Pan Bóg głęboki sen na człowieka. A gdy ten zasnął, wyjął jedno z jego żeber,
+                        a miejsce to zapełnił ciałem.
+                    </v:content>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>ec50923569c744b4df97bb30dfbd3886</v:id>
+                    <v:card-number>22</v:card-number>
+                    <v:number>22</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6d553492885133f1e8f3289501382eed</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Z żebra, które Pan Bóg wyjął z mężczyzny, utworzył kobietę i przyprowadził ją do niego.
+                    </v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            e1af72f4a1afe9d085dfcdc9c4f7b8a7
+                        </supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>31582b8279d00dad044e6e2f3c11caf4</v:id>
+                    <v:card-number>23</v:card-number>
+                    <v:number>23</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6d553492885133f1e8f3289501382eed</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Wtedy mężczyzna rzekł: „Ta wreszcie jest kością z moich kości i ciałem z mego ciała.
+                        Będzie się zwała kobietą, bo z mężczyzny została wzięta”.
+                    </v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            cfc55b16d72cda3d952476be9bd6a437
+                        </supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>99ff7c7462941ed09d385d18aced26b7</v:id>
+                    <v:card-number>24</v:card-number>
+                    <v:number>24</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6d553492885133f1e8f3289501382eed</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Dlatego opuści mężczyzna swego ojca i swoją matkę, a złączy się ze swoją żoną, tak że
+                        staną się jednym ciałem.
+                    </v:content>
+                    <v:definitions datatype="array">
+                        <supp:Supplement xmlns:supp="http://holy.arch.com/holy-entities/supplement">
+                            0a29e0cdea34935beaad6a179a46e8f3
+                        </supp:Supplement>
+                    </v:definitions>
+                </v:Verse>
+            </ch:verses>
+            <ch:verses datatype="array">
+                <v:Verse xmlns:v="http://holy.arch.com/holy-entities/verse">
+                    <v:id>68f94623e58ced637d8b5b0b75c6ce77</v:id>
+                    <v:card-number>25</v:card-number>
+                    <v:number>25</v:number>
+                    <v:sub-number>I</v:sub-number>
+                    <v:chapter>
+                        <ch:Chapter>6d553492885133f1e8f3289501382eed</ch:Chapter>
+                    </v:chapter>
+                    <v:content>Mężczyzna i jego żona byli nadzy, ale nie odczuwali wstydu.</v:content>
+                </v:Verse>
+            </ch:verses>
+        </ch:Chapter>
+    </instance>
+    <attachments/>
+</envelope>

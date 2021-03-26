@@ -1,15 +1,3 @@
 {
-  "tome": "Rdz",
-  "testament": "Old Testament",
-  "chapters": [
-    {
-      "number": "1",
-      "verses": [
-        {
-          "number": "32",
-          "content": "Not Found"
-        }
-      ]
-    }
-  ]
+  "Rdz 1,32" : "Invalid siglum (Verse not found [Rdz 1,32])"
 }
