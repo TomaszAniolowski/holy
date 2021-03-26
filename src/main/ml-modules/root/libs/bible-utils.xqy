@@ -76,20 +76,6 @@ declare function bib:retrieve-last-chapter(
 };
 
 (:~
- : Pulls the verse digit from verse number of the combined form (e.g. '1a')
- :
- : @param $verse-num - the verse number
- :
- : @return the digit part of verse number
- :)
-declare function bib:pull-verse-digit-part(
-        $verse-num as xs:string
-) as xs:string
-{
-    xqy3:split-verse-num($verse-num)[fn:matches(., '\d')]
-};
-
-(:~
  : Verifies the correctness of the siglum provided.
  : It uses javascript module because marklogic regex tools return wrong values.
  :
