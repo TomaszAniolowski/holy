@@ -25,6 +25,8 @@ In response, we get selected verses (determined by the siglum parameter) in JSON
 `gradle mlDeploy`
 
 ## Run flows
+* Ingest raw data into the database (use your personal credentials to pismoswiete.pl)  
+`gradle ingestXhtml '-Pusername=<username>' -Ppassword=<password> --no-daemon`
 * Run Chapter flow  
 `gradle hubRunFlow -PflowName=psw -PbatchSize=4 -PthreadCount=12 -PshowOptions=true '-Psteps="1"' '-PjobId="chapter-job"' -i`
 * Run Chapter flow  
