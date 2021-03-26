@@ -1,6 +1,7 @@
 xquery version "1.0-ml";
 
 import module namespace test = "http://marklogic.com/test" at "/test/test-helper.xqy";
+import module namespace test-utils = "http://marklogic.com/holy/test/test-utils" at "/test/lib/test-utils.xqy";
 import module namespace http-utils = 'http://marklogic.com/holy/ml-modules/http-utils' at '/libs/http-utils.xqy';
 import module namespace hhc = "http://marklogic.com/holy/ml-modules/holy-hub-constants" at "/constants/holy-hub-constants.xqy";
 
@@ -77,12 +78,12 @@ return (
     test:assert-equal('Bad Request', $response-incorrect-siglum-message, 'Incorrect response message for rs:sigla=aaaaa'),
     test:assert-equal('Bad Request', $response-no-siglum-message, 'Incorrect response message for no siglum'),
 
-    test:assert-equal-json($expected-response-correct-1-body, $actual-response-correct-1-body, 'Different response bodies for rs:siglum=Rdz_1,1'),
-    test:assert-equal-json($expected-response-correct-2-body, $actual-response-correct-2-body, 'Different response bodies for rs:siglum=Rdz_50,26'),
-    test:assert-equal-json($expected-response-correct-3-body, $actual-response-correct-3-body, 'Different response bodies for rs:siglum=Iz_1,4'),
-    test:assert-equal-json($expected-response-no-ref-1-body, $actual-response-no-ref-1-body, 'Different response bodies for rs:siglum=Rdz_1,32'),
-    test:assert-equal-json($expected-response-no-ref-2-body, $actual-response-no-ref-2-body, 'Different response bodies for rs:siglum=Rdz_51,1'),
-    test:assert-equal-json($expected-response-no-ref-3-body, $actual-response-no-ref-3-body, 'Different response bodies for rs:siglum=1Rdz_1,1'),
-    test:assert-equal-json($expected-response-incorrect-siglum-body, $actual-response-incorrect-siglum-body, 'Different response bodies for rs:siglum=aaaaa'),
-    test:assert-equal-json($expected-response-no-siglum-body, $actual-response-no-siglum-body, 'Different response bodies for no siglum')
+    test-utils:assert-map-equal($expected-response-correct-1-body, $actual-response-correct-1-body, 'Different response bodies for rs:siglum=Rdz_1,1'),
+    test-utils:assert-map-equal($expected-response-correct-2-body, $actual-response-correct-2-body, 'Different response bodies for rs:siglum=Rdz_50,26'),
+    test-utils:assert-map-equal($expected-response-correct-3-body, $actual-response-correct-3-body, 'Different response bodies for rs:siglum=Iz_1,4'),
+    test-utils:assert-map-equal($expected-response-no-ref-1-body, $actual-response-no-ref-1-body, 'Different response bodies for rs:siglum=Rdz_1,32'),
+    test-utils:assert-map-equal($expected-response-no-ref-2-body, $actual-response-no-ref-2-body, 'Different response bodies for rs:siglum=Rdz_51,1'),
+    test-utils:assert-map-equal($expected-response-no-ref-3-body, $actual-response-no-ref-3-body, 'Different response bodies for rs:siglum=1Rdz_1,1'),
+    test-utils:assert-map-equal($expected-response-incorrect-siglum-body, $actual-response-incorrect-siglum-body, 'Different response bodies for rs:siglum=aaaaa'),
+    test-utils:assert-map-equal($expected-response-no-siglum-body, $actual-response-no-siglum-body, 'Different response bodies for no siglum')
 )

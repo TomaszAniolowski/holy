@@ -5,6 +5,7 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import java.io.UnsupportedEncodingException;
 import java.net.*;
 import java.nio.charset.StandardCharsets;
 import java.util.*;
@@ -14,7 +15,7 @@ public class PismoSwieteUser implements BrowserUser {
     private static final String LOGIN_PAGE_URL = "https://pismoswiete.pl/login";
     private static final String FORM_TARGET_URL = "https://pismoswiete.pl/login_check";
     private static final String SESSION_COOKIE_KEY = "PHPSESSID";
-    private static final Map<String,String> GET_LOGIN_PAGE_REQ_PARAMS = new HashMap<>() {{
+    private static final Map<String,String> GET_LOGIN_PAGE_REQ_PARAMS = new HashMap<String,String>() {{
         put("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36");
         put("accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9");
         put("Accept-Language", "en-US,en;q=0.5");
@@ -32,7 +33,7 @@ public class PismoSwieteUser implements BrowserUser {
 
     public PismoSwieteUser() {
         sender = RequestSenderFactory.getNewRequestSender();
-        postFormReqParams = new HashMap<>() {{
+        postFormReqParams = new HashMap<String,String>() {{
             put("user-agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36");
             put("accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9");
             put("accept-encoding", "gzip, deflate, br");
@@ -85,7 +86,11 @@ public class PismoSwieteUser implements BrowserUser {
                 value = login;
             else if (key.equals("_password"))
                 value = password;
-            paramList.add(key + "=" + URLEncoder.encode(value, StandardCharsets.UTF_8));
+            try {
+                paramList.add(key + "=" + URLEncoder.encode(value, "UTF-8"));
+            } catch (UnsupportedEncodingException e) {
+                e.printStackTrace();
+            }
         }
 
         StringBuilder result = new StringBuilder();
