@@ -18,7 +18,7 @@ In response, we get selected verses (determined by the siglum parameter) in JSON
 
 ## Installation
 * Clone the repository  
-`git clone https://github.com/TomaszAniolowski/holy.git`
+`git clone https://github.com/monasticus/holy.git`
 * Initialize DHF project  
 `gradle hubInit`
 * Deploy app  
